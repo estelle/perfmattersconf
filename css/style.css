@@ -1,0 +1,182 @@
+html, body {
+  background-color: #f8ac04;
+  font-family: trebuchet MS, opens-sans, sans-serif;
+  line-height: 1.4; }
+
+*:not(input) {
+  margin: 0; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw; }
+
+body > header, body > footer {
+  flex: 0 0 auto; }
+
+main {
+  flex: 1 1 auto; }
+  main section {
+    min-height: 20vh; }
+
+a {
+  color: #f8ac04; }
+
+body > header,
+body > footer {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #350e65; }
+  body > header li,
+  body > footer li {
+    border: 2px solid transparent;
+    border-width: 2px 0;
+    flex: 0 0 auto;
+    z-index: 4; }
+  body > header li:hover,
+  body > footer li:hover {
+    border-color: #ffffff; }
+  body > header a, body > header a:hover,
+  body > footer a,
+  body > footer a:hover {
+    color: #ffffff;
+    text-decoration: none; }
+  body > header li:hover,
+  body > footer li:hover {
+    background-color: #f8ac04; }
+    body > header li:hover a,
+    body > footer li:hover a {
+      color: #350e65; }
+
+body > header {
+  min-height: 4.8em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0;
+  position: relative; }
+  body > header figure {
+    font-size: 3.3em;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 5px 0 0 20px;
+    z-index: 10; }
+
+body > header:before {
+  bottom: -12px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); }
+
+body > footer:before {
+  top: -11px;
+  box-shadow: -3px -3px 3px rgba(0, 0, 0, 0.2); }
+
+body > footer {
+  color: #f2411a;
+  position: relative;
+  margin-top: 12px;
+  text-align: center; }
+  body > footer ul {
+    display: flex;
+    justify-content: center; }
+  body > footer li {
+    border: 2px solid transparent;
+    border-width: 2px 0; }
+  body > footer li:hover {
+    border-color: #ffffff; }
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  line-height: 2; }
+  nav ul li {
+    padding: 5px 10px; }
+
+:not(main) a {
+  text-decoration: none; }
+
+a:hover, a:focus, a:active {
+  text-decoration: underline; }
+
+.button {
+  background-color: #350e65;
+  color: #f2411a;
+  padding: 5px 20px;
+  border: 2px solid;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2); }
+  .button:hover, .button:focus, .button:active {
+    color: #350e65;
+    background-color: #f2411a;
+    text-decoration: none; }
+
+main {
+  margin-top: -20px;
+  padding: 20px;
+  /* 14242002 */ }
+  main > * {
+    margin: 0 -20px;
+    padding: 20px;
+    position: relative; }
+  main section {
+    box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.2); }
+  main section:nth-of-type(3n+1) {
+    background-color: #fcd9d1; }
+  main section:nth-of-type(3n+2) {
+    background-color: #feebc0; }
+  main section:nth-of-type(3n) {
+    background-color: #f6f0fd; }
+  main section:last-of-type {
+    padding-bottom: 100px;
+    margin-bottom: -80px; }
+  main p, main li, main ul, main h2, main h3 {
+    margin: 1em auto;
+    max-width: 45em; }
+  main a {
+    color: #350e65; }
+  main a:hover {
+    background-color: #f2411a; }
+
+main section:first-of-type {
+  background: url(../images/back.jpg) no-repeat top center black;
+  color: #ffffff;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative; }
+  main section:first-of-type::before {
+    margin: 0 -1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    content: "";
+    z-index: 1;
+    height: 70%;
+    top: 15%;
+    width: 100%;
+    position: absolute; }
+  main section:first-of-type > * {
+    z-index: 1; }
+  main section:first-of-type a {
+    background-color: #f8ac04;
+    color: #333;
+    border-radius: 3px;
+    padding: 0.5rem 2rem; }
+
+.circle {
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 50%;
+  height: 18rem;
+  width: 18rem;
+  box-sizing: border-box;
+  margin: 50px 20px;
+  text-align: center;
+  padding: 4rem 0;
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), 6px 6px 6px rgba(0, 0, 0, 0.6);
+  border: 1.5rem solid #f8ac04;
+  flex: 0 0 18rem; }
+  .circle h1 {
+    font-size: 2rem; }
+  .circle h2 {
+    font-size: 1rem; }
+
+/*# sourceMappingURL=style.css.map */

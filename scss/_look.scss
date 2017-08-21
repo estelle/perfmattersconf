@@ -1,0 +1,27 @@
+
+html, body {
+  background-color: $bg;
+  font-family: trebuchet MS, opens-sans, sans-serif;
+  line-height: 1.4;
+  }
+ *:not(input){
+  margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	width: 100vw;
+}
+body > header, body > footer {
+	flex: 0 0 auto;
+}
+main {
+	flex: 1 1 auto;
+	section {
+		min-height: 20vh;
+	}
+}
+
+a {color: $bg;}

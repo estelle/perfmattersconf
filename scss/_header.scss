@@ -1,0 +1,25 @@
+body > header {
+	min-height: 4.8em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 0;
+	position: relative;
+	figure {
+		font-size: 3.3em;
+		color: $light;
+		font-weight: bold;
+		margin: 5px 0 0 20px;
+		z-index: 10;
+	}
+}
+
+ body > header:before {   
+    bottom: -12px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+	}
+ body > footer:before {   
+    top: -11px;
+    box-shadow: -3px -3px 3px rgba(0,0,0,0.2);
+	}

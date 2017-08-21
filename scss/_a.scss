@@ -1,0 +1,20 @@
+:not(main) a {
+  text-decoration: none;			
+}
+a {
+	&:hover, &:focus, &:active {
+		text-decoration: underline;
+	}
+}
+.button {
+	background-color: $speed-dark;
+	color: $speed-light;
+    padding: 5px 20px;
+    border: 2px solid;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    &:hover, &:focus, &:active {
+    	color: $speed-dark;
+		background-color: $speed-light;
+		text-decoration: none;
+    }
+}

@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+@import "variables";
+
+.speakers {
+	&.speakers.speakers {background-color: $light;}
+	ul {
+		display: flex;
+		flex-flow: wrap row;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	li {
+		list-style-type: none;
+		flex: 0 0 33%;
+		min-width: 240px;
+		text-align: center;
+	}
+	figure img {
+		width: 100%;
+
+	}
+	a:hover {
+		background-color: transparent;
+		img {
+			background-color: $speed-dark; border-radius: 50%;
+		}
+	}
+}

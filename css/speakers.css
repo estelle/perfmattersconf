@@ -1,0 +1,21 @@
+.speakers.speakers.speakers {
+  background-color: #ffffff; }
+.speakers ul {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: flex-start;
+  align-items: flex-start; }
+.speakers li {
+  list-style-type: none;
+  flex: 0 0 33%;
+  min-width: 240px;
+  text-align: center; }
+.speakers figure img {
+  width: 100%; }
+.speakers a:hover {
+  background-color: transparent; }
+  .speakers a:hover img {
+    background-color: #350e65;
+    border-radius: 50%; }
+
+/*# sourceMappingURL=speakers.css.map */
