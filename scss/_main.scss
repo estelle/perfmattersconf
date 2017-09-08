@@ -31,7 +31,7 @@ main {
 		max-width: 45em;
 	}
 	a {
-		color: $speed-dark;
+		color: $speed-light;
 	}
-	a:hover {background-color: $speed-light;} /* 14242002 */
+	a:hover {text-decoration: underline;} /* 14242002 */
 }

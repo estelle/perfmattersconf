@@ -3,26 +3,21 @@ main section:first-of-type {
 	color: $light;
 	background-size: cover;
 	display: flex;
+	flex-direction: column;
 	justify-content: flex-start;	
 	align-items: center;
 	position: relative;
+	padding: 2rem 1rem;
 	&::before {
-		margin: 0 -1rem;
 		background-color: rgba(0,0,0,0.3);
 		content: "";
 		z-index: 1;
-		height: 70%;
-		top: 15%;
-		width: 100%;
+		height: calc(100% - 4rem);
+		top: 2rem;
+		width: calc(100% + 1rem);
 		position: absolute;
 	  }
 	> * {
 		z-index: 1;
 	  }
-	a {
-		background-color: $bg;
-		color: $text;
-		border-radius: 3px;
-		padding: 0.5rem 2rem;
-	}
 }

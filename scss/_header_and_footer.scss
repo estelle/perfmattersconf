@@ -8,18 +8,21 @@ body > footer {
 		flex: 0 0 auto;
 		z-index: 4;
 	}
-	li:hover {
+	li:hover, li.cta {
 		border-color: $light;
 	}
 	a, a:hover {
 		color: $light;
 		text-decoration: none;
 	}
-	li:hover {
+	li:hover, li.cta {
 		background-color: $bg;
 		a {
 			color: $speed-dark;
 		}
+	}
+	li.cta:hover, li.cta:focus {
+		background-color: $speed-light;
 	}
 }
 

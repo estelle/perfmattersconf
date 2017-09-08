@@ -4,7 +4,6 @@
 
 @import "reset";
 @import "look";
-
 @import "header_and_footer";
 @import "header";
 @import "footer";
@@ -14,3 +13,13 @@
 @import "banner_look";
 @import "home";
 @import "circle";
+@import "reg";
+
+.subnav {
+	display: flex; 
+	list-style-type: none;
+	padding-left: 0;
+	li {
+		border-right: 1px solid black;
+	}
+}
