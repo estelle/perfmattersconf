@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
 	<title>#PerfMatters: Web Performance Conference</title>
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="../css/style.css"/>
 	<style>
 
 	</style>
 </head>
 <body>
-<header>
+<nav>
     <?php echo $logo ?>
 	<?php echo $nav ?>
-</header>
-<main>
-<section>
+</nav>
+<header>
+	<hgroup>
 	<div class="circle">
 	<h1>Code of Conduct</h1>
 	<h2>#PerfMatters Conference<br/>
@@ -21,10 +22,12 @@
 	<?php echo $date ?></h2>
 	</div>
 	<div class="headerblurb">
-	    <h3>Code of Conduct</h3>
+	    <h1>Code of Conduct</h1>
 		<p>All attendees, speakers, sponsors and volunteers at #PerfMatters Conference are required to agree with the conference code of conduct. Organizers will enforce this code throughout the event.</p>
 	</div>
-</section>
+</hgroup>
+</header>
+<main>
 <section>
 
 <h2>The Quick Version</h2>

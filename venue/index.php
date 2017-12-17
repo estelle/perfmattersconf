@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
 	<title>#PerfMatters: Venue</title>
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="../css/style.css"/>
 	<style>
 
 	</style>
 </head>
 <body id="home">
-<header>
+<nav>
     <?php echo $logo ?>
 	<?php echo $nav ?>
-</header>
-<main>
-<section>
+</nav>
+<header>
+	<hgroup>
 <div class="circle">
 	<h1>Venue &amp; Hotels</h1>
 	<h2>#PerfMatters Conference<br/>
@@ -24,23 +25,31 @@
 <p>Cañada College Theater<br/>
 4200 Farm Hill Blvd<br/>
 Redwood City, CA 94061</p>
+<ul class="subnav">
+	<li><a href="#venue">Venue</a></li>
+	<li><a href="#hotels">Hotels</a></li>
+	<li><a href="#directions">Directions</a></li>
+	<li><a href="#accessibility">Accessibility</a></li>
+</ul>
+</div></hgroup></header>
 
-</div>
-</section>
-<section class="about">
+<main>
+<section id="venue">
 	<h2>Venue</h2>
 	<p>The #PerfMatters Conference will take place March 27th and 28th, 2018, in the Cañada College Theater. 
 	<p><img src="../images/theatre.jpg" alt="modern theater with 516 seats" style="width: 600px; max-width: 90%;"></p>
 	<p>The theatre is ADA compliant with handicap parking spots in front of the theatre. </p>
 	<p>Coffee, snacks, lunch and the after party will be held in The Grove. The Grove, a 4,537-square-feet open space lounge, has a beautiful view, and is also ADA compliant. 
 	</section>
-<section>
+	
+<section id="hotels">
 	<h2>Hotels</h2>
-</section>
-<section>
+	<p>Coming soon</p>
+</section> 
+<section id="directions">
 	<h2>Getting here</h2>
 	<p>Cañada College is a community college located half way between San Francisco and Silicon Valley.  The campus is at 4200 Farm Hill Boulevard in an unincorporated area of San Mateo County, California, just off Highway 280.</p>
-<p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12670.165899946745!2d-122.2650223!3d37.4479354!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x436a6bd31c932d38!2sCa%C3%B1ada+College!5e0!3m2!1sen!2sus!4v1502402031392" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12670.165899946745!2d-122.2650223!3d37.4479354!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x436a6bd31c932d38!2sCa%C3%B1ada+College!5e0!3m2!1sen!2sus!4v1502402031392" width="600" height="450" frameborder="0" style="border:0; max-width: 90%" allowfullscreen></iframe>
 	<h3>Parking: Ask us for a free daily permit.</h3>
 	<p>If you're coming by car, there is ample parking. We will have daily parking permits available, or you can purchase your own for $3.00.  Please park in parking lot #2.  Put your parking permit on the dashboard
 	<h3>By Car: 280 to Exit #27 at Farm Hill Blvd </h3>
@@ -69,10 +78,25 @@ Redwood City, CA 94061</p>
 	<p> A little less convenient, but still completely doable, and just and extra 8 miles further, is OAK / Oakland International Airport, in Oakland, CA.
  
 </section>
+<section id="accessibility">
+<h2>Accessibility and Inclusion</h2>
+<h3>We aim to have a welcoming and inclusive event</h3>
+<p>In order to have an inclusive event with a welcoming atmosphere, we hope to remove all accessibility barriers that may hinder anyone from attending this event. If there are any issues that you feel may prevent you from attending and fully enjoying this event, we will do our best to accommodate, but we need to know ahead of time as best we can what those issues may be. <a href="mailto:support@perfmattersconf.com?subject=conference&20accessibility">Please get in touch</a> and let us know what we can do to help.</p>
+<ul><li>The conference is mostly one track in an ADA compliant yet not fully accessible theatre. There is a ramp to get to the theatre, and a lift to get up the five steps from the entrance to the theatre foyer. Stepless access within the main theater includes the last row, the first two rows, and the stage.</li>
+<li>The second track half track, if there is one, is in the same building, and is fully accessible with no steps</li>
+<li>The dining / drinks / party / expo area is in "The Grove", located about 80 meters from the theatre, with about 25 steps. There is elevator access. The 80 meters are outside. We tend to have amazing weather in California, but there is a small chance of rain, but no chance of freezing or boiling temperatures</li>
+<li>There is accessible parking directly between the theatre and The Grove. There is also accessible parking directly behind both venues. If you have an accessibility parking placard and are able to walk a flight of stairs, please use the parking behind the venue, leaving the five spots between the venue for those unable to otherwise access the venue.</li>
+<li>If you need assistance, such as a Sign language interpreter, a complimentary ticket will be provided. They do need to register though, so let us know. If you aren't local, please contact us. We'll find an interpreter for the event.</li>
+<li>There will be a diversity program to bring more people from typically under represented people in tech into the web performance family.</li>
+<li>There are meat and vegetarian options. Please let us know when you register if you are vegan, celiac, or have other dietary requirements needing our attention.</li>
+<li>There will be a slack for the event, including a slack channel dedicating to "housing". If you are willing to share your company (or personally) paid hotel room with someone who can't afford it, or live near the venue and willing to host an out of town guest, we encourage you to post your availability in that chat room so people who need assistance can privately DM you to take you up on your generosity.</li>
+</ul><p>In case you haven't figured it out, we want to ensure anyone who wants to attend this event can attend this event.<sup>*</sup></p></div></div></div></section>
 </main>
 <footer>
 	<?php echo $nav ?>
 	<?php echo $footer ?>
 </footer>
+
+	<small>* Priority will be given to those attending five or few events a year or have otherwise demonstrated an interest in the topic of web performance. This is not an open invitation to the local conference hopper contingent.</small>
 </body>
 </html>

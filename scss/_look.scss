@@ -23,5 +23,8 @@ main {
 		min-height: 20vh;
 	}
 }
-
+header, main section {
+	&:hover {
+	}
+}
 a {color: $bg;}

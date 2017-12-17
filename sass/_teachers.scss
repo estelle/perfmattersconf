@@ -1,0 +1,69 @@
+.teachers ul img {
+	border-radius: 50%;
+	float: left;
+	shape-outside: circle(50%);
+	margin-left: -10px;
+}
+.hal {
+	width: 200px;
+}
+.eve {
+	
+	img { 
+		width: 117px; padding: 5% 10%;
+	}
+}
+.teachers {
+	ul {
+		display: flex;
+		list-style-type: none;
+		justify-content: space-between;
+		li {
+			flex: 0 1 45%;
+			min-width: 300px;
+		}
+
+	}
+	.hal:hover {
+		position:relative;
+		img {visibility: hidden;}
+	}
+	.hal:hover::after {
+		content: '';
+		background: url(../svg/halanim.svg);
+		top:0; left:0; right:0; bottom:0;
+		position: absolute;
+    transform: translatex(-10px);
+	}
+	h2 {
+		margin-bottom: 0;
+	}
+	h1 {
+		margin: -1rem 0 0 0;
+		font-size: 2.5rem;
+		color: $white;
+		text-shadow: $shadows;
+		span {
+			font-size: 4rem;
+			font-family: serif;
+			position: relative;
+			top: 0.5rem;
+			font-weight: normal;
+			color: $theme_color;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.teachers ul {
+
+		flex-direction: column;
+		li {
+			flex: 1;
+			+ li {
+				border-top: 1px solid $theme_color;
+			}
+		}
+
+	}
+}

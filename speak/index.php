@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<title>#PerfMatters: Web Performance Conference</title>
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="../css/style.css"/>
 	<style>
 
@@ -62,7 +63,7 @@ If you need child-care please let us know well in advance so we can get it all s
 </section>
 <section>
 <p>
-<a href="<?php include '../form.txt' ?>" aria-label="Apply to speak now" class="button">Apply Now</a></p>
+<a href="<?php echo $form ?>" aria-label="Apply to speak now" class="button">Apply Now</a></p>
 </section>
 </main>
 <footer>

@@ -1,0 +1,88 @@
+header {
+    background-image: url(../images/flamechart.jpg);
+    text-align: center;
+    background-color: $white;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 8vh 0;
+}
+
+hgroup {
+  background-color: rgba(255,255,255,0.6);
+  border: 1 solid white;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  box-shadow: $shadows, $topshadows;
+  padding: 3vh;
+
+	.about {
+  		text-align: left;
+  		line-height: 1.5;
+	}
+  h2 {
+	font-size: calc((5vw + 5vh)/2);
+	margin: 0;
+	color: $theme_color;
+	font-weight: normal;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+	span {
+		font-family: acme;
+	}
+}
+h1 {
+	font-size: 3em;
+	font-family: acme;
+}
+p  {
+	font-size: calc((2.5vw + 2.5vh)/2);
+	max-width: 40em;
+}
+}
+
+@media only screen and (min-width: 540px) {
+    header {
+    	padding-top: calc((20vh+20vw)/2);
+    }
+    .about {
+  		padding-left: 3em;
+    }
+ }
+
+header .buttons {
+	display: flex;
+	max-width: 26rem;
+	text-align: center;
+	padding-top: calc((5vh + 5vw)/2);
+	margin: auto;
+	a {
+	  padding: 7px 14px;
+	  text-decoration: none;
+	  font-family: "acme", "Open sans", geneva;
+	  margin: 5px;
+	  font-size: 1.5em;
+	  border-radius: 2px;
+	  box-shadow: $shadows;
+	  &:hover {
+	  	box-shadow: -2px -2px 2px rgba(0,0,0,0.2);
+	  }
+	}
+	.btn {
+		background-color: $lightborders;
+		color: $aa_theme_color_on_grey;
+		font-family: "acme", "Open sans", geneva;
+	  
+	}
+	.btn-cta {
+	  color: $bg;
+	  background-color: $theme_color;
+	  font-family: "acme", "Open sans", geneva;
+	  &:hover, &:focus {
+	  	background-color: $bg;
+	  	color: $theme_color;
+	  }
+
+	  }
+}
