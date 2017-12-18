@@ -95,8 +95,6 @@ body, header, footer {
 
 section, footer {
   padding: 4vh 1vw;
-  _margin-left: -1vw;
-  _margin-right: -1vw;
   display: flex;
   align-items: center;
   flex-direction: column; }
@@ -152,14 +150,14 @@ header {
   background-image: url(../images/flamechart.jpg);
   text-align: center;
   background-color: #fff;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
   padding: 8vh 0; }
 
 hgroup {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   border: 1 solid white;
   display: flex;
   flex-flow: column wrap;
@@ -306,61 +304,69 @@ footer {
     header hgroup::before {
       margin: 0 -2rem; } }
 .speakers ul {
+  max-width: 68em;
   display: flex;
   flex-flow: wrap row;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 .speakers li {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
-  flex: 0 0 200px;
-  min-width: 200px;
   text-align: center;
-  padding: 5px; }
-.speakers li:hover {
-  position: relative; }
-  .speakers li:hover:before {
-    content: "";
-    z-index: 1;
-    position: absolute;
-    background: #f8ac04;
-    left: 24px;
-    right: -80px;
-    height: 340px;
-    width: 240px;
-    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.3); }
-  .speakers li:hover img {
-    z-index: 5;
-    position: absolute;
-    left: 45px;
-    top: 20px;
-    transform: translatez(5px);
-    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.3); }
+  margin: 5px 30px;
+  padding: 0;
+  flex: 0;
+  width: 200px; }
+.speakers li:hover, .speakers li.focus {
+  height: 320px;
+  width: 300px;
+  margin: 0 -20px -80px;
+  padding: 5px 10px;
+  z-index: 100;
+  left: 40px;
+  position: relative;
+  background: #f8ac04;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); }
 .speakers img {
   height: 200px;
-  -webkit-filter: sepia(50);
-  box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.3); }
+  -webkit-filter: sepia(40);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); }
 .speakers a {
   display: block; }
 .speakers figcaption {
-  visibility: hidden;
-  line-height: 1.4;
-  z-index: 1000;
+  line-height: 1.4; }
+  .speakers figcaption .bio {
+    position: absolute;
+    left: -200vw; }
+  .speakers figcaption .name {
+    position: relative;
+    display: block;
+    top: -3em;
+    width: 200px;
+    padding: 0;
+    white-space: nowrap;
+    background-color: #f8ac04;
+    color: white;
+    font-weight: bold;
+    background-color: #d91962; }
+.speakers li:hover img, .speakers li.focus img {
+  -webkit-filter: none; }
+.speakers li:hover figcaption, .speakers li.focus figcaption {
+  left: 0;
   position: absolute;
   top: 240px;
   bottom: 0;
-  left: 20px;
-  width: 240px;
+  width: 300px;
   text-align: center;
   color: #350e65;
   margin: 0;
   padding: 0; }
-.speakers li:hover img {
-  -webkit-filter: none; }
-.speakers li:hover figcaption {
-  visibility: visible; }
+  .speakers li:hover figcaption .bio, .speakers li:hover figcaption .name, .speakers li.focus figcaption .bio, .speakers li.focus figcaption .name {
+    position: static;
+    display: block;
+    clear: both;
+    width: 100%; }
 
 a {
   color: #350e65; }

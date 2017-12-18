@@ -4,43 +4,37 @@
 
 .speakers {
 	ul {
+		max-width: 68em;
 		display: flex;
 		flex-flow: wrap row;
 		justify-content: flex-start;
 		align-items: flex-start;
-		padding: 0;
+		padding: 0; margin: 0;
 	}
 	li {
 		list-style-type: none;
+		text-align: center;
+		margin: 5px 30px;
 		padding: 0;
-		margin: 0;
-		flex: 0 0 200px;
-		min-width: 200px;
-		text-align: center; 
-		padding:5px;
+		flex: 0;
+		width: 200px; 
 	}
-	li:hover {
+	li:hover, li.focus {
+		height: 320px;
+		width: 300px;
+		margin: 0 -20px -80px;
+		padding: 5px 10px;
+		z-index: 100;
+		left: 40px;
 		position: relative;
-		&:before {
-			content:"";
-			z-index: 1;
-			position: absolute; background: $bg;
-			left: 24px; right: -80px; 
-			height: 340px; width: 240px;
-			box-shadow: 3px 3px 1px rgba(0,0,0,0.3);
-		}
-		img {
-			z-index: 5;
-			position: absolute;
-			left: 45px; top: 20px;
-			transform: translatez(5px);
-			box-shadow: 3px 3px 1px rgba(0,0,0,0.3);
-		}
+		background: $bg;
+		box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+		
 	}
 	img {
 		height: 200px;
-		-webkit-filter: sepia(50);
-		box-shadow: 3px 3px 1px rgba(0,0,0,0.3);
+		-webkit-filter: sepia(40);
+		box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
 
 	}
 	a {
@@ -48,21 +42,30 @@
 	}
 
 	figcaption {
-		visibility: hidden;
 		line-height: 1.4;
-		z-index: 1000;
-		position: absolute;
-		top: 240px; bottom: 0; left: 20px;
-		width: 240px; text-align: center;
-		color: $popcolor; margin: 0; padding: 0;
-	}
-	li:hover {
+		.bio {position: absolute; left: -200vw;}
+		.name {
+			position: relative;
+			display: block;
+			top: -3em; width: 200px;
+			padding:0; white-space: nowrap;
+			background-color: $bg;
+			color: white; font-weight: bold;
+			background-color: $speed-light; 
+		}
+	   }
+	li:hover, li.focus {
 		img {
 			-webkit-filter: none;
 		}
 		figcaption {
-			visibility: visible;
-
+			left: 0;
+			position: absolute;
+			top: 240px; bottom: 0;
+			width: 300px; text-align: center;
+			color: $popcolor; 
+			margin: 0; padding: 0;
+			.bio, .name {position: static; display: block;clear: both; width: 100%;}
 		}
 	}
 }
