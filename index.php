@@ -43,6 +43,38 @@
 	<lable for="paul"><figure><a href="https://twitter.com/paul_irish"><img data-src="avatars/paul.jpg" alt="Paul Irish"></a>	<figcaption>Paul Irish<br/> Performance Engineer<br/> Google Chrome</figcaption>    </figure>
   </label>
 </li>
+
+<li>
+  <label for="rachel">
+	<figure><a href="https://twitter.com/rachelnabors"><img data-src="avatars/rachel.jpg" alt="Rachel Nabors"></a>	
+		<figcaption>Rachel Nabors<br/>
+			Program Manager<br/>Microsoft
+		</figcaption>
+	    </figure>
+  </label>
+</li>
+
+<li>
+  <label for="yoav">
+	<figure><a href="https://twitter.com/yoavweiss"><img data-src="avatars/yoav.jpg" alt="Yoav Weiss"></a>	
+		<figcaption>Yoav Weiss<br/>
+			Principal Architect<br/>Akamai
+		</figcaption>
+	    </figure>
+  </label>
+</li>
+
+
+<li>
+  <label for="sharon">
+	<figure><a href="https://twitter.com/SharonSteed"><img data-src="avatars/sharon.jpg" alt="Sharon Steed"></a>	
+		<figcaption>Sharon Steed<br/>
+			Communilogue, LLC<br/>Founder/CEO 
+		</figcaption>
+	    </figure>
+  </label>
+</li>
+
 <li>
   <label for="leonie">
 	<figure><a href="https://twitter.com/leoniewatson"><img data-src="avatars/leonie.jpg" alt="Léonie Watson "></a>	
@@ -66,11 +98,12 @@
 </li>
 
 
+
 <li>
-  <label for="sharon">
-	<figure><a href="https://twitter.com/SharonSteed"><img data-src="avatars/sharon.jpg" alt="Sharon Steed"></a>	
-		<figcaption>Sharon Steed<br/>
-			Communilogue, LLC<br/>Founder/CEO 
+  <label for="eli">
+	<figure><a href="https://twitter.com/EliFitch"><img data-src="avatars/eli.jpg" alt="Eli Fitch"></a>	
+		<figcaption>Eli Fitch<br/>
+			Senior Web Application Engineer<br/>MapBox 
 		</figcaption>
 	    </figure>
   </label>
@@ -85,6 +118,18 @@
 	    </figure>
   </label>
 </li>
+
+
+<li>
+  <label for="simon">
+	<figure><a href="https://twitter.com/simonhearne"><img data-src="avatars/simon.jpg" alt="Simon Hearne"></a>	
+		<figcaption>Simon Hearne<br/>
+			Principle Software Engineer<br/>Akamai 
+		</figcaption>
+	    </figure>
+  </label>
+</li>
+
 <li>
   <label for="katie">
 	<figure><a href="https://twitter.com/ksylor"><img data-src="avatars/katie.jpg" alt="Katie Sylor-Miller"></a>	
@@ -95,24 +140,11 @@
   </label>
 </li>
 
-<li>
-  <label for="eli">
-	<figure><a href="https://twitter.com/EliFitch"><img data-src="avatars/eli.jpg" alt="Eli Fitch"></a>	
-		<figcaption>Eli Fitch<br/>
-			Senior Web Application Engineer<br/>MapBox 
-		</figcaption>
-	    </figure>
-  </label>
-</li>
-<li>
-  <label for="simon">
-	<figure><a href="https://twitter.com/simonhearne"><img data-src="avatars/simon.jpg" alt="Simon Hearne"></a>	
-		<figcaption>Simon Hearne<br/>
-			Principle Software Engineer<br/>Akamai 
-		</figcaption>
-	    </figure>
-  </label>
-</li>
+
+
+
+
+
 <li>
   <label for="javier">
 	<figure><a href="https://twitter.com/JJavierGarza"><img data-src="avatars/javiergarza.jpg" alt="Javier Garza"></a>	
@@ -128,6 +160,54 @@
 	<figure><a href="https://twitter.com/bianca_berning"><img data-src="avatars/bianca.jpg" alt="bianca berning"></a>	
 		<figcaption>Bianca Berning<br/>
 			Font Engineer<br/>Dalton Maag 
+		</figcaption>
+	    </figure>
+  </label>
+</li>
+
+
+<li>
+  <label for="jessica">
+	<figure><a href="https://twitter.com/missycat"><img data-src="avatars/jessica.jpg" alt="Jessica Chan"></a>	
+		<figcaption>Jessica Chan<br/>
+			Pinterest
+		</figcaption>
+	    </figure>
+  </label>
+</li>
+
+
+
+<li>
+  <label for="sarah">
+	<figure><a href="https://twitter.com/sarahddubs"><img data-src="avatars/sarah.jpg" alt="Sarah Dapul-Weberman"></a>	
+		<figcaption>Sarah Dapul-Weberman<br/>
+        Software Engineer<br/>
+			Pinterest
+		</figcaption>
+	    </figure>
+  </label>
+</li>
+
+
+<li>
+  <label for="michelle">
+	<figure><a href="https://twitter.com/"><img data-src="avatars/michelle.jpg" alt="Michelle Vu"></a>	
+		<figcaption>Michelle Vu<br/>
+        Software Engineer<br/>
+			Pinterest
+		</figcaption>
+	    </figure>
+  </label>
+</li>
+
+
+
+<li>
+  <label for="gopal">
+	<figure><a href="https://twitter.com/"><img data-src="avatars/gopal.jpg" alt="Gopal Brugalette"></a>	
+		<figcaption>Gopal Brugalette<br/>
+			Principal Software Engineer<br/>Concur 
 		</figcaption>
 	    </figure>
   </label>
@@ -150,15 +230,7 @@
 	    </figure>
   </label>
 </li>
-<li>
-  <label for="gopal">
-	<figure><a href="https://twitter.com/"><img data-src="avatars/gopal.jpg" alt="Gopal Brugalette"></a>	
-		<figcaption>Gopal Brugalette<br/>
-			Principal Software Engineer<br/>Concur 
-		</figcaption>
-	    </figure>
-  </label>
-</li>
+
 
 <li>
   <label for="jacques">
@@ -175,6 +247,15 @@
 	<figure><a href="https://twitter.com/vitortalaia"><img data-src="avatars/vitor.jpg" alt="Vitor Talaia"></a>	
 		<figcaption>Vitor Talaia<br/>Junior Developer
 			<br/> Code Miner 42
+		</figcaption>
+	    </figure>
+  </label>
+</li>
+<li>
+  <label for="kim">
+	<figure><a href="https://twitter.com/"><img src="avatars/kim.jpg" alt="Kimberly Munoz"></a>	
+		<figcaption>Kimberly Munoz<br/>
+			Web Developer<br/>Slack 
 		</figcaption>
 	    </figure>
   </label>
@@ -224,16 +305,8 @@
 		</figcaption>
 	    </figure>
   </label>
-</li>
-<li>
-  <label for="">
-	<figure><a href="https://twitter.com/"><img src="avatars/" alt=""></a>	
-		<figcaption><br/>
-			<br/> 
-		</figcaption>
-	    </figure>
-  </label>
 </li>-->
+
 </ul>
 </section>
 <section class="reg" id="reg">
