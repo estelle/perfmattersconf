@@ -4,6 +4,31 @@
 	<title>#PerfMatters: Getting Up To Speed</title>
 	<link rel="stylesheet" href="../css/style2.css"/>
   <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  
+    <meta name="twitter:image" content="https://perfmattersconf.com/images/workshop_ad.jpg"/>
+    
+    
+    
+    <meta name="twitter:url" content="https://www.perfmattersconf.com/workshop?tim" />
+    
+    <meta property="og:title" content="Get up to speed Workshop #PerfMatters Conference" />
+    
+    <meta property="og:type" content="article" />
+    
+    
+    <meta property="og:image" content="https://perfmattersconf.com/images/workshop_ad.jpg" />
+    
+    <meta name="author" content="Estelle Weyl" />
+    
+    <meta property="og:url" content="https://www.perfmattersconf.com/workshop/" />
+    
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <meta name="twitter:site" content="@perfmattersconf">
+    
+    <meta name="twitter:title" content="Get up to Speed! Make the most of the #PerfMatters Conference with a full day workshop on web performance to get you up to speed with all you need to know about web performance. ">
+    
+    <meta property="og:description" content="Get up to Speed Web Performance Workshop: part of the #PerfMatters Conference" />
 	
 </head>
 <body id="home">
