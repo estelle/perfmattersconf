@@ -29,7 +29,7 @@
 		<h2>What is <span>#PerfMatters</span>?</h2>
 		<p>#PerfMatters Conference is the web performance conference in Redwood City, California with talks by internationally renowned performance developers. Our focus is on front-end web performance.</p>
 			<div class="buttons">
-				<a class="btn-cta" href="#reg">Register Now</a>
+				<a class="btn-cta" href="#reg">Register Now</a> <a href="workshop/" title="Find Out about our workshop" class="btn">Workshop</a>
 			</div>
 		</div>
 	</hgroup>

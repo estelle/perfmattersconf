@@ -1,6 +1,8 @@
 <?php 
 	$date = "March 27-28, 2018";
 
+	$wk_date = "March 26, 2018";
+
 	$nav = 	"<ul>\r\n" .
 			"<li><a href=\"/#speakers\">Speakers</a></li>\r\n" .
 			"<li><a href=\"/sponsors\">Sponsors</a></li>\r\n" .

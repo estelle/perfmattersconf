@@ -45,6 +45,11 @@ Redwood City, CA 94061</p>
 <section id="hotels">
 	<h2>Hotels</h2>
 	<p>Coming soon</p>
+
+	<h3>Note about Pacific Euro Hotel
+	<p>The Pacific Euro Hotel is a 1-star Hotel at 868 Main St, Redwood City, CA: If you want to stay at the most inexpensive place around, this is it. It's a dumpy hotel with parking that is metered from 10:00am to 6:00pm. I think it has shared bathrooms and the internet is not secure, but the location and price are great. The hotel is located downtown, near all the restaurants and coffee shops. There are a few homeless people on that block, but it's a safe city.  We can not recommend this place at all. However, if you don't have corporate sponsorship for your hotel stay, it is the only place on the Peninsula that is under $100. I think it's about $69/night with shared bathroom, $89/night with your own bathroom. </p>
+	<h3>Room Share</h3>
+		<p>Looking to save money by sharing a room? Looking to help someone out who doesn't have the budget for a bay area hotel room? Please join the Slack chat room and find a roommate. If you do have a hotel room, consider offering up the second bed in your hotel room to someone who doesn't have corporate sponsorship.</p> 
 </section> 
 <section id="directions">
 	<h2>Getting here</h2>

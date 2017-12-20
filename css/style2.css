@@ -1,3 +1,4 @@
+/* purple */
 /* latin */
 @font-face {
   font-family: 'Acme';
@@ -6,7 +7,7 @@
   src: local("Acme Regular"), local("Acme-Regular"), url(https://fonts.gstatic.com/s/acme/v7/J7ium-afZ1cSO20cJqzQyvesZW2xOQ-xsNqO47m55DA.woff) format("woff"), local("Acme-Regular"), url(https://fonts.gstatic.com/s/acme/v7/FDMh4aixPTtSeEPULD_zPPesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215; }
 body > nav {
-  background-color: #f8ac04;
+  background-color: #d91962;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -18,7 +19,7 @@ body > nav {
     body > nav .logo a {
       font-family: acme;
       font-size: 3em;
-      color: #350e65;
+      color: #fff;
       font-weight: bold;
       margin: 5px 0 0 20px;
       z-index: 10;
@@ -43,7 +44,7 @@ body > nav {
         box-sizing: border-box;
         display: block;
         text-decoration: none;
-        color: #350e65; }
+        color: #fff; }
         body > nav ul li a:hover {
           color: white; }
       body > nav ul li:hover {
@@ -57,7 +58,7 @@ a:hover, a:focus, a:active {
 
 .subnav a,
 .button, a.cta {
-  background-color: #d91962;
+  background-color: #f8ac04;
   color: #ffffff;
   border-radius: 3px;
   padding: 0.5rem 2rem;
@@ -68,12 +69,12 @@ a:hover, a:focus, a:active {
   .button:active, a.cta:hover, a.cta:focus, a.cta:active {
     text-decoration: none;
     color: #ffffff;
-    background-color: #ab144d; }
+    background-color: #c68903; }
 
 a.cta,
 section:first-of-type a.button,
 .subnav.subnav a:hover {
-  background-color: #f8ac04;
+  background-color: #d91962;
   color: #333; }
 
 .subnav {
@@ -111,7 +112,7 @@ section:first-of-type {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), -3px -3px 3px rgba(0, 0, 0, 0.2);
   color: #fff; }
   section:first-of-type a {
-    color: #f8ac04; }
+    color: #d91962; }
 
 section:nth-of-type(2) {
   background-color: #06020b;
@@ -121,7 +122,7 @@ section:nth-of-type(2) {
   background-position: right center;
   color: #fff; }
   section:nth-of-type(2) a {
-    color: #d91962; }
+    color: #f8ac04; }
 
 section:nth-of-type(3),
 table {
@@ -139,10 +140,10 @@ section:nth-of-type(5) {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), -3px -3px 3px rgba(0, 0, 0, 0.2);
   color: #fff; }
   section:nth-of-type(5) a {
-    color: #d91962; }
+    color: #f8ac04; }
 
 footer {
-  background-color: #d91962;
+  background-color: #f8ac04;
   box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset -3px -3px 3px rgba(0, 0, 0, 0.2); }
   footer ul li a, footer a {
     color: white; }
@@ -206,14 +207,14 @@ header .buttons {
     header .buttons a:hover {
       box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.2); }
   header .buttons [class|="btn"] {
-    background-color: #f8ac04;
+    background-color: #d91962;
     color: #350e65;
     font-family: "acme", "Open sans", geneva; }
     header .buttons [class|="btn"]:hover, header .buttons [class|="btn"]:focus {
-      color: #f8ac04;
-      background-color: #d91962; }
+      color: #d91962;
+      background-color: #f8ac04; }
   header .buttons .btn-cta {
-    color: #f8ac04;
+    color: #d91962;
     background-color: #350e65;
     font-family: "acme", "Open sans", geneva; }
 
@@ -252,31 +253,13 @@ footer {
     flex-wrap: wrap; }
     footer article > ul {
       flex: 100%; } }
-.reg {
-  color: #fff; }
-  .reg h1 {
-    font-size: 2rem;
-    margin-bottom: 0; }
-  .reg table {
-    color: #333;
-    border: 1px solid;
-    padding: 10px; }
-    .reg table td {
-      padding: 5px 10px; }
-    .reg table tr + tr td {
-      border-top: 1px solid; }
-    .reg table td + td {
-      border-left: 1px solid; }
-    .reg table td[colspan] {
-      text-align: center; }
-
 .circle {
   background-color: #ffffff;
   color: #333;
   box-sizing: border-box;
   text-align: center;
   box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), 6px 6px 6px rgba(0, 0, 0, 0.6);
-  border: solid #f8ac04 10px;
+  border: solid #d91962 10px;
   padding: 1rem;
   width: 100%;
   margin-top: 1rem;
@@ -304,72 +287,36 @@ footer {
     flex-flow: row nowrap; }
     header hgroup::before {
       margin: 0 -2rem; } }
-.speakers ul {
-  max-width: 68em;
-  display: flex;
-  flex-flow: wrap row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0;
-  margin: 0; }
-.speakers li {
-  list-style-type: none;
-  text-align: center;
-  margin: 5px 30px;
-  padding: 0;
-  flex: 0;
-  width: 200px; }
-.speakers li:hover, .speakers li.focus {
-  height: 320px;
-  width: 300px;
-  margin: 0 -20px -80px;
-  padding: 5px 10px;
-  z-index: 100;
-  left: 40px;
-  position: relative;
-  background: #f8ac04;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); }
-.speakers img {
+.reg {
+  color: #fff; }
+  .reg h1 {
+    font-size: 2rem;
+    margin-bottom: 0; }
+  .reg table {
+    color: #333;
+    border: 1px solid;
+    padding: 10px; }
+    .reg table td {
+      padding: 5px 10px; }
+    .reg table tr + tr td {
+      border-top: 1px solid; }
+    .reg table td + td {
+      border-left: 1px solid; }
+    .reg table td[colspan] {
+      text-align: center; }
+
+header {
+  background-image: url(../images/ebony1.png); }
+
+.pop th {
+  text-align: left; }
+
+img {
   height: 200px;
-  -webkit-filter: sepia(40);
+  float: right;
+  margin-right: 30px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); }
-.speakers a {
-  display: block; }
-.speakers figcaption {
-  line-height: 1.4; }
-  .speakers figcaption .bio {
-    position: absolute;
-    left: -200vw; }
-  .speakers figcaption .name {
-    position: relative;
-    display: block;
-    top: -3em;
-    width: 200px;
-    padding: 0;
-    white-space: nowrap;
-    background-color: #f8ac04;
-    color: white;
-    font-weight: bold;
-    background-color: #d91962; }
-.speakers li:hover img, .speakers li.focus img {
-  -webkit-filter: none; }
-.speakers li:hover figcaption, .speakers li.focus figcaption {
-  left: 0;
-  position: absolute;
-  top: 240px;
-  bottom: 0;
-  width: 300px;
-  text-align: center;
-  color: #350e65;
-  margin: 0;
-  padding: 0; }
-  .speakers li:hover figcaption .bio, .speakers li:hover figcaption .name, .speakers li.focus figcaption .bio, .speakers li.focus figcaption .name {
-    position: static;
-    display: block;
-    clear: both;
-    width: 100%; }
+  img:hover {
+    -webkit-filter: none; }
 
-a {
-  color: #350e65; }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style2.css.map */

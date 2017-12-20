@@ -183,7 +183,7 @@ happen! All sponsors, regardless of the size of contribution, get:</p>
 <ul><li>Your logo on our Web site, intermission slides, and printed
 materials,</li>
 <li>Tweets of appreciation from our event-related twitter
-accounts, retweeted as appropriate from @estellevw (8,700 followers), @standardista (8,700 followers), @webdevtips(1,100 followers), and @SFWebPerf, and</li>
+accounts, retweeted as appropriate from our own Twitter handle as well as @estellevw (9,100 followers), @standardista (9,200 followers), @webdevtips(1,100 followers), and @SFWebPerf, and</li>
 <li>Tickets to the conference.</li>
 </ul>
 <article  class="reg">
@@ -272,7 +272,7 @@ accounts, retweeted as appropriate from @estellevw (8,700 followers), @standardi
     <td>✔</td>
   </tr>
   <tr>
-    <td><details><summary>Registration Option</summary><p>For an additional sponsorship of $5,000, one platinum level sponsor can staff the registration desk, providing the opportunity to interact with all attendees. This is also the only booth in the main theatre venue.</details></td>
+    <td><details><summary>Registration Option</summary><p>One platinum level sponsor can staff the registration desk, providing the opportunity to interact with all attendees. This is also the only "booth" in the main theatre venue.</details></td>
     <td></td>
     <td></td>
     <td></td>
@@ -353,25 +353,30 @@ accounts, retweeted as appropriate from @estellevw (8,700 followers), @standardi
 <p><strong>Tickets</strong> have been priced in a manner to ensure that attendees from corporations large and small can attend. Discounts are being made available for attendees without corporate sponsorships, including students and free lancers. Everything is being done to ensure that barriers to entry are as minimal as possible, while ensuring the conference and content is not undervalued.</p>
 <p><strong>Attendees</strong> &mdash;  We anticipate 440 to 516 individuals interested in performance and front end user experience with roles ranging from performance focused engineers, engineering managers, directors and CTOs. Thus far, we can confirm the following companies will be in attendance:</p>
 <ul class="lists">
+  <li><img src="https://ucygetfavicon.appspot.com/http://www.ancestry.com" alt="">Ancestry</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.bluevolt.com" alt="">BlueVolt</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.deque.com" alt="">Deque</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.elo7.com" alt="">Elo7</li>
 
 <li><img src="http://www.etsy.com/favicon.ico" alt="">Etsy</li>
+<li><img src="https://ucygetfavicon.appspot.com/http://www.expedia.com" alt="">Expedia</li>
+<li><img src="https://ucygetfavicon.appspot.com/http://www.forbes.com" alt="">Forbes</li>
 <li><img src="https://img1.wsimg.com/Sitecore/3/A/4/%7B3A44F70D-6D11-4C14-B611-A1F191704047%7Dgodaddy.ico" alt="">GoDaddy</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.google.com" alt="">Google</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.groupon.com" alt="">Groupon</li>
+<li><img src="https://ucygetfavicon.appspot.com/http://www.ibm.com" alt="">IBM</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.indeed.com" alt="">Indeed</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.lullabot.com" alt="">Lullabot</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.mapbox.com" alt="">MapBox</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.microsoft.com" alt="">Microsoft</li>
-<li><img src="https://ucygetfavicon.appspot.com/http://www.mozilla.com" alt="">Mozilla</li>
+<li><img src="https://ucygetfavicon.appspot.com/http://www.mozilla.com" alt="">Mozilla</li><li><img src="https://ucygetfavicon.appspot.com/http://www.paypal.com" alt="">PayPal</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.pinterest.com" alt="">Pinterest</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.sap.com" alt="">SAP</li>
+<li><img src="https://ucygetfavicon.appspot.com/http://www.slack.com" alt="">Slack</li>
 <li><img src="https://www.spredfast.com/favicon.ico" alt="">Spredfast</li>
 <li><img src="https://ucygetfavicon.appspot.com/https://www.paciellogroup.com/" alt="">The Paciello Group</li>
+<li><img src="https://ucygetfavicon.appspot.com/http://www.xeneta.com" alt="">Xenata</li>
 </ul>
-<p>To date, women have purchased 38% of the tickets sold  
 <p><strong>Diversity</strong> &mdash; We are reaching a global audience and have talk proposals from Europe, Australia, Asia, North America, and Africa. We anticate speakers and attendees will stem from around the globe,  with 50% of attendees from the west coast of the United States. Our goal is to have a gender and ethnicity distribution that is more diverse than the average engineering company in the Bay Area.</p> 
 <p><strong>Atmosphere</strong> &mdash; The venue is gorgeous, comfortable, and accessible. You'll note from the speaker offerings, we treat everyone well. We aim to make an affordable, fun, luxurious experience conducive to learning and networking.</p>
 
@@ -383,41 +388,46 @@ accounts, retweeted as appropriate from @estellevw (8,700 followers), @standardi
 
  <article class="reg">
 <table class="longtext">
+  <colgroup>
+    <col/>
+    <col/>
+    <!--<col/>-->
+    <col/>
   <tr>
     <th scope="col">Opportunity</th>
     <td>Sponsorship Level</td>
 
-    <th scope="col">Cost</th>
+    <!--<th scope="col">Cost</th>-->
     <th scope="col">Description</th>
   </tr>
   <tr>
     <td>Registration</td>
     <td>Platinum</td>
-    <td>$5,000</td>
+    <!--<td>$5,000</td>-->
     <td>Only offered to one Platinum sponsor, your people can staff the registration desk, providing the opportunity to interact with all attendees. There are no vendors / sponsor tables within the main venue other than the registration desk. We will provide additional staff to help support the registration desk, to handle any registration issues that may arise. But, otherwise, your team will be the only "booth" in the main theatre venue. If you would like to provide the lanyrds, you may do so too.</td>
   </tr>
   <tr>
     <td>Party</td>
     <td>Gold +</td>
-    <td>cost ($12,000)</td>
+    <!--<td>cost ($12,000)</td>-->
     <td>Available to our gold and platinum sponsors, we are still waiting for a quote from the caterer, so are not sure of the cost of the party, but that quote will be partially up to you! We are hosting a conference party from 5:30 to 9:30 on Tuesday, directly after the first day's sessions, in The Grove. We'll work together to negotiate a good budget while making the event classy, fun, and memorable.</td>
   </tr>
   <tr>
     <td>Drinks</td>
     <td>Gold +</td>
-    <td>cost ($3,000)</td>
+    <!--<td>cost ($3,000)</td>-->
     <td>Available to our gold and platinum sponsors: If you want to sponsor the party and the drinks, that would be lovely. The cost includes the drinks, servers, and the required security details costs. Drinks include red wine, white wine, beer, bottles of Mexican Coke, water, and two specialty drinks. We are still negotiating the costs, but it will be at cost: we are purchasing the drinks directly, so it's at cost drinks plus the serving staff, glasses, and security detail.</td>
   </tr>
   <tr>
     <td>Speaker Dinner</td>
     <td>Gold +</td>
-    <td>cost ($2,400)</td>
+    <!--<td>cost ($2,400)</td>-->
     <td>Available to our gold and platinum sponsors, the price depends on the number of speakers and guests, but is estimated to be at about $90 per person.</td>
   </tr>
   <tr>
     <td>T-shirts</td>
     <td>Gold +</td>
-    <td>cost + $500</td>
+    <!--<td>cost + $500</td>-->
     <td>If you're a gold and platinum sponsor, the conference T-shirt can include your logo.  Long
 after the event is over, your sponsored shirts with
 logo and URL will be seen on the most fashion forward
@@ -426,7 +436,7 @@ logo and URL will be seen on the most fashion forward
   <tr>
     <td>Bags</td>
     <td>Silver +</td>
-    <td>cost + $500</td>
+    <!--<td>cost + $500</td>-->
     <td>If you're sponsoring at the silver level or higher, the conference bag can include your logo. Reusable bags are always a hit with attendees, and
 sponsoring the bag means your brand will be seen over
 and over again when practicality is a must. We'll create
@@ -436,87 +446,87 @@ the production details! This sponsorship includes the cost of the conference bag
   <tr>
     <td>Umbrellas</td>
     <td>Silver +</td>
-    <td>at cost + $150</td>
+    <!--<td>at cost + $150</td>-->
     <td>We like useful schwag. If you're sponsoring at the silver level or higher, you might want to sponsor an umbrella for all the attendees. That way you don't have to worry about sizes. You can either order these yourselves, or we can order them for you, and include them at registration along with any other schwag. This sponsorship will cost you the price of the umbrella. Or, if we do it for you, at cost plus $150. </td>
   </tr>
   <tr>
     <td>Water Bottles</td>
     <td>Silver + </td>
-    <td>at cost + $200</td>
+    <!--<td>at cost + $200</td>-->
     <td>We are looking for an organization to sponsor the water bottles and the water service. To be friendlier to the environment, we would like to provide all attendees with a water bottle upon registration to be used throughout the conference. We would then provide water in either 5-gallon dispensers or large carafes with cucumber and / or lemon. Your choice. This sponsorship will be at cost + $200.</td>
   </tr>
   <tr>
     <td>Coffee</td>
     <td>Silver +</td>
-    <td>at cost ($1,800)</td>
+    <!--<td>at cost ($1,800)</td>-->
     <td>Sponsor coffee and tea. We're still waiting on a quote, but my guesstimate is $1,800 for the two days.</td>
   </tr>
   <tr>
     <td>Ice Cream</td>
     <td>Silver +</td>
-    <td>at cost ($1,200)</td>
+    <!--<td>at cost ($1,200)</td>-->
     <td>Snacks are awesome. And awesome snacks bring people to the expo hall. If you're a sponsor, consider also sponsoring a mid-day ice cream social. This will be at cost. And, it's your choice if you want it to be "make your own sundae", freezers full of high end snacks like Haagen Daaz pops and Its' It, or a less expensive Costco run of whatever Costco is currently carrying. I am sure the attendees will be happy no matter what.</td>
   </tr>
   
   <tr>
     <td>Speaker Gifts</td>
     <td>Silver +</td>
-    <td>Gift x 20</td>
-    <td>If you would like to offer the speakers a gift, you'll need to pass the idea thru the organizers, and likely provide 20 of whatever it is you would like to offer. We'll know the quantity of gifts needed by January 15. </td>
+    <!--<td>Gift x 20</td>-->
+    <td>If you would like to offer the speakers a gift, you'll need to pass the idea thru the organizers, and provide 28 of whatever it is you would like to offer. </td>
   </tr>
   <tr>
     <td>Parking</td>
     <td>Silver +</td>
-    <td>At cost + $200</td>
-    <td>It costs $3.00 per car per day. We'll be distributing parking permits. We'll try to get your logo on it. If we can, that $200 fee is for design and printing. If not, it's purely at cost, with an estimate of $900 per day, so $2,000 for 2-days plus logo. If you want, you can have branded staff helping people out, which makes for an additional touch point with attendees, and helps us out a lot.</td>
+    <!--<td>at cost + $200</td>-->
+    <td>It costs $3.00 per car per day. We'll be distributing parking permits. We'll try to get your logo on it. If we can, that $200 fee is for design and printing. If not, it's purely at cost, with an estimate of $900 per day, so $2,000 for 2-days plus logo. If you want, you can have your own branded staff guiding drivers and distributing permits, which makes for an additional touch point with attendees, and helps us out a lot.</td>
   </tr>
   <tr>
     <td>Lunch</td>
     <td>Any</td>
-    <td>at cost ($5,400)</td>
+    <!--<td>at cost ($5,400)</td>-->
     <td>Lunch on the first day is a sandwich or salad, along with fruit salad, chips and a cookie. On the second day we're having wraps or salad, along with fruit salad, chips and a cookie. You can sponsor one or both lunches. If you sponsor, you can upgrade to a better lunch if you so choose, but that is the current option. I am still waiting on a quote, but the estimate is $5,400 per day. </td>
   </tr>
   <tr>
     <td>Diversity Ticket</td>
     <td>Any</td>
-    <td>bulk ticket rate</td>
+    <!--<td>bulk ticket rate</td>-->
     <td>Want to sponsor tickets for someone who otherwise couldn't afford to attend, you can sponsor their ticket (at the discounted bulk rate). If you would like to offer airfare and hotel/AirBnB, you will get huge karma points in addition to recognition.</td>
   </tr>
   <tr>
     <td>Close Captioning</td>
     <td>Any</td>
-    <td>at cost</td>
+    <!--<td>at cost</td>-->
     <td>We would love to offer captioning to improve accessibility for everyone.</td>
   </tr>
   <tr>
     <td>Streaming / Recording</td>
     <td>Any</td>
-    <td>at cost </td>
+    <!--<td>at cost </td>-->
     <td>We are looking for a sponsor to provide live streaming of the event and produce videos of the recording. Your logo will be on YouTube and our conference website forever.</td>
   </tr>
   <tr>
     <td>Sign Language Interpreter</td>
     <td>Any</td>
-    <td>at cost</td>
+    <!--<td>at cost</td>-->
     <td>We are not sure if we need ASL interpreters yet, but will provide it if needed.</td>
   </tr>
   <tr>
     <td>Green Room</td>
     <td>Any</td>
-    <td>cost ($1,800)</td>
+    <!--<td>cost ($1,800)</td>-->
     <td>We would like to provide a green room for the speakers. The cost is $1,600 for the room rental plus $200 for snacks</td>
   </tr>
   <tr>
     <td>Child Care</td>
     <td>Any</td>
-    <td>cost</td>
+    <!--<td>cost</td>-->
     <td>We would like to provide child care to those needing it.</td>
   </tr>
   
   <tr>
     <td>Bus Service</td>
     <td>Any</td>
-    <td>cost</td>
+    <!--<td>cost</td>-->
     <td>We would like to provide bus service from downtown Redwood City's CalTrain Station to the venue and back. </td>
   </tr>
   
@@ -527,7 +537,7 @@ the production details! This sponsorship includes the cost of the conference bag
 <section>
 <h2>Brought to you by <a href="http://standardista.com">STANDARDISTA</a></h2>
 <figure style="float:right; text-align:center;"><a href="https://twitter.com/estellevw?lang=en" style="display: block"><img src="../images/estelle.svg" alt="Jem Young"></a>Estelle Weyl, Author<br>
-Mobile HTML5 & CSS Definitive Guide<br>
+Mobile HTML5 &amp; CSS Definitive Guide<br>
 Standardista</figure>
 
 <p>This conference is being organized by Standardista, with efforts led by <a href="https://www.linkedin.com/in/estellevw/">Estelle Weyl</a>. Estelle has organized several conferences, and has <a href="http://lanyrd.com/profile/estellevw">attended over 150</a>. . She organizes the SF Web Performance Group, the Seattle Web Performance Group, and organized the Confident Coding conference series. 
