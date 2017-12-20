@@ -1,0 +1,29 @@
+$theme_color: rgb(53, 14, 101); /* purple */
+$darken: rgba(0,0,0,0.1);
+$lightborders: #ccc;
+$shadows: 3px 3px 3px rgba(0,0,0,0.2);
+$topshadows: -3px -3px 3px rgba(0,0,0,0.2);
+$black: #333;
+$white: #fff;
+$background: $white;
+$bg_light: $lightborders;
+$tc_tester: lighten($theme_color, 50%);
+$tc_light: lighten($theme_color, 75%);
+$tc_dark: darken($theme_color, 20%);
+$aa_theme_color_on_grey: #005193;
+
+
+$cdn-dark: #635e5e;
+$cdn-light: #d0d0d0;
+$bg: rgb(217, 25, 98); // /* pink */
+$speed-light: rgb(248, 172, 4); 
+$shield-dark: #5c1f8e;
+$shield-light: #cec1e2;
+$flex-dark: #447228;
+$flex-light: #badba5;
+$ads-dark: #00154e;
+$speed-dark: rgb(248, 172, 4); // /* orange */
+
+$popcolor: $white;
+$light: #ffffff;
+$text: #333;
