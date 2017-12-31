@@ -27,7 +27,7 @@ if ($name) {
 			$twitter  = 'marcysutton';
 			$talk_title = 'React/Virtual DOM and accessibility';
 			$talk_description = 'TBD';
-			$about	  = "Marcy Sutton works on web accessibility tools at Deque Systems, a company focused on digital equality. In 2016, O'Reilly gave Marcy a Web Platform Award for her work in accessibility. She loves co-leading the Accessibility Seattle meetup and a code club for Girl Develop It Bellingham. When away from the keyboard, Marcy can be found hiking with her dog, riding a bicycle, or snowboarding.";
+			$about	  = "Marcy Sutton works on web accessibility tools at Deque Systems, a company focused on digital equality. In 2016, O’Reilly gave Marcy a Web Platform Award for her work in accessibility. She loves co-leading the Accessibility Seattle meetup and a code club for Girl Develop It Bellingham. When away from the keyboard, Marcy can be found hiking with her dog, riding a bicycle, or snowboarding.";
 		    break;
 
 		case 'leonie':
@@ -35,8 +35,8 @@ if ($name) {
 			$job      = 'Principal Engineer';
 			$company  = ', Paciello Group and W3C Web Platform WG co-chair';
 			$twitter  = 'leoniewatson';
-			$talk_title = "There's more to performance than meets the eye";
-			$talk_description = "What does performant look like when you can't see the screen? The browser does more with the DOM than visually render content. It presents an accessibility tree that's queried using platform accessibility APIs. Different browser processing models mean that Assistive Technologies (AT) are changing the way they obtain accessibility information, but is that having an impact on performance, and what happens when we introduce a new JavaScript accessibility API into the equation?";
+			$talk_title = "There’s more to performance than meets the eye";
+			$talk_description = "What does performant look like when you can’t see the screen? The browser does more with the DOM than visually render content. It presents an accessibility tree that’s queried using platform accessibility APIs. Different browser processing models mean that Assistive Technologies (AT) are changing the way they obtain accessibility information, but is that having an impact on performance, and what happens when we introduce a new JavaScript accessibility API into the equation?";
 			$about    = '<p>L&eacute;onie Watson (AKA Tink) began using the internet in 1993, turned it into a web design career in 1997, and (despite losing her eyesight along the way) has been enjoying herself thoroughly ever since.</p>
 <p>L&eacute;onie is Communications director and Principal engineer at <a href="http://paciellogroup.com">The Paciello Group (TPG)</a>, and also works with Government Digital Service (GDS) on the <a href="http://gov.uk">GOV.UK platform</a>.</p>
 <p>As a member of the <a href="https://www.w3.org/2002/ab/">W3C Advisory Board</a>, and co-chair of the <a href="https://www.w3.org/WebPlatform/WG/">W3C Web Platform WG</a> (working on specs like HTML5), L&eacute;onie is closely involved with the web standards community. She is frequently asked to talk about web standards and/or accessibility at <a href="http://ljwatson.github.io/decks">conferences</a>.</p>
@@ -49,16 +49,16 @@ if ($name) {
 			$company  = 'Etsy';
 			$twitter  = 'ksylor';
 			$talk_title = 'Raiders of the Fast Start: Frontend Performance Archaeology';
-			$talk_description =  "There are a lot of books, articles, and online tutorials out there with fantastic advice on how to make your websites performant. It all seems easy in theory, but applying best practices to real-world code is anything but straightforward. Diagnosing and fixing frontend performance issues on a large legacy codebase is like being an archaeologist excavating the remains of a lost civilization. You don't know what you will find until you start digging! </p>
+			$talk_description =  "There are a lot of books, articles, and online tutorials out there with fantastic advice on how to make your websites performant. It all seems easy in theory, but applying best practices to real-world code is anything but straightforward. Diagnosing and fixing frontend performance issues on a large legacy codebase is like being an archaeologist excavating the remains of a lost civilization. You don’t know what you will find until you start digging! </p>
 
-<p>Pick up your trowels and come along with Etsy's Frontend Systems team as we become archaeologists digging into frontend performance on our large, legacy mobile codebase. I'll share real-life lessons you can use to guide your own excavations into legacy code:</p>
+<p>Pick up your trowels and come along with Etsy’s Frontend Systems team as we become archaeologists digging into frontend performance on our large, legacy mobile codebase. I’ll share real-life lessons you can use to guide your own excavations into legacy code:</p>
 
 <ul> <li>What tools and metrics we used to diagnose issues and track progress.</li> 
 <li>How we went beyond server-driven best practices to focus on the client.</li> 
-<li> Which fixes successfully increased conversion, and which didn't.</li>
+<li> Which fixes successfully increased conversion, and which didn’t.</li>
 </ul> 
  
-<p>Our work, like all good archaeology, went beyond artifacts and unearthed new insights into our culture. We at Etsy pride ourselves on our culture of performance, but, like all cultures, it needs to adapt and reinvent itself to account for changes to the landscape. Based on what we've learned, we are making the case for a new, organization-wide, frontend-focused performance culture that will solve the problems we face today.";
+<p>Our work, like all good archaeology, went beyond artifacts and unearthed new insights into our culture. We at Etsy pride ourselves on our culture of performance, but, like all cultures, it needs to adapt and reinvent itself to account for changes to the landscape. Based on what we’ve learned, we are making the case for a new, organization-wide, frontend-focused performance culture that will solve the problems we face today.";
 			$about    = "Katie Sylor-Miller is a Senior Software Engineer on the Frontend Systems team at Etsy, where she advocates for and implements frontend best practices in collaboration with product engineers and designers. She is passionate about frontend architecture, design systems, style guides, accessibility, frontend performance, and teaching others. Katie created ohshitgit.com to share her hard-won knowledge of how to get out of your git messes with a bit of humor (and a lot of swears).";
 		    break;
 
@@ -68,11 +68,11 @@ if ($name) {
 			$company  = 'MapBox';
 			$twitter  = 'EliFitch';
 			$talk_title = 'Perceived Performance: The only kind that really matters';
-			$talk_description = "Web performance has made incredible strides in the last few years, which has presented developers with a new problem: How do we efficiently improve our app's performance now that we've plucked the low hanging fruit from the vine?  How do we make an API driven app faster when the performance bottleneck are API requests?  The answer is directly manipulating users' perceptions in order to make our projects *feel* faster than they really are.</p>
+			$talk_description = "Web performance has made incredible strides in the last few years, which has presented developers with a new problem: How do we efficiently improve our app’s performance now that we’ve plucked the low hanging fruit from the vine?  How do we make an API driven app faster when the performance bottleneck are API requests?  The answer is directly manipulating users' perceptions in order to make our projects *feel* faster than they really are.</p>
 
-<p>This isn't easy.  Humans are imprecise beings, and how we perceive the world around us is fraught with fascinating quirks.  Improving perceived performance is likewise an incredibly challenging prospect.  If people don't perceive time accurately, how can you possibly hope to build to meet this nebulous standard?</p>
+<p>This isn’t easy.  Humans are imprecise beings, and how we perceive the world around us is fraught with fascinating quirks.  Improving perceived performance is likewise an incredibly challenging prospect.  If people don’t perceive time accurately, how can you possibly hope to build to meet this nebulous standard?</p>
 
-<p>In this talk, Eli will discuss the psychological basics of how people sense time, and how to use this understanding to create experiences that feel fast, tactile, and create the illusion of speed.  He'll break down real world, actionable guidelines on:</p>
+<p>In this talk, Eli will discuss the psychological basics of how people sense time, and how to use this understanding to create experiences that feel fast, tactile, and create the illusion of speed.  He’ll break down real world, actionable guidelines on:</p>
 <ul>
 <li>When it makes sense to focus on perceived performance over outright speed
 </li><li>How to turn the difference between active and passive mental states to our advantage
@@ -109,7 +109,7 @@ if ($name) {
 			$company  = 'Code Miner 42';
 			$twitter  = 'vitortalaia';
 			$talk_title = 'Accelerated Mobile Pages: The good, the bad and the ugly';
-			$talk_description = "The purpose of this talk is to introduce the Accelerated Mobile Pages (AMP) project, a way to make web pages load insanely fast on mobile devices. How it works, its benefits —and why it's a hot topic for media publishers—, its downsides —and why developers are criticizing it.";
+			$talk_description = "The purpose of this talk is to introduce the Accelerated Mobile Pages (AMP) project, a way to make web pages load insanely fast on mobile devices. How it works, its benefits —and why it’s a hot topic for media publishers—, its downsides —and why developers are criticizing it.";
 			$about    = "Developer at Codeminer 42 that also likes to watch Formula One races; Currently working on implementing​ an AMP blog version for a big brazilian e-commerce platform.";
 		    break;
 
@@ -119,11 +119,11 @@ if ($name) {
 			$company  = 'Akamai';
 			$twitter  = 'yoavweiss';
 			$talk_title = 'Faster Bytes is Not Always Enough - Why is The Web Slow? (and what can we do about it)';
-			$talk_description = "Our networks are getting exceedingly faster. Unfortunately, that's not always enough to make sure users perceive their experience as fast when they are loading your web site. So, how do users perceive web performance? What does a browser do when it loads a page? And what makes a web page \"fast\"? </p>
+			$talk_description = "Our networks are getting exceedingly faster. Unfortunately, that’s not always enough to make sure users perceive their experience as fast when they are loading your web site. So, how do users perceive web performance? What does a browser do when it loads a page? And what makes a web page \"fast\"? </p>
 
 <p>In this talk, Yoav Weiss will go over the various processing modes that a browser goes through when it loads web pages. He will explain the connection between the various networking protocols and web performance as perceived by the user.
-He will talk about the different metrics we use when measuring the performance of a page, and discuss how changes in the web's content layer are impacting those metrics and the user experience. Finally, he'll detail performance API and protocol enhancements that can help us remedy the situation and make our customer sites faster.";
-			$about    = "Yoav Weiss is a principal architect at Akamai, where he focuses on making the Web platform faster by adding performance-related features to browsers as well as to Akamai's CDN. Yoav has been working on mobile Web performance for longer than he cares to admit. He takes image bloat on the Web as a personal insult, which is why he joined the Responsive Image Community Group and implemented the various responsive images features in Blink and WebKit. When he's not writing code, he's probably slapping his bass, mowing the lawn in the French countryside, or playing board games with his family.";
+He will talk about the different metrics we use when measuring the performance of a page, and discuss how changes in the web’s content layer are impacting those metrics and the user experience. Finally, he’ll detail performance API and protocol enhancements that can help us remedy the situation and make our customer sites faster.";
+			$about    = "Yoav Weiss is a principal architect at Akamai, where he focuses on making the Web platform faster by adding performance-related features to browsers as well as to Akamai’s CDN. Yoav has been working on mobile Web performance for longer than he cares to admit. He takes image bloat on the Web as a personal insult, which is why he joined the Responsive Image Community Group and implemented the various responsive images features in Blink and WebKit. When he’s not writing code, he’s probably slapping his bass, mowing the lawn in the French countryside, or playing board games with his family.";
 		    break;
 
 		case 'sharon':
@@ -132,14 +132,14 @@ He will talk about the different metrics we use when measuring the performance o
 			$company  = 'Communilogue, LLC';
 			$twitter  = 'SharonSteed';
 			$talk_title = 'Cultivating community: building powerful relationships by communicating with empathy';
-			$talk_description = "One of our most valuable commodities as humans is our ability to build relationships - both personally and professionally. And the key to any successful relationship is empathy: being able to understand someone, connect with someone and view the world through their eyes. The problem is that the empathy needed to cultivate relationships, foster collaboration and build strong communities is often times lacking, especially when we are around people who are different from us. And if empathy is the tie that binds us, then vulnerability is the thread that holds that rope together. It's time to change the status quo in tech.</p>
+			$talk_description = "One of our most valuable commodities as humans is our ability to build relationships - both personally and professionally. And the key to any successful relationship is empathy: being able to understand someone, connect with someone and view the world through their eyes. The problem is that the empathy needed to cultivate relationships, foster collaboration and build strong communities is often times lacking, especially when we are around people who are different from us. And if empathy is the tie that binds us, then vulnerability is the thread that holds that rope together. It’s time to change the status quo in tech.</p>
 
-<p>Let's explore the impact of empathy on communities. We'll discuss how communication plays a role in building successful relationships; how empathy fosters highly collaborative teams; and finally we'll talk about true accessibility. Why? Because innovation is at it's best when it's inclusive. And to be inclusive, you must be empathetic.";
+<p>Let’s explore the impact of empathy on communities. We’ll discuss how communication plays a role in building successful relationships; how empathy fosters highly collaborative teams; and finally we’ll talk about true accessibility. Why? Because innovation is at it’s best when it’s inclusive. And to be inclusive, you must be empathetic.";
 			$about    = "Sharon Steed is a corporate empathy and communications consultant as well as an international keynote speaker. Sharon is a subject matter expert on communicating with empathy. She has spoken at companies on improving team communication and collaboration; at tech conferences on vulnerability as an asset; and has given a TEDx talk on empowering insecurities. A lifelong stutterer, she uses her speech impediment to teach both what empathy is and how to be empathetic.</p>
 
 <p>Her corporate empathy practice teaches organizations how to build a collaborative culture using principles of empathy. Sharon works with teams looking to boost productivity through improving collaboration as well as with individuals on effective, productive and positive communication strategies.</p>
 
-<p>Sharon's course \"Communicating with Empathy\" is available on both LinkedIn Learning and Lynda.com.";
+<p>Sharon’s course \"Communicating with Empathy\" is available on both LinkedIn Learning and Lynda.com.";
 		    break;
 
 		case 'lin':
@@ -148,10 +148,10 @@ He will talk about the different metrics we use when measuring the performance o
 			$company  = 'Mozilla';
 			$twitter  = 'linclark';
 			$talk_title = 'Making the browser faster';
-			$talk_description = "There are lots of talks about how web developers can make their sites run faster. In this talk, let's turn the tables and look at how browser developers can make their browsers faster. </p>
+			$talk_description = "There are lots of talks about how web developers can make their sites run faster. In this talk, let’s turn the tables and look at how browser developers can make their browsers faster. </p>
 
-<p>We'll see how a CSS engine can be modified to run up to 18x faster, and how you can get up to 400 frames per second by rendering like a 3D game engine. Then we'll talk about other future directions to explore in speeding up the browser.";
-			$about    = "Lin Clark is a code cartoonist. She takes complex coding concepts and turns them into cartoons. She also works in Mozilla's Emerging Technologies group, where she gets to tinker with things like WebAssembly, Servo, and Rust. In previous lives, she worked at npm, was a core contributor to open source projects like Firefox's developer tools, and contributed to HTML data standards.";
+<p>We’ll see how a CSS engine can be modified to run up to 18x faster, and how you can get up to 400 frames per second by rendering like a 3D game engine. Then we’ll talk about other future directions to explore in speeding up the browser.";
+			$about    = "Lin Clark is a code cartoonist. She takes complex coding concepts and turns them into cartoons. She also works in Mozilla’s Emerging Technologies group, where she gets to tinker with things like WebAssembly, Servo, and Rust. In previous lives, she worked at npm, was a core contributor to open source projects like Firefox’s developer tools, and contributed to HTML data standards.";
 		    break;
 
 		case 'jeremy':
@@ -160,9 +160,9 @@ He will talk about the different metrics we use when measuring the performance o
 			$company  = 'Freelance';
 			$twitter  = 'malchata';
 			$talk_title = 'Demystifying Performance Timings';
-			$talk_description = "If you've ever experimented with the navigation and resource timing APIs in the browser, it can be a daunting task to understand the performance timings they provide. What's the difference between connectStart and fetchStart? Where does SSL time figure in? What the heck does domInteractive mean, and how is that different from domComplete? What order do these timings even occur in?</p>
+			$talk_description = "If you’ve ever experimented with the navigation and resource timing APIs in the browser, it can be a daunting task to understand the performance timings they provide. What’s the difference between connectStart and fetchStart? Where does SSL time figure in? What the heck does domInteractive mean, and how is that different from domComplete? What order do these timings even occur in?</p>
 
-<p>In this talk, we're going to demystify these performance timings. We'll define them, place them in proper order, and you'll learn how to quantify the time your site and its assets are taking to load in distinct phases. All you'll need is a basic working knowledge of JavaScript, and simple arithmetic skills. If you've wanted to make sense of performance timings, this is the talk for you!";
+<p>In this talk, we’re going to demystify these performance timings. We’ll define them, place them in proper order, and you’ll learn how to quantify the time your site and its assets are taking to load in distinct phases. All you’ll need is a basic working knowledge of JavaScript, and simple arithmetic skills. If you’ve wanted to make sense of performance timings, this is the talk for you!";
 			$about    = "Jeremy Wagner is a web developer living and working in Saint Paul, Minnesota. He is the author of the Manning Publications book Web Performance in Action, a companion guide for the performance-minded web developer. Read his meandering ramblings on the web at https://jeremywagner.me, or check him out on Twitter @malchata.";
 		    break;
 
@@ -239,7 +239,7 @@ You need effective methods for getting your message to engineers, product manage
 <li>Developing Relationships</li>
 <li>Building Frameworks</li>
 </ul>
-<p>All of these methods can be implemented at a grass-roots level. After this session, you'll have concrete tools to drive the performance engineering culture you envision.";
+<p>All of these methods can be implemented at a grass-roots level. After this session, you’ll have concrete tools to drive the performance engineering culture you envision.";
 			$about    = "Gopal is a Performance Architect/Principal Engineer. His experience spans e-Commerce, Financial and various Technology industries. He is currently developing a machine-learning based system for analyzing production and test data. His responsibilities have included preparing sites for peak events, user behavior insights, DevOps transformations, applying data science and machine learning to performance problems, developing engineering frameworks and expanding performance engineering activities into the development cycle and production. He has presented at numerous industry events and been featured in online magazines.  Previous to IT, he was a researcher at the Center for Experimental Nuclear Physics.  Outside of IT, he enjoys developing his permaculture farm and woodworking.";
 		    break;
 
@@ -251,8 +251,8 @@ You need effective methods for getting your message to engineers, product manage
 			$talk_title = 'Measure the Change You Want to See in the World';
 			$talk_description = "A stairway at Netflix costs over $100,000 each year because it turns left instead of right. Lurking in Gulp build times we found an entire engineer. One sneaky getBoundingClientRect launched a million laptop fan hurricanes.</p>
 
-<p>There's a hidden world around us, and our only hope of cracking it open is keeping a measurement-oriented mindset. Kick off your path to performance glory with a lightning talk on what we miss when we're not looking.";
-			$about    = "Jacques Favreau is a senior UI engineer at Netflix. He's the tech lead for the Web Core team, which covers web performance, developer productivity, cross-team libraries, and best practices. Jacques is an ardent supporter of accessible websites and removing magic from code – something future-Jacques is always happy about.
+<p>There’s a hidden world around us, and our only hope of cracking it open is keeping a measurement-oriented mindset. Kick off your path to performance glory with a lightning talk on what we miss when we’re not looking.";
+			$about    = "Jacques Favreau is a senior UI engineer at Netflix. He’s the tech lead for the Web Core team, which covers web performance, developer productivity, cross-team libraries, and best practices. Jacques is an ardent supporter of accessible websites and removing magic from code – something future-Jacques is always happy about.
 When not watching or working on Netflix, he can usually be found at home in San Mateo with his wife and daughter, or out pursuing their passion for travel.";
 		    break;
 
@@ -267,7 +267,7 @@ When not watching or working on Netflix, he can usually be found at home in San 
 <p>In this talk, Rachel Nabors will introduce us to how the human visual system works and show us the latest and greatest ways to create light, performant animations and interactions that keep users in flow and delighted.';
 			$about    = "Rachel Nabors (rachelnabors.com) began telling stories online as a teenager with her award-winning <a href='https://rachelthegreat.com'>web comics</a>. Her love of web technologies transformed into a career in front end development, where she has worked with Mozilla, the W3C, and Microsoft to build the web forward. She recently launched Animation at Work wrote an A Book Apart book of the same name: (bkaprt.com/animationatwork), a book on using animation in web design available from A Book Apart. </p>
 
-<p>When she isn't traveling the world, giving talks and kissing puppies, she can be found perched in Seattle, sipping a cup of fancy tea!";
+<p>When she isn’t traveling the world, giving talks and kissing puppies, she can be found perched in Seattle, sipping a cup of fancy tea!";
 		    break;
 
 		case 'jessica':
@@ -286,11 +286,11 @@ When not watching or working on Netflix, he can usually be found at home in San 
 			$company  = 'IBM';
 			$twitter  = 'jlengstorf';
 			$talk_title = 'Progressive Web Apps: Show Up for Offline First, but Stay for the Killer Performance Boost';
-			$talk_description = "There's a big push for Offline First development, with a new buzzword — \"Progressive Web App\", or PWA — making the rounds for the last year or two. But a lot of what's being said sounds like the coding equivalent of \"eat your vegetables!\".</p>
+			$talk_description = "There’s a big push for Offline First development, with a new buzzword — \"Progressive Web App\", or PWA — making the rounds for the last year or two. But a lot of what’s being said sounds like the coding equivalent of \"eat your vegetables!\".</p>
 
-<p>What's in it for ME? Quite a bit, it turns out.</p>
+<p>What’s in it for ME? Quite a bit, it turns out.</p>
 
-<p>In this talk, Jason Lengstorf will share the surprising ways that online apps will see huge benefits when they're built to support offline users. Learn how to add blazing speed gains to existing sites with just a few simple changes — and how you can easily add Offline First support to your apps with just a few lines of code.</p>
+<p>In this talk, Jason Lengstorf will share the surprising ways that online apps will see huge benefits when they’re built to support offline users. Learn how to add blazing speed gains to existing sites with just a few simple changes — and how you can easily add Offline First support to your apps with just a few lines of code.</p>
 
 <p>Learn how going Offline First will improve the connected experience, including:</p>
 
@@ -301,7 +301,7 @@ When not watching or working on Netflix, he can usually be found at home in San 
 <li>and more!</li>
 </ul>
 
-<p>So in addition to eating your vegetables — you know, making your web apps usable for people with slow and unreliable connections and whatnot — you'll ALSO see your apps perform even better for connected users. All with minimal effort required.";
+<p>So in addition to eating your vegetables — you know, making your web apps usable for people with slow and unreliable connections and whatnot — you’ll ALSO see your apps perform even better for connected users. All with minimal effort required.";
 			$about    = "Jason Lengstorf is a developer, designer, author, and friendly bear. He focuses on work-life balance, efficiency, processes, and productivity to help people get more done in less time — so they can spend more time on the things that matter most. He recently joined IBM Design as a senior front-end developer in Austin, TX, where he can often be spotted in the forest foraging for nuts and berries.";
 		    break;
 
@@ -312,7 +312,7 @@ When not watching or working on Netflix, he can usually be found at home in San 
 			$twitter  = 'kimberlymunoz';
 			$talk_title = 'Increasing Performance Developing Accessible Sites Through Semantic HTML';
 			$talk_description = '&lt;section> and &lt;button> and &lt;div>, Oh my! HTML is extensible enough to create almost anything you need, but for developers making accessible websites (which should be all of us) semantic markup has a number of advantages and built-in features to make accessible sites more performant. Learn about them in this talk.';
-			$about    = "Kimberly Muñoz is a front-end developer creating fast, accessible online experiences. She is currently on Slack's Customer Acquisition Team where she worked on the recent redesign of Slack.com. Previously she was recently a Technology and Innovation Fellow at the Consumer Financial Protection Bureau where she helped launch the redesign of Consumerfinance.gov, a new responsive website built on Django.";
+			$about    = "Kimberly Muñoz is a front-end developer creating fast, accessible online experiences. She is currently on Slack’s Customer Acquisition Team where she worked on the recent redesign of Slack.com. Previously she was recently a Technology and Innovation Fellow at the Consumer Financial Protection Bureau where she helped launch the redesign of Consumerfinance.gov, a new responsive website built on Django.";
 		    break;
 
 		case '':

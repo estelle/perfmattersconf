@@ -8,9 +8,64 @@
 	<title>#PerfMatters: Web Performance Conference</title>
 	<meta name="description" content="#PerfMatters - A Front-End Web Performance Conference in Redwood City, CA in March 2018. Call for speakers is currently open.">
 	<meta name="viewport" content="width=device-width">
+
+	<?php if($name) { ?>
+	    <meta name="twitter:image" content="https://perfmattersconf.com/large/<?php echo $name ?>.jpg"/>
+    
+    
+    
+    <meta name="twitter:url" content="https://www.perfmattersconf.com/?name=<?php echo $name ?>#speakers" />
+    
+    <meta property="og:title" 
+    content='<?php echo $fullname ?> presents <?php echo $talk_title ?>' />
+    
+    <meta property="og:type" content="article" />
+    
+    
+    <meta property="og:image" content="https://perfmattersconf.com/large/<?php echo $name ?>.jpg" />
+    
+    <meta name="author" content="Estelle Weyl" />
+    
+    <meta property="og:url" content="https://www.perfmattersconf.com/?name=<?php echo name ?>#speakers" />
+    
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <meta name="twitter:site" content="@perfmattersconf">
+    
+    <meta name="twitter:title" content='<?php echo $talk_title ?>'>
+    
+    <meta property="og:description" content='<?php echo substr($talk_description, 0, 240) ?>' />
+ <?php } else { ?>
+<meta name="twitter:image" content="https://perfmattersconf.com/images/people1.jpg"/>
+    
+    
+    
+    <meta name="twitter:url" content="https://www.perfmattersconf.com/" />
+    
+    <meta property="og:title" content="Get up to speed Workshop #PerfMatters Conference" />
+    
+    <meta property="og:type" content="article" />
+    
+    
+    <meta property="og:image" content="https://perfmattersconf.com/images/people1.jpg" />
+    
+    <meta name="author" content="Estelle Weyl" />
+    
+    <meta property="og:url" content="https://www.perfmattersconf.com/" />
+    
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <meta name="twitter:site" content="@perfmattersconf">
+    
+    <meta name="twitter:title" content=" #PerfMatters Conference 2018">
+    
+    <meta property="og:description" content="A two-day community Web Performance conference happening March 28-29, 2018 in Redwood City, CA. Getting Up To Speed workhop on March 27 to help get people up to speed on Web Performance." />
+ <?php } ?>
+
 	<style>
 <?php include("css/style.css"); ?>
 	</style>
+    
 </head>
 <body id="home">
 <nav>
@@ -139,7 +194,18 @@ Code Cartoonist<br/>Mozilla
 	    </figure>
   </label>
 </li>
+<li>
+  <label for="tim">
+	<figure><a href="https://twitter.com/tkadlec"><img data-src="avatars/tim.jpg" alt="Tim Kadlec"></a>	
+		<figcaption><span class="name">Tim Kadlec</span>
+<span class="bio">	
+	
+Head of Developer Evanglism<br/>Snyk 
+		</span></figcaption>
 
+	    </figure>
+  </label>
+</li>
 
 <li>
   <label for="simon">
@@ -326,6 +392,19 @@ Web Developer<br/>Slack
 <span class="bio">	
 	
 IBM<br/> 
+		</span></figcaption>
+
+	    </figure>
+  </label>
+</li>
+
+<li>
+  <label for="estelle">
+	<figure><a href="https://twitter.com/estellevw"><img src="avatars/estelle.jpg" alt="Estelle Weyl"></a>	
+		<figcaption><span class="name">Estelle Weyl</span>
+<span class="bio">	
+Standardista<br/>
+Freelance 
 		</span></figcaption>
 
 	    </figure>
