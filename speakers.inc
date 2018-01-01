@@ -286,9 +286,9 @@ When not watching or working on Netflix, he can usually be found at home in San 
 			$company  = 'IBM';
 			$twitter  = 'jlengstorf';
 			$talk_title = 'Progressive Web Apps: Show Up for Offline First, but Stay for the Killer Performance Boost';
-			$talk_description = "There’s a big push for Offline First development, with a new buzzword — \"Progressive Web App\", or PWA — making the rounds for the last year or two. But a lot of what’s being said sounds like the coding equivalent of \"eat your vegetables!\".</p>
+			$talk_description = "There is a big push for Offline First development, with a new buzzword — \"Progressive Web App\", or PWA — making the rounds for the last year or two. But a lot of what’s being said sounds like the coding equivalent of \"eat your vegetables!\".</p>
 
-<p>What’s in it for ME? Quite a bit, it turns out.</p>
+<p>What is in it for ME? Quite a bit, it turns out.</p>
 
 <p>In this talk, Jason Lengstorf will share the surprising ways that online apps will see huge benefits when they’re built to support offline users. Learn how to add blazing speed gains to existing sites with just a few simple changes — and how you can easily add Offline First support to your apps with just a few lines of code.</p>
 
@@ -301,7 +301,7 @@ When not watching or working on Netflix, he can usually be found at home in San 
 <li>and more!</li>
 </ul>
 
-<p>So in addition to eating your vegetables — you know, making your web apps usable for people with slow and unreliable connections and whatnot — you’ll ALSO see your apps perform even better for connected users. All with minimal effort required.";
+<p>So in addition to eating your vegetables — you know, making your web apps usable for people with slow and unreliable connections and whatnot — you will ALSO see your apps perform even better for connected users. All with minimal effort required.";
 			$about    = "Jason Lengstorf is a developer, designer, author, and friendly bear. He focuses on work-life balance, efficiency, processes, and productivity to help people get more done in less time — so they can spend more time on the things that matter most. He recently joined IBM Design as a senior front-end developer in Austin, TX, where he can often be spotted in the forest foraging for nuts and berries.";
 		    break;
 
@@ -312,7 +312,7 @@ When not watching or working on Netflix, he can usually be found at home in San 
 			$twitter  = 'kimberlymunoz';
 			$talk_title = 'Increasing Performance Developing Accessible Sites Through Semantic HTML';
 			$talk_description = '&lt;section> and &lt;button> and &lt;div>, Oh my! HTML is extensible enough to create almost anything you need, but for developers making accessible websites (which should be all of us) semantic markup has a number of advantages and built-in features to make accessible sites more performant. Learn about them in this talk.';
-			$about    = "Kimberly Muñoz is a front-end developer creating fast, accessible online experiences. She is currently on Slack’s Customer Acquisition Team where she worked on the recent redesign of Slack.com. Previously she was recently a Technology and Innovation Fellow at the Consumer Financial Protection Bureau where she helped launch the redesign of Consumerfinance.gov, a new responsive website built on Django.";
+			$about    = "Kimberly Muñoz is a front-end developer creating fast, accessible online experiences. She is currently on Slacks Customer Acquisition Team where she worked on the recent redesign of Slack.com. Previously she was recently a Technology and Innovation Fellow at the Consumer Financial Protection Bureau where she helped launch the redesign of Consumerfinance.gov, a new responsive website built on Django.";
 		    break;
 
 		case '':
