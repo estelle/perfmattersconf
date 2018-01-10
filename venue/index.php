@@ -44,11 +44,34 @@ Redwood City, CA 94061</p>
 	
 <section id="hotels">
 	<h2>Hotels</h2>
-	<h3></h3>
-	<p>Coming soon</p>
-
-	<h3>Note about Pacific Euro Hotel
-	<p>The Pacific Euro Hotel is a 1-star Hotel at 868 Main St, Redwood City, CA: If you want to stay at the most inexpensive place around, this is it. It's a dumpy hotel with parking that is metered from 10:00am to 6:00pm. I think it has shared bathrooms and the internet is not secure, but the location and price are great. The hotel is located downtown, near all the restaurants and coffee shops. There are a few homeless people on that block, but it's a safe city.  We can not recommend this place at all. However, if you don't have corporate sponsorship for your hotel stay, it is the only place on the Peninsula that is under $100. I think it's about $69/night with shared bathroom, $89/night with your own bathroom. </p>
+	<h3>Marriott hotels is offering #PerfMatters a special group rate: </h3>
+	<p>To receive the group room rate, sign up at the links below. If you want to book the even lower rates for Saturday and Sunday night, call the hotels directly and mention that you are registering as part of the #PerfMatters Conference room block. Rates will be honored until February 26, 2018, or until the hotel sells out, whichever comes first.</p>
+	<p><strong>Courtyard by Marriott Redwood City</strong><br>
+    600 Bair Island Rd, <br>
+    Redwood City, CA 94063 <br>
+    $264 per night / $139 weekend night</p>
+<p>This new hotel (less than a year) is closer to downtown Redwood City, which actually has a semblance of a night life.</p>
+	<ul>
+	  <li><a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Perfmatters.com%20Conference%5Esford%60pmcpmca%7Cpmcpmcb%60264%60USD%60false%604%603/26/18%603/29/18%602/26/18&app=resvlink&stop_mobi=yes" target="_blank">Courtyard Redwood City online registration</a></li>
+	  <li>Call the hotel, especially if you want to include a weekend: 1+(650) 216-9435</li>
+</ul>
+<p><strong>SpringHill Suites by Marriott Belmont Redwood Shores</strong><br>
+1401 Shoreway Rd, <br>
+Belmont, CA 94002<br>
+$249  per night / $119 weekend night </p>
+<p> This brand new hotel (less than 2 months old) is less accessible to restaurants and any semblance of activity, which may be a good thing for some.</p>
+<ul>
+  <li><a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Perfmatters.com%20Conference%5Esfobm%60pmcpmca%7Cpmcpmcb%60249%60USD%60false%606%603/26/18%603/29/18%602/26/18&app=resvlink&stop_mobi=yes" target="_blank">SpringHill Suites Belmont Redwood Shores Online Registration</a><a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Perfmatters.com%20Conference%5Esford%60pmcpmca%7Cpmcpmcb%60264%60USD%60false%604%603/26/18%603/29/18%602/26/18&app=resvlink&stop_mobi=yes" target="_blank"></a></li>
+  <li>Call the hotel, especially if you want to include a weekend: 1+(650) 481-0185</li>
+</ul>
+<p>Both hotels are offering our group:</p>
+<ul>
+  <li>complimentary breakfast</li>
+  <li>complimentary wifi</li>
+  <li>complimentary parking</li>
+</ul>
+<h2>Note about Pacific Euro Hotel</h2>
+<p>The Pacific Euro Hotel is a 1-star Hotel at 868 Main St, Redwood City, CA: If you want to stay at the most inexpensive place around, this is it. It's a dumpy hotel with parking that is metered from 10:00am to 6:00pm. I think it has shared bathrooms and the internet is not secure, but the location and price are great. The hotel is located downtown, near all the restaurants and coffee shops. There are a few homeless people on that block, but it's a safe city.  We can not recommend this place at all. However, if you don't have corporate sponsorship for your hotel stay, it is the only place on the Peninsula that is under $100. I think it's about $69/night with shared bathroom, $89/night with your own bathroom. </p>
 	<h3>Room Share</h3>
 		<p>Looking to save money by sharing a room? Looking to help someone out who doesn't have the budget for a bay area hotel room? Please <a href="https://join.slack.com/t/perfmattersconf/shared_invite/enQtMjkyMDM3MTAxMzQ3LTBjNmQyOTFiNzEzMjFmZjA5ODZiODhiZDZjMWFmYjJkY2VlZjlmNWYyOWU4ZjA4ZDViZjVjZmIyNGJhYzNmYzM">join the #PerfMatters Slack channel</a> and find a roommate. </p><p>If you do have a hotel room, consider offering up the second bed in your hotel room to someone who doesn't have corporate sponsorship.</p> 
 </section> 
