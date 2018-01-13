@@ -5,7 +5,11 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="../css/style.css"/>
 	<style>
-
+section > * {
+ width: 54em;
+}
+section:not([id]):not([class]) {height: 100px;}
+#hotels a { color: #d91962;}
 	</style>
 </head>
 <body id="home">
@@ -42,6 +46,7 @@ Redwood City, CA 94061</p>
 	<p>Coffee, snacks, lunch and the after party will be held in The Grove. The Grove, a 4,537-square-feet open space lounge, has a beautiful view, and is also ADA compliant. 
 	</section>
 	
+<section></section>
 <section id="hotels">
 	<h2>Hotels</h2>
 	<h3>Marriott hotels is offering #PerfMatters a special group rate: </h3>
@@ -70,10 +75,11 @@ $249  per night / $119 weekend night </p>
   <li>complimentary wifi</li>
   <li>complimentary parking</li>
 </ul>
+<h2>Room Share</h2>
+		<p>Looking to save money by sharing a room? Looking to help someone out who doesn't have the budget for a bay area hotel room? Please <a href="https://join.slack.com/t/perfmattersconf/shared_invite/enQtMjkyMDM3MTAxMzQ3LTBjNmQyOTFiNzEzMjFmZjA5ODZiODhiZDZjMWFmYjJkY2VlZjlmNWYyOWU4ZjA4ZDViZjVjZmIyNGJhYzNmYzM">join the #PerfMatters Slack channel</a> and find a roommate. </p><p>If you do have a hotel room, consider offering up the second bed in your hotel room to someone who doesn't have corporate sponsorship.</p> 
 <h2>Note about Pacific Euro Hotel</h2>
 <p>The Pacific Euro Hotel is a 1-star Hotel at 868 Main St, Redwood City, CA: If you want to stay at the most inexpensive place around, this is it. It's a dumpy hotel with parking that is metered from 10:00am to 6:00pm. I think it has shared bathrooms and the internet is not secure, but the location and price are great. The hotel is located downtown, near all the restaurants and coffee shops. There are a few homeless people on that block, but it's a safe city.  We can not recommend this place at all. However, if you don't have corporate sponsorship for your hotel stay, it is the only place on the Peninsula that is under $100. I think it's about $69/night with shared bathroom, $89/night with your own bathroom. </p>
-	<h3>Room Share</h3>
-		<p>Looking to save money by sharing a room? Looking to help someone out who doesn't have the budget for a bay area hotel room? Please <a href="https://join.slack.com/t/perfmattersconf/shared_invite/enQtMjkyMDM3MTAxMzQ3LTBjNmQyOTFiNzEzMjFmZjA5ODZiODhiZDZjMWFmYjJkY2VlZjlmNWYyOWU4ZjA4ZDViZjVjZmIyNGJhYzNmYzM">join the #PerfMatters Slack channel</a> and find a roommate. </p><p>If you do have a hotel room, consider offering up the second bed in your hotel room to someone who doesn't have corporate sponsorship.</p> 
+	
 </section> 
 <section id="directions">
 	<h2>Getting here</h2>

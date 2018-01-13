@@ -28,8 +28,8 @@ if ($name) {
 			$job      = 'Performance Engineer';
 			$company  = 'Google';
 			$twitter  = 'paul_irish';
-			$talk_title = '';
-			$talk_description = '';
+			$talk_title = 'Web Perf Metrics & Measurement in 2018';
+			$talk_description = 'Chrome developer tools aficionado (understatement) and Google web performance engineer, will present web performance metrics and measurements in 2018';
 			$about    = "";
 		    break;
 
@@ -237,6 +237,7 @@ educated decisions about which providers should stay and which should go.</p>
 		    break;
 			
 				case 'gopal2':
+				case 'gopalB':
 			$fullname = 'Gopal Brugalette';
 			$job      = 'Principal Software Engineer';
 			$company  = 'Concur';
@@ -383,6 +384,15 @@ In this workshop, we&rsquo;ll go beyond the latest and greatest techniques and t
 		    break;
 
 
+		case 'pinterest':
+			$fullname = 'Jessica Chan, Michelle Vu, and Sarah Dapul-Weberman';
+			$job      = 'Software Engineers';
+			$company  = 'Pinterest';
+			$twitter  = 'missyjcat';
+			$talk_title = 'Making Pinterest Fast';
+			$talk_description = 'Pinterest.com serves millions of requests per day internationally across a myriad of network conditions and devices. This is the story of how the web performance team tackled the task of gathering data, applying a strategic roadmap across the organization, prevented performance regression slips as developers were shipping new features, and executed on the best opportunities to improve the Pinterest experience for our users and made performance a priority for the company.';
+			$about    = "";
+		    break;
 		case '':
 			$fullname = '';
 			$job      = '';
@@ -393,18 +403,19 @@ In this workshop, we&rsquo;ll go beyond the latest and greatest techniques and t
 			$about    = "";
 		    break;
 	}
-	$speaker = (object) [
-    'fullname' => $fullname,
-    'job' => $job,
-    'company' => $company,
-    'twitter' => $twitter,
-    'talk_title' => $talk_title,
-    'talk_description' => $talk_description,
-    'about' => $about
+	
+	$speaker = (object)[
+    	'fullname' => $fullname,
+    	'job' => $job,
+    	'company' => $company,
+    	'twitter' => $twitter,
+    	'talk_title' => $talk_title,
+    	'talk_description' => $talk_description,
+    	'about' => $about
   	];
+	
 	return $speaker;
 
-	return [$fullname, $job, $company, $twitter, $talk_title, $talk_description, $about];
 }
 }
 

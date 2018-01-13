@@ -59,7 +59,7 @@
     
     <meta name="twitter:title" content=" #PerfMatters Conference 2018">
     
-    <meta property="og:description" content="A two-day community Web Performance conference happening March 28-29, 2018 in Redwood City, CA. Getting Up To Speed workhop on March 27 to help get people up to speed on Web Performance." />
+    <meta property="og:description" content="A two-day community Web Performance conference happening March 27-28, 2018 in Redwood City, CA. Getting Up To Speed workhop on March 26 to help get people up to speed on Web Performance." />
  <?php } ?>
 
 	<style>
