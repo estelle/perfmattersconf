@@ -1,5 +1,5 @@
 .talks {
-li > div {display: flex;}
+	li > div {display: flex;}
 li:nth-of-type(odd) > div {
 	flex-direction: row-reverse;	
 }
@@ -7,16 +7,21 @@ figure a {
 	padding: 10px 10px 30px; 
 	background: white; 
 	display:inline-block; transform: rotate(-5deg); 
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
-figure a, 
 figure img {
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3); 
 }
 	
 figure img {width: 200px;}
 li:nth-of-type(odd) figure a {transform: rotate(5deg);}
-section > ul > li ~ li {
-	border-top: 1px solid;}
+> ul > li ~ li {
+	border-top: 2px solid $bg;}
 	h4 {margin-bottom: 0;}
 	h4 + p {margin-top: 0;}
-section > ul  {list-style-type: none;}}
+ > ul  {list-style-type: none;}
+    hr {opacity: 0.1;}
+}
+@media screen and (max-width: 520px) {
+	.talks.talks.talks li > div {flex-direction: column}
+}

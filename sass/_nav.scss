@@ -3,6 +3,7 @@ body > nav {
 	display: flex;
 	justify-content: space-between;
 	position: fixed;
+	flex-flow: wrap;
 	width: 100%;
 	line-height: 1;
 	z-index: 12;	

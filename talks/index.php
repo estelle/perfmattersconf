@@ -37,28 +37,7 @@
 
 	<style>
 <?php include("../css/style.css"); ?>
-.talks li > div {display: flex;}
-.talks li:nth-of-type(odd) > div {
-	flex-direction: row-reverse;	
-}
-.talks figure a { 
-	padding: 10px 10px 30px; 
-	background: white; 
-	display:inline-block; transform: rotate(-5deg); 
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-}
-.talks figure img {
-	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3); 
-}
-	
-.talks figure img {width: 200px;}
-.talks li:nth-of-type(odd) figure a {transform: rotate(5deg);}
-.talks > ul > li ~ li {
-	border-top: 1px solid;}
-	h4 {margin-bottom: 0;}
-	h4 + p {margin-top: 0;}
-.talks  > ul  {list-style-type: none;}
-hr {opacity: 0.25;}
+
 	</style>
     
 </head>

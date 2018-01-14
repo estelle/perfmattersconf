@@ -15,10 +15,12 @@ footer {
 		margin: 0;
 		padding: 0 0 0 1rem;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-evenly;
 		li {
-		flex: 25%;
+		flex: 1 0 auto;
 		padding: 0 20px;
+		box-sizing: border-box;
 		}
 		a {
 			text-decoration: none;
@@ -34,7 +36,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
 	footer article {
 		flex-wrap: wrap;
 		> ul {
@@ -43,11 +45,11 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 	footer article {
 		flex-wrap: wrap;
-		> ul {
-			flex: 100%;
+		 ul {
+			flex-direction: column;
 		}
 	}
 }
