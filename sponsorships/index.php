@@ -183,7 +183,7 @@ happen! All sponsors, regardless of the size of contribution, get:</p>
 <ul><li>Your logo on our Web site, intermission slides, and printed
 materials,</li>
 <li>Tweets of appreciation from our event-related twitter
-accounts, retweeted as appropriate from our own Twitter handle as well as @estellevw (9,100 followers), @standardista (9,200 followers), @webdevtips(1,100 followers), and @SFWebPerf, and</li>
+accounts, retweeted as appropriate from our own Twitter handle as well as @estellevw (9,200 followers), @standardista (9,400 followers), @webdevtips(1,100 followers), and @SFWebPerf, and</li>
 <li>Tickets to the conference.</li>
 </ul>
 <article  class="reg">
@@ -192,9 +192,12 @@ accounts, retweeted as appropriate from our own Twitter handle as well as @estel
     <th scope="col"></th>
     <th scope="col">Supporter<br/>$1,000+</th>
     <th scope="col">Silver-<br/>$5,000+</th>
-    <th scope="col">Silver+<br/>$7,500+</th>
-    <th scope="col">Gold<br/>$12,500+</th>
-    <th scope="col">Platinum<br/>$17,500+</th>
+    <th scope="col">Silver+<br/>
+    $6,500+</th>
+    <th scope="col">Gold<br/>
+    $9,000+</th>
+    <th scope="col">Platinum<br/>
+    $12,000+</th>
   </tr>
   <tr>
     <td><details><summary>Tickets</summary><p>Each sponsorship includes full passes to the full conference, including sessions and the party.</p></details></td>
@@ -294,16 +297,19 @@ accounts, retweeted as appropriate from our own Twitter handle as well as @estel
 
 <section>
 <h2>Attendees &amp; Participants</h2>
-<p><strong>Speakers</strong>&mdash;  The call for proposals just closed. We received over 175 proposals representing over 80 corporations. Confirmed speakers include:</p>
+<p><strong>Speakers</strong>&mdash;  We received over 175 proposals representing over 80 corporations. Speakers are listed on the home page and again on the talks page:</p>
 <ul>
-  <li><a href="https://www.google.com/search?q=paul+irish">Paul Irish</a>, Google    </li><li><a href="https://www.google.com/search?q=jem+young">Jem Young</a>, Netflix
+  <li><a href="https://www.google.com/search?q=paul+irish">Paul Irish</a>, Google Performance Engineer, PM Chrome Developer Tools</li>
+  <li><a href="https://www.google.com/search?q=jem+young">Jem Young</a>, Netflix
 </li>
-  <li><a href="https://www.google.com/search?q=marcy+sutton">Marcy Sutton</a>, Deque    </li>
-  <li><a href="https://www.google.com/search?q=leonie+watson">Leonie Watson</a>, The Paciello Group    </li>
-  <li><a href="https://www.google.com/search?q=eli+fitch">Eli Fitch</a>, Mapbox, and    </li>
-  <li><a href="https://www.google.com/search?q=estelle+weyl">Estelle Weyl</a>, Freelance.</li>
+  <li><a href="https://www.google.com/search?q=marcy+sutton">Marcy Sutton</a>, Deque, author of the accesibility features in Angular</li>
+  <li><a href="https://www.google.com/search?q=leonie+watson">Leonie Watson</a>, The Paciello Group, Co-Chair of the WC3's Web Platform Working Group</li>
+  <li><a href="https://www.google.com/search?q=eli+fitch">Eli Fitch</a>, Mapbox    </li>
+  <li><a href="https://www.google.com/search?q=estelle+weyl">Estelle Weyl</a>, Freelance, author of Mobile HTML5 and co-author of CSS: The Definitive Guide</li>
+  <li>Yoav Weiss, Akamai, <a href="https://www.w3.org/webperf/">W3C Web Performance Working Group</a>, 
+    implemented &lt;picture&gt; element in webkit </li>
 </ul>  
-<p>We are currently reviewing talks from over 80 corporations, students, freelancers, and web performance meetup organizers, including (ask for the full list):
+<p>With a semi-blind* proposal reviewal process, we ended up with several surprises as we turned down talks from more famous developers in selecting what we think is a great, diverse (both topic and presenet-wise) line up. Submissions included (ask for the full list):
 <ul class="lists">
 <li><img src="https://ucygetfavicon.appspot.com/http://www.adpushup.com" alt="">AdPushup</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.akamai.com" alt="">Akamai</li>
@@ -349,33 +355,52 @@ accounts, retweeted as appropriate from our own Twitter handle as well as @estel
 <li><img src="https://ucygetfavicon.appspot.com/http://www.wix.com" alt="">Wix</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.yelp.com" alt="">Yelp</li></ul>
 
-<p>The full list of confirmed speakers will be posted December 5, 2017.</p>
-<p><strong>Tickets</strong> have been priced in a manner to ensure that attendees from corporations large and small can attend. Discounts are being made available for attendees without corporate sponsorships, including students and free lancers. Everything is being done to ensure that barriers to entry are as minimal as possible, while ensuring the conference and content is not undervalued.</p>
+<p>The <a href="/">full list of confirmed speakers</a> is posted on our home page.</p>
+<p><strong>Tickets</strong> have been priced in a manner to ensure that attendees from corporations large and small can attend. Discounts are being made available for attendees without corporate sponsorships, including students and freelancers. Everything is being done to ensure that barriers to entry are as minimal as possible, while ensuring the conference and content is not undervalued.</p>
+<p>We've added an incredibly reasonably priced <a href="/workshop">"Getting Up To Speed" workshop</a> to ensure that no one feels intimidated or unqualified to attend the main conference.</p>
 <p><strong>Attendees</strong> &mdash;  We anticipate 440 to 516 individuals interested in performance and front end user experience with roles ranging from performance focused engineers, engineering managers, directors and CTOs. Thus far, we can confirm the following companies will be in attendance:</p>
 <ul class="lists">
+  <li><img src="https://ucygetfavicon.appspot.com/http://www.addepar.com" alt="">Addepar</li>
   <li><img src="https://ucygetfavicon.appspot.com/http://www.ancestry.com" alt="">Ancestry</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.bluevolt.com" alt="">BlueVolt</li>
+<li><img src="https://ucygetfavicon.appspot.com/http://www.daltonmaag.com" alt="">dalton maag</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.deque.com" alt="">Deque</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.elo7.com" alt="">Elo7</li>
 
 <li><img src="http://www.etsy.com/favicon.ico" alt="">Etsy</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.expedia.com" alt="">Expedia</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.forbes.com" alt="">Forbes</li>
+<li><img src="https://www.google.com/s2/favicons?domain=www.generalmills.com" alt="">GeneralMills</li>
 <li><img src="https://img1.wsimg.com/Sitecore/3/A/4/%7B3A44F70D-6D11-4C14-B611-A1F191704047%7Dgodaddy.ico" alt="">GoDaddy</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.google.com" alt="">Google</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.groupon.com" alt="">Groupon</li>
+<li><img src="https://ucygetfavicon.appspot.com/http://www.hearsaysystems.com" alt="">Hearsay Systems</li>
+<li><img src="https://ucygetfavicon.appspot.com/http://www.HoldMyTicket.com" alt="">HoldMyTicket</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.ibm.com" alt="">IBM</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.indeed.com" alt="">Indeed</li>
+<li><img src="https://ucygetfavicon.appspot.com/http://www.kohls.com" alt="">Kohl's</li>
+<li><img src="https://ucygetfavicon.appspot.com/http://www.LendingHome.com" alt="">LendingHome</li>
+<li><img src="https://ucygetfavicon.appspot.com/http://www.linkedIn.com" alt="">LinkedIn</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.lullabot.com" alt="">Lullabot</li>
+
+<li><img src="https://ucygetfavicon.appspot.com/http://www.MachMetrics.com" alt="">MachMetrics</li>
+<li><img src="https://magento.com/sites/default/files/Magento_Favicon_64x64.ico" alt="">Magento</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.mapbox.com" alt="">MapBox</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.microsoft.com" alt="">Microsoft</li>
-<li><img src="https://ucygetfavicon.appspot.com/http://www.mozilla.com" alt="">Mozilla</li><li><img src="https://ucygetfavicon.appspot.com/http://www.paypal.com" alt="">PayPal</li>
+<li><img src="https://ucygetfavicon.appspot.com/http://www.mozilla.com" alt="">Mozilla</li>
+<li><img src="https://nccgroup.trust/favicon.ico" alt="">NCC Group</li>
+<li><img src="https://ucygetfavicon.appspot.com/http://www.paypal.com" alt="">PayPal</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.pinterest.com" alt="">Pinterest</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.sap.com" alt="">SAP</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.slack.com" alt="">Slack</li>
+<li><img src="https://cdn.speedcurve.com/favicon.ico?new=woot" alt="">SpeedCurve</li>
 <li><img src="https://www.spredfast.com/favicon.ico" alt="">Spredfast</li>
 <li><img src="https://ucygetfavicon.appspot.com/https://www.paciellogroup.com/" alt="">The Paciello Group</li>
+<li><img src="https://usa.visa.com/content/dam/VCOM/Brand/favicon.ico" alt="">Visa</li>
+<li><img src="https://ucygetfavicon.appspot.com/http://www.vlocity.com" alt="">Vlocity</li>
+<li><img src="https://ucygetfavicon.appspot.com/http://www.vox.com" alt="">Vox Media</li>
 <li><img src="https://ucygetfavicon.appspot.com/http://www.xeneta.com" alt="">Xenata</li>
+<li><img src="https://ucygetfavicon.appspot.com/http://www.yelp.com" alt="">Yelp</li>
 </ul>
 <p><strong>Diversity</strong> &mdash; We are reaching a global audience and have talk proposals from Europe, Australia, Asia, North America, and Africa. We anticate speakers and attendees will stem from around the globe,  with 50% of attendees from the west coast of the United States. Our goal is to have a gender and ethnicity distribution that is more diverse than the average engineering company in the Bay Area.</p> 
 <p><strong>Atmosphere</strong> &mdash; The venue is gorgeous, comfortable, and accessible. You'll note from the speaker offerings, we treat everyone well. We aim to make an affordable, fun, luxurious experience conducive to learning and networking.</p>

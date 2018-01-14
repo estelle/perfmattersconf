@@ -29,8 +29,8 @@ if ($name) {
 			$company  = 'Google';
 			$twitter  = 'paul_irish';
 			$talk_title = 'Web Perf Metrics & Measurement in 2018';
-			$talk_description = 'Chrome developer tools aficionado (understatement) and Google web performance engineer, will present web performance metrics and measurements in 2018';
-			$about    = "";
+			$talk_description = 'The landscape of measuring your page&rsquo;s performance has been evolving quick. Paul will provide an insider&rsquo;s view to the modern approaches for evaluating page load and runtime responsiveness. We&rsquo;ll cover lab-based tooling and client-side APIs so you can get a complete and accurate understanding of your page&rsquo;s performance.';
+			$about    = "Chrome developer tools aficionado (understatement) and Google web performance engineer, will present web performance metrics and measurements in 2018";
 		    break;
 
 		case 'marcy':
@@ -39,7 +39,7 @@ if ($name) {
 			$company  = 'Deque Systems';
 			$twitter  = 'marcysutton';
 			$talk_title = 'React/Virtual DOM and accessibility';
-			$talk_description = 'TBD';
+			$talk_description = '';
 			$about	  = "Marcy Sutton works on web accessibility tools at Deque Systems, a company focused on digital equality. In 2016, O&rsquo;Reilly gave Marcy a Web Platform Award for her work in accessibility. She loves co-leading the Accessibility Seattle meetup and a code club for Girl Develop It Bellingham. When away from the keyboard, Marcy can be found hiking with her dog, riding a bicycle, or snowboarding.";
 		    break;
 
@@ -101,8 +101,8 @@ if ($name) {
 			$job      = 'Senior Software Engineer';
 			$company  = 'Netflix';
 			$twitter  = 'jemyoung';
-			$talk_title = 'TBD';
-			$talk_description = 'TBD';
+			$talk_title = '';
+			$talk_description = '';
 			$about    = "";
 		    break;
 
@@ -183,8 +183,8 @@ He will talk about the different metrics we use when measuring the performance o
 			$fullname = 'Javier Garza';
 			$job      = 'Senior Enterprise Architect';
 			$company  = 'Akamai';
-			$twitter  = 'JJavierGarza';
-			$talk_title = 'jjaviergarza';
+			$twitter  = 'jjaviergarza';
+			$talk_title = 'Optimize your life';
 			$talk_description = 'Javier has been focused on optimizing the Web for over a decade, working with the largest Companies who are changing the world to ensure the Web is fast and secure for everybody. On this inspiring talk Javier will explain how this quest for optimizing everything expanded from his work, to other areas of his life (like for example reducing a long commute in half), and what you can do with all that extra time.';
 			$about    = "Multi-lingual technology evangelist that loves taking things apart, understanding how they work and finding the best/most practical way of improving them. Started hacking basic-based computer games at the age of 9. I have been working with computers the past 25 years in Spain, Germany and USA (half of those at Akamai helping the largest Websites on the Internet run faster and more secure).";
 		    break;
@@ -268,20 +268,6 @@ You need effective methods for getting your message to engineers, product manage
 <p>There&rsquo;s a hidden world around us, and our only hope of cracking it open is keeping a measurement-oriented mindset. Kick off your path to performance glory with a lightning talk on what we miss when we&rsquo;re not looking.";
 			$about    = "Jacques Favreau is a senior UI engineer at Netflix. He&rsquo;s the tech lead for the Web Core team, which covers web performance, developer productivity, cross-team libraries, and best practices. Jacques is an ardent supporter of accessible websites and removing magic from code – something future-Jacques is always happy about.
 When not watching or working on Netflix, he can usually be found at home in San Mateo with his wife and daughter, or out pursuing their passion for travel.";
-		    break;
-
-		case 'rachel':
-			$fullname = 'Rachel Nabors';
-			$job      = 'Program Manager';
-			$company  = 'Microsoft';
-			$twitter  = 'rachelnabors';
-			$talk_title = 'Illusion of Life: Jank-free user interactions';
-			$talk_description = 'Human perception is a fascinating thing. Most of what we think of as "reality" is actually a simulation provided by the inputs of our five senses. Humans, being highly visual primates, are especially sensitive to visual inputs. Most screen-based interfaces seek to recreate an illusion of reality via active and visual skeumorphism, gestures, and other techniques. But janky or otherwise unperformant animations and interactions can ruin this illusion of life, break the user experience.</p>
-
-<p>In this talk, Rachel Nabors will introduce us to how the human visual system works and show us the latest and greatest ways to create light, performant animations and interactions that keep users in flow and delighted.';
-			$about    = "Rachel Nabors (rachelnabors.com) began telling stories online as a teenager with her award-winning <a href='https://rachelthegreat.com'>web comics</a>. Her love of web technologies transformed into a career in front end development, where she has worked with Mozilla, the W3C, and Microsoft to build the web forward. She recently launched Animation at Work wrote an A Book Apart book of the same name: (bkaprt.com/animationatwork), a book on using animation in web design available from A Book Apart. </p>
-
-<p>When she isn&rsquo;t traveling the world, giving talks and kissing puppies, she can be found perched in Seattle, sipping a cup of fancy tea!";
 		    break;
 
 		case 'jessica':
@@ -391,7 +377,7 @@ In this workshop, we&rsquo;ll go beyond the latest and greatest techniques and t
 			$twitter  = 'missyjcat';
 			$talk_title = 'Making Pinterest Fast';
 			$talk_description = 'Pinterest.com serves millions of requests per day internationally across a myriad of network conditions and devices. This is the story of how the web performance team tackled the task of gathering data, applying a strategic roadmap across the organization, prevented performance regression slips as developers were shipping new features, and executed on the best opportunities to improve the Pinterest experience for our users and made performance a priority for the company.';
-			$about    = "";
+			$about    = "Sarah Dapul-Weberman is a software engineer on the Pinterest Core Experience Web team. She focuses specifically on server-side web technologies. She is passionate about attempting to automate away more and more parts of her job.";
 		    break;
 		case '':
 			$fullname = '';
