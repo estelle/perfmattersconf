@@ -8,7 +8,7 @@
 			"<li><a href=\"/talks\">Talks</a></li>\r\n" .
 			"<li><a href=\"/sponsors\">Sponsors</a></li>\r\n" .
 			"<li><a href=\"/venue\">Venue</a></li>\r\n" .
-			"<li class=\"cta\"><a href=\"#reg\">Register</a></li>\r\n" .
+			"<li class=\"cta\"><a href=\"/#reg\">Register</a></li>\r\n" .
 		"</ul>\r\n";
 
 		$nav2 = "<ul>\r\n" .

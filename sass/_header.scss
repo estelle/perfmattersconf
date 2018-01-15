@@ -6,7 +6,7 @@ header {
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
-    padding: 8vh 0;
+    padding: 120px 0 80px;
 }
 
 hgroup {
@@ -35,6 +35,7 @@ hgroup {
 h1 {
 	font-size: 3em;
 	font-family: acme;
+	line-height: 1;
 }
 p  {
 	font-size: calc((2.5vw + 2.5vh)/2);

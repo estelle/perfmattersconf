@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<title>#PerfMatters: Sponsorship Opportunities</title>
+  <meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="../css/style.css"/>
   <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
 	<style>
@@ -235,43 +236,43 @@ accounts, retweeted as appropriate from our own Twitter handle as well as @estel
   </tr>
     <tr>
     <td><details><summary>Booth</summary><p>A space with a table and 2 chairs, along with 2 expo-center passes will be provided.</p></details></td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td></td>
+    <td></td>
     <td>✔</td>
     <td>✔</td>
     <td>✔</td>
   </tr>
     <tr>
     <td><details><summary>Speaker Dinner</summary> <p>Gold and Platinum level sponsorship includes an invite or two to the speaker dinner.</p></details></td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td>1</td>
     <td>2</td>
   </tr>
   <tr>
     <td><details><summary>Newsletter</summary><p>The email blast or newsletter can include a sponsor provided paragraph or article. We reserve the right to edit and confirm the content. Optionally, a job description can be posted.</p></details></td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td>Paragraph</td>
     <td>Article</td>
   </tr>
   
   <tr>
     <td><details><summary>Stage Mention</summary><p>You will be thanked for sponsoring the event directly from the stage</p></details></td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td>✔</td>
     <td>✔</td>
   </tr>
     <tr>
     <td><details><summary>Teach Me Something</summary><p>Between talks there will be 2 to 5-minute tutorial relevant to the majority of the participants. Platinum sponsorship includes one of these sessions, topic/speaker subject to approval. </details></td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td>✔</td>
   </tr>
   <tr>

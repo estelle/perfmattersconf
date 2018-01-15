@@ -8,6 +8,8 @@ body > nav {
 	line-height: 1;
 	z-index: 12;	
 	.logo { margin: 0;
+		display: flex; 
+		align-items: center;
 		a { font-family: acme;
 			font-size: 3em;
 			color: $popcolor;
@@ -20,6 +22,7 @@ body > nav {
 		font-size: 0.8rem;
 		margin-left: 1em;
 		font-weight: normal;
+		white-space: nowrap;
 		display: inline-block;
 		line-height: 1.3;
 		}
@@ -45,6 +48,10 @@ body > nav {
 			}
 		}
 	}
+}
+
+@media screen and (max-width: 25em) {
+	body > nav > ul > li:first-of-type {display: none;}
 }
 
 

@@ -5,8 +5,11 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="../css/style.css"/>
 	<style>
-section > * {
- width: 54em;
+@media screen and (min-width: 55em) {
+	section > * {
+	 width: 54em;
+	}
+	.subnav {display: flex;}
 }
 section:not([id]):not([class]) {height: 100px;}
 #hotels a { color: #d91962;}

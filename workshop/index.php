@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<title>#PerfMatters: Getting Up To Speed</title>
+  <meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="../css/style2.css"/>
   <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
   
