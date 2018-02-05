@@ -66,54 +66,14 @@
   <li>How HTTP/2 differs from HTTP/1 and what that means for popular opimizations</li>
   <li>How to identify common performance bottlenecks in your sites and applications</li></ul>
 
-<p>By the time we're done, you'll have a firm understanding of what makes sites fast, and how to separate the hype from reality.</p>
+<p>By the time we're done, you'll have a firm understanding of what makes sites fast, and how to separate the hype from reality. After the workshop, you should be confident attending and keeping up with all the discussions both on-stage and off-stage at #PerfMattersConference.</p>
 </section>
 <section class="reg" id="reg">
   <h1>Register for "Getting Up To Speed" Workshop</h1>
-  <p>March 6, 2018 at Cañada College</p>
-  <table class="pop">
-    <thead><tr>
-      <th>Ticket Type</th>
-      <th>Cost</th>
-    </tr></thead>
-    <thead><tr><th colspan="2">Regular Tickets (thru January 31)</th></tr></thead>
-    <tbody>
-    <tr>
-      <td>Conference &amp; Workshop</td>
-      <td>$549</td>
-    </tr>
-
-    <tr>
-      <td>Workshop Only</td>
-      <td>$200</td>
-    </tr>
-    <tr>
-      <td>Conference Only</td>
-      <td>$399</td>
-    </tr>
-  </tbody>
-    <thead><tr><th colspan="2">Late Bird Tickets (thru March 24) &nbsp; &nbsp; &nbsp;</th></tr></thead>
-    <tbody>
-    <tr>
-      <td>Conference &amp; Workshop</td>
-      <td>$679</td>
-    </tr>
-    <tr>
-      <td>Workshop Only</td>
-      <td>$250</td>
-    </tr>
-    <tr>
-      <td>Conference Only</td>
-      <td>$479</td>
-    </tr>
-   
-  </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="2"><a href="https://perfmattersconf.lilregie.com" title="Register Now" class="cta">Register Now</a></td>
-    </tr>
-  </tfoot>
-</table>
+  <p>March 26, 2018 at Cañada College</p>
+<p style="text-shadow:#d91962 2px 2px; margin-top:-1em;">DIVERSITY DISCOUNTS AVAILABLE!</p>
+<?php echo $reg ?>
+<p style="text-shadow:#d91962 2px 2px;">DIVERSITY DISCOUNTS AVAILABLE!</p>
 
 <p><small>Prices subject to change. No refunds. Tickets are transferable with notice. Questions? Contact us at <a href="mailto:tickets@perfmattersconf.com">tickets@perfmattersconf.com</a></small>
 </section>

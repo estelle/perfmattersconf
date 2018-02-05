@@ -39,7 +39,8 @@ if ($name) {
 			$company  = 'Deque Systems';
 			$twitter  = 'marcysutton';
 			$talk_title = 'React/Virtual DOM and accessibility';
-			$talk_description = '';
+			$talk_description = 'The JavaScript frameworks gaining the most market share are ones that implement a virtual DOM. React is one such framework that dominated the industry with its new approaches to browser rendering and code organization conventions; by now, its reach and popularity are difficult to ignore. Any time a big shift in web development practices comes along, it&rsquo;s worthwhile to investigate how it might impact accessibility and performance. </p><p>
+The most notable differences in React are its encouragement of modules packaging HTML and CSS together with JavaScript, and applying them to a Virtual DOM. Instead of manipulating parts of a page directly with many small updates–like you would with a tool like jQuery–changes are aggregated in memory and only applied if there are differences in the HTML sub-tree. For large-scale web applications, compiling views virtually before applying them as pixels has proven performance benefits. There are also other wins related to code architecture and ergonomics that have developers across the world reaching for React as part of their web development stack. This begs the question: does the shift to React.js affect people with disabilities relying on assistive technologies? In this talk, we&rsquo;ll look at how React impacts accessibility, from end-user experience to automated testing.';
 			$about	  = "Marcy Sutton works on web accessibility tools at Deque Systems, a company focused on digital equality. In 2016, O&rsquo;Reilly gave Marcy a Web Platform Award for her work in accessibility. She loves co-leading the Accessibility Seattle meetup and a code club for Girl Develop It Bellingham. When away from the keyboard, Marcy can be found hiking with her dog, riding a bicycle, or snowboarding.";
 		    break;
 
@@ -101,9 +102,9 @@ if ($name) {
 			$job      = 'Senior Software Engineer';
 			$company  = 'Netflix';
 			$twitter  = 'jemyoung';
-			$talk_title = '';
-			$talk_description = '';
-			$about    = "";
+			$talk_title = 'Modern Performance in the Year of the Dog';
+			$talk_description = 'It&rsquo;s 2018 and with the explosion of people joining the internet for the first time, building a performant application is more crucial than ever before. Unfortunately with all the new tools, libraries, and measurements, it&rsquo;s difficult to even know where to start when it comes to building an application from scratch. In this talk, we&rsquo;re going to cover the steps and methodologies that the modern web developer should keep in mind when crafting code. From choosing the right libraries and understanding application architecture, all the way to debugging common performance issues, we&rsquo;re going to learn how to build a modern, production ready web application.';
+			$about    = "Jem Young is a (very) tall engineer at Netflix who loves dogs, reading, and clean code. He really enjoys working across the stack but his true passion lies in JavaScript and building a clean user experience. He believes that empathy is the key to building an effective UI and when he's not out riding his bike, you can find him hassling other engineers to write more tests.";
 		    break;
 
 		case 'bianca':

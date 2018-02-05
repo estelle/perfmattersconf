@@ -63,7 +63,8 @@
  <?php } ?>
 
 	<style>
-<?php include("css/style.css"); ?>@media screen and (min-color-index:0) 
+<?php include("css/style.css"); ?> 
+@media screen and (min-color-index:0) 
 and(-webkit-min-device-pixel-ratio:0) and (min-width: 480px) and (max-width: 640px) {
 	.speakers ul {}
 	.speakers li {min-height:320px;flex: 0 0 auto; box-sizing: border-box;}

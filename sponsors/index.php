@@ -2,8 +2,18 @@
 <html lang="en">
 <head>
 	<title>#PerfMatters: Our Sponsors</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/style.css"/>
 	<style>
+main ul {
+	display:flex;
+	align-content: space-evenly;
+	list-style-type: none;
+}
+li {
+	list-style-type: none;
+}
+main ul li img {height:90px;}
 
 	</style>
 </head>
@@ -45,10 +55,15 @@ the web performance engineeers of the world.
 </section>
 <section>
 <h2>Silver Sponsors</h2>
+<ul><li><a href="https://fastly.com"><img src="../logos/fastly.png" alt="Fastly"/></a></li></ul>
 </section>
 <section>
 <h2>Partners &amp; Community Supporters</h2>
 </section>
+
+<section id="reg">
+    <?php echo $reg ?>
+    </section>
 </main>
 <footer>
 	<?php echo $nav ?>

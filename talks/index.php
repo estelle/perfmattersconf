@@ -7,7 +7,8 @@
 <head>
 	<title>#PerfMatters: Web Performance Conference</title>
 	<meta name="description" content="#PerfMatters - A Front-End Web Performance Conference in Redwood City, CA in March 2018. Call for speakers is currently open.">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 	<?php if($name) { ?>
 	<meta name="twitter:image" content="https://perfmattersconf.com/large/<?php echo $name ?>.jpg"/>
@@ -37,7 +38,11 @@
 
 	<style>
 <?php include("../css/style.css"); ?>
-
+@media screen and (max-width: 640px){
+.talks.talks.talks li>div {
+    flex-direction: column;
+}
+}
 	</style>
     
 </head>
@@ -58,7 +63,7 @@
 		<h2><span>#PerfMatters Conference Sessions</span>?</h2>
 		<p>One track, two days, 21 great talks (so far), 23 amazing speakers<br>Plus a one day <a href="../workshop/">workshop</a></p>
 			<div class="buttons">
-				<a class="btn-cta" href="#reg">Register Now</a> <a href="workshop/" title="Find Out about our workshop" class="btn">Workshop</a>
+				<a class="btn-cta" href="#reg">Register Now</a> <a href="../workshop/" title="Find Out about our workshop" class="btn">Workshop</a>
 			</div>
 		</div>
 	</hgroup>
@@ -69,7 +74,7 @@
 <h2>Talks</h2>
 <ul>
 <?php
-$people = array("paul", "sharon", "leonie", "eli", "lin", "simon", "katie", "javier", "bianca",  "yoav","pinterest", "gopal2", "jeremy", "dawn", "jacques", "vitor", "kim", "jason", "tim", "jem", 'marcy'); 
+$people = array("paul", "sharon", "jem", "leonie", 'marcy', "tim", "eli", "katie","lin", "simon",  "javier", "bianca",  "yoav","pinterest", "gopal2", "jeremy", "dawn", "jacques", "vitor", "kim", "jason"); 
 
 foreach ($people as $name) {
 	$person = getInformation($name);

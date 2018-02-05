@@ -51,6 +51,8 @@
     margin: 0 0 1em 0;
   }
   .lists img {display: inline-block; width: 16px; margin-right: 10px;}
+  
+  .claimed {display: inline-block; transform: rotate(-20deg); color: red;}
 	</style>
     <script>
 	
@@ -202,7 +204,7 @@ accounts, retweeted as appropriate from our own Twitter handle as well as @estel
   </tr>
   <tr>
     <td><details><summary>Tickets</summary><p>Each sponsorship includes full passes to the full conference, including sessions and the party.</p></details></td>
-    <td>1</td>
+    <td></td>
     <td>2</td>
     <td>2</td>
     <td>3</td>
@@ -433,18 +435,6 @@ accounts, retweeted as appropriate from our own Twitter handle as well as @estel
     <td>Only offered to one Platinum sponsor, your people can staff the registration desk, providing the opportunity to interact with all attendees. There are no vendors / sponsor tables within the main venue other than the registration desk. We will provide additional staff to help support the registration desk, to handle any registration issues that may arise. But, otherwise, your team will be the only "booth" in the main theatre venue. If you would like to provide the lanyrds, you may do so too.</td>
   </tr>
   <tr>
-    <td>Party</td>
-    <td>Gold +</td>
-    <!--<td>cost ($12,000)</td>-->
-    <td>Available to our gold and platinum sponsors, we are still waiting for a quote from the caterer, so are not sure of the cost of the party, but that quote will be partially up to you! We are hosting a conference party from 5:30 to 9:30 on Tuesday, directly after the first day's sessions, in The Grove. We'll work together to negotiate a good budget while making the event classy, fun, and memorable.</td>
-  </tr>
-  <tr>
-    <td>Drinks</td>
-    <td>Gold +</td>
-    <!--<td>cost ($3,000)</td>-->
-    <td>Available to our gold and platinum sponsors: If you want to sponsor the party and the drinks, that would be lovely. The cost includes the drinks, servers, and the required security details costs. Drinks include red wine, white wine, beer, bottles of Mexican Coke, water, and two specialty drinks. We are still negotiating the costs, but it will be at cost: we are purchasing the drinks directly, so it's at cost drinks plus the serving staff, glasses, and security detail.</td>
-  </tr>
-  <tr>
     <td>Speaker Dinner</td>
     <td>Gold +</td>
     <!--<td>cost ($2,400)</td>-->
@@ -470,6 +460,12 @@ a themed design, add your logo, and take care of all
 the production details! This sponsorship includes the cost of the conference bag plus $500 for the graphic designer. </td>
   </tr>
   <tr>
+    <td>Speaker Gifts</td>
+    <td>Silver +</td>
+    <!--<td>Gift x 20</td>-->
+    <td>If you would like to offer the speakers a gift, you'll need to pass the idea thru the organizers, and provide 28 of whatever it is you would like to offer. </td>
+  </tr>
+  <tr>
     <td>Umbrellas</td>
     <td>Silver +</td>
     <!--<td>at cost + $150</td>-->
@@ -482,23 +478,10 @@ the production details! This sponsorship includes the cost of the conference bag
     <td>We are looking for an organization to sponsor the water bottles and the water service. To be friendlier to the environment, we would like to provide all attendees with a water bottle upon registration to be used throughout the conference. We would then provide water in either 5-gallon dispensers or large carafes with cucumber and / or lemon. Your choice. This sponsorship will be at cost + $200.</td>
   </tr>
   <tr>
-    <td>Coffee</td>
+    <td>Party</td>
     <td>Silver +</td>
-    <!--<td>at cost ($1,800)</td>-->
-    <td>Sponsor coffee and tea. We're still waiting on a quote, but my guesstimate is $1,800 for the two days.</td>
-  </tr>
-  <tr>
-    <td>Ice Cream</td>
-    <td>Silver +</td>
-    <!--<td>at cost ($1,200)</td>-->
-    <td>Snacks are awesome. And awesome snacks bring people to the expo hall. If you're a sponsor, consider also sponsoring a mid-day ice cream social. This will be at cost. And, it's your choice if you want it to be "make your own sundae", freezers full of high end snacks like Haagen Daaz pops and Its' It, or a less expensive Costco run of whatever Costco is currently carrying. I am sure the attendees will be happy no matter what.</td>
-  </tr>
-  
-  <tr>
-    <td>Speaker Gifts</td>
-    <td>Silver +</td>
-    <!--<td>Gift x 20</td>-->
-    <td>If you would like to offer the speakers a gift, you'll need to pass the idea thru the organizers, and provide 28 of whatever it is you would like to offer. </td>
+    <!--<td>cost ($12,000)</td>-->
+    <td>We are still waiting for a quote from the caterer, so are not sure of the cost of the party, but that quote will be partially up to you! We are hosting a conference party from 5:30 to 9:30 on Tuesday, directly after the first day's sessions, in The Grove. We'll work together to negotiate a good budget while making the event classy, fun, and memorable. The sample menus we have looked at are $8/person to $15/person depending on the options.</td>
   </tr>
   <tr>
     <td>Parking</td>
@@ -507,10 +490,28 @@ the production details! This sponsorship includes the cost of the conference bag
     <td>It costs $3.00 per car per day. We'll be distributing parking permits. We'll try to get your logo on it. If we can, that $200 fee is for design and printing. If not, it's purely at cost, with an estimate of $900 per day, so $2,000 for 2-days plus logo. If you want, you can have your own branded staff guiding drivers and distributing permits, which makes for an additional touch point with attendees, and helps us out a lot.</td>
   </tr>
   <tr>
+    <td>Coffee</td>
+    <td>Any</td>
+    <!--<td>at cost ($1,800)</td>-->
+    <td>Sponsor coffee and tea. We're still waiting on a quote, but my guesstimate is $1,800 for the two days.</td>
+  </tr>
+  <tr>
+    <td>Ice Cream</td>
+    <td>Any</td>
+    <!--<td>at cost ($1,200)</td>-->
+    <td>Snacks are awesome. And awesome snacks bring people to the expo hall. If you're a sponsor, consider also sponsoring a mid-day ice cream social. This will be at cost. And, it's your choice if you want it to be "make your own sundae", freezers full of high end snacks like Haagen Daaz pops and Its' It, or a less expensive Costco run of whatever Costco is currently carrying. I am sure the attendees will be happy no matter what.</td>
+  </tr>
+  <tr>
     <td>Lunch</td>
     <td>Any</td>
     <!--<td>at cost ($5,400)</td>-->
     <td>Lunch on the first day is a sandwich or salad, along with fruit salad, chips and a cookie. On the second day we're having wraps or salad, along with fruit salad, chips and a cookie. You can sponsor one or both lunches. If you sponsor, you can upgrade to a better lunch if you so choose, but that is the current option. I am still waiting on a quote, but the estimate is $5,400 per day. </td>
+  </tr>
+  <tr>
+    <td>Drinks</td>
+    <td><span class="claimed">CLAIMED</span></td>
+    <!--<td>cost ($3,000)</td>-->
+    <td>If you want to sponsor the drinks for the party, that would be lovely. The cost includes the drinks, servers, and the required security details costs. Drinks include red wine, white wine, beer, bottles of Mexican Coke, water, and two specialty drinks. We are still negotiating the costs, but it will be at cost: we are purchasing the drinks directly, so it's at cost drinks plus the serving staff, glasses, and security detail.</td>
   </tr>
   <tr>
     <td>Diversity Ticket</td>

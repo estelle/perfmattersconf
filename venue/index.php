@@ -129,6 +129,10 @@ $249  per night / $119 weekend night </p>
 <li>There are meat and vegetarian options. Please let us know when you register if you are vegan, celiac, or have other dietary requirements needing our attention.</li>
 <li>There will be a slack for the event, including a slack channel dedicating to "housing". If you are willing to share your company (or personally) paid hotel room with someone who can't afford it, or live near the venue and willing to host an out of town guest, we encourage you to post your availability in that chat room so people who need assistance can privately DM you to take you up on your generosity.</li>
 </ul><p>In case you haven't figured it out, we want to ensure anyone who wants to attend this event can attend this event.<sup>*</sup></p></div></div></div></section>
+
+<section id="reg">
+    <?php echo $reg ?>
+    </section>
 </main>
 <footer>
 	<?php echo $nav ?>
