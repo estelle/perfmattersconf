@@ -435,12 +435,6 @@ accounts, retweeted as appropriate from our own Twitter handle as well as @estel
     <td>Only offered to one Platinum sponsor, your people can staff the registration desk, providing the opportunity to interact with all attendees. There are no vendors / sponsor tables within the main venue other than the registration desk. We will provide additional staff to help support the registration desk, to handle any registration issues that may arise. But, otherwise, your team will be the only "booth" in the main theatre venue. If you would like to provide the lanyrds, you may do so too.</td>
   </tr>
   <tr>
-    <td>Speaker Dinner</td>
-    <td>Gold +</td>
-    <!--<td>cost ($2,400)</td>-->
-    <td>Available to our gold and platinum sponsors, the price depends on the number of speakers and guests, but is estimated to be at about $90 per person.</td>
-  </tr>
-  <tr>
     <td>T-shirts</td>
     <td>Gold +</td>
     <!--<td>cost + $500</td>-->
@@ -448,6 +442,13 @@ accounts, retweeted as appropriate from our own Twitter handle as well as @estel
 after the event is over, your sponsored shirts with
 logo and URL will be seen on the most fashion forward
 , fastest web developers! This sponsorship includes the cost of the conference T-shirt, plus $500 for the graphic designer. As unisex T-shirts don't exist, these will come in both fit and relaxed cuts. We will be getting quality shirts that stand up to multiple wears and washings.</td>
+  </tr>
+  
+  <tr>
+    <td>Speaker Dinner</td>
+    <td><span class="claimed">CLAIMED</span></td>
+    <!--<td>cost ($2,400)</td>-->
+    <td>The price depends on the number of speakers and guests, but is estimated to be at about $90 per person.</td>
   </tr>
   <tr>
     <td>Bags</td>
@@ -473,7 +474,7 @@ the production details! This sponsorship includes the cost of the conference bag
   </tr>
   <tr>
     <td>Water Bottles</td>
-    <td>Silver + </td>
+    <td><span class="claimed">CLAIMED</span></td>
     <!--<td>at cost + $200</td>-->
     <td>We are looking for an organization to sponsor the water bottles and the water service. To be friendlier to the environment, we would like to provide all attendees with a water bottle upon registration to be used throughout the conference. We would then provide water in either 5-gallon dispensers or large carafes with cucumber and / or lemon. Your choice. This sponsorship will be at cost + $200.</td>
   </tr>

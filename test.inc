@@ -44,8 +44,8 @@
 			justify-content: space-between;	
 		}
 		</style>
-	<div>
-		<a href="https://perfmattersconf.lilregie.com" title="Register Now" class="cta" style="margin: 1.5em auto">Register Now</a>
+	
+		<a href="https://perfmattersconf.lilregie.com" title="Register Now" class="cta" style="margin: 1.5em auto;">Register Now</a><div>
 	<table>
 	<caption>Conference</caption>
 		<thead><tr>
@@ -67,16 +67,16 @@
 			<td>EXPIRED</td>
 			<td><strike>$329</strike></td>
 		</tr>
-		<tr class="active">
-			<td>Early Bird</td>
-			<td>January 31, 2018</td>
-			<td>AVAILABLE</td>
+		<tr>
+			<td><strike>Early Bird</strike></td>
+			<td><strike>January 31, 2018</strike></td>
+			<td>EXPIRED</td>
 			<td>$399</td>
 		</tr>
-		<tr>
+		<tr class="active">
 			<td>Regular Ticket</td>
 			<td>March 14, 2018</td>
-			<td>February 1, 2018</td>
+			<td>AVAILABLE</td>
 			<td>$479</td>
 		</tr>
 		<tr>
@@ -110,28 +110,28 @@
 			<td>SOLD OUT</td>
 			<td>$299</td>
 		</tr>
-		<tr class="active">
-			<td>Discounted Regular Ticket</td>
-			<td>January 31, 2018</td>
-			<td>AVAILABLE</td>
+		<tr>
+			<td><strike>Discounted Regular Ticket</strike></td>
+			<td><strike>January 31, 2018</strike></td>
+			<td>EXPIRED</td>
 			<td>$399</td>
 		</tr>
-		<tr class="active">
-			<td>Early Bird Diversity Ticket</td>
-			<td>January 31, 2018</td>
-			<td>AVAILABLE</td>
+		<tr>
+			<td><strike>Early Bird Diversity Ticket</strike></td>
+			<td><strike>January 31, 2018</strike></td>
+			<td>EXPIRED</td>
 			<td>$199</td>
 		</tr>
-		<tr>
+		<tr class="active">
 			<td>Regular Ticket</td>
 			<td>March 14, 2018</td>
-			<td>February 1, 2018</td>
+			<td>WAITLIST</td>
 			<td>$479</td>
 		</tr>
-		<tr>
+		<tr class="active">
 			<td>Diversity Ticket</td>
 			<td>March 14, 2018</td>
-			<td>February 1, 2018</td>
+			<td>AVAILABLE</td>
 			<td>$239</td>
 		</tr>
 		</tbody>
@@ -149,28 +149,28 @@
 		</thead>
 		<tbody>		
 		
-		<tr class="active">
-			<td>Workshop &amp; Conference</td>
-			<td>January 31, 2018</td>
-			<td>AVAILABLE</td>
+		<tr>
+			<td><strike>Workshop &amp; Conference</strike></td>
+			<td><strike>January 31, 2018</strike></td>
+			<td>SOLD OUT</td>
 			<td>$748</td>
 		</tr>
-		<tr class="active">
-			<td>Diversity Workshop &amp; Conference</td>
-			<td>January 31, 2018</td>
-			<td>AVAILABLE</td>
+		<tr>
+			<td><strike>Diversity Workshop &amp; Conference</strike></td>
+			<td><strike>January 31, 2018</strike></td>
+			<td>EXPIRED</td>
 			<td>$548</td>
 		</tr>
-		<tr>
+		<tr class="active">
 			<td>Workshop &amp; Conference</td>
 			<td>March 14, 2018</td>
-			<td>February 1, 2018</td>
+			<td>WAITLIST</td>
 			<td>$908</td>
 		</tr>
-		<tr>
+		<tr class="active">
 			<td>Diversity Workshop &amp; Conference</td>
 			<td>March 14, 2018</td>
-			<td>February 1, 2018</td>
+			<td>AVAILABLE</td>
 			<td>$688</td>
 		</tr>
 		<tr>

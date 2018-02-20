@@ -47,18 +47,21 @@ the web performance engineeers of the world.
 
 </section>
 <section>
-<h2>Platinum Sponsors</h2>
-<!--<ul><li><a href="https://instartlogic.com"><img src="../images/instartlogo.svg" style="height: 80px" alt="instart logic"></a></li></ul>-->
-</section>
-<section>
 <h2>Gold Sponsors</h2>
 </section>
 <section>
 <h2>Silver Sponsors</h2>
-<ul><li><a href="https://fastly.com"><img src="../logos/fastly.png" alt="Fastly"/></a></li></ul>
+<ul style="justify-content: space-around; display: flex; flex-flow: row wrap; width: 90%">
+<li><a href="https://fastly.com"><img src="../logos/fastly.png" alt="Fastly"/></a></li>
+<li><a href="https://cloudinary.com"><img src="../logos/cloudinary_w.svg" alt="Cloudinary"/></a></li>
+</ul>
 </section>
 <section>
 <h2>Partners &amp; Community Supporters</h2>
+<ul style="justify-content: space-around; display: flex; flex-flow: row wrap; width: 90%">
+<li><a href="https://catchpoint.com"><img src="../logos/catchpoint.png" alt="Catchpoint" style="height: 80px"/></a></li>
+<li><a href="https://speedcurve.com"><img src="../logos/speedcurve.png" alt="SpeedCurve" style="height: 60px"/></a></li>
+</ul>
 </section>
 
 <section id="reg">
