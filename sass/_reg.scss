@@ -9,7 +9,7 @@
 		width: 100%;
 		color: #333;
 		border: 1px solid;
-		padding: 10px;
+		white-space: nowrap;
 		td { padding:5px 10px;}
 		tr + tr td {border-top:1px solid;}
 		td + td {
@@ -19,6 +19,43 @@
 	}
 
 }
+
+
+.registration {
+	caption {
+	font-size: 2em; 
+	font-weight: bold; 
+	margin-top: 2em;
+	background-color: rgba(255,255,255,0.5);
+} 
+tbody tr {
+	opacity: 0.35;
+	} 
+tr:nth-of-type(odd){
+	background-color: $tc_light;
+}
+tr.active {
+	opacity: 1;
+	background-color: lighten($bg, 20%);
+}
+  table {
+	margin: auto;
+	border-collapse: collapse;
+	td, th {
+		padding: 2px;
+	}
+  }
+  p {
+	text-align: center;
+  }
+  .cta {
+  	display: block;
+  	width: 580px;
+  	max-width: 70%;
+  	margin: 2em auto;
+  }
+}
+
 @media screen and (max-width: 54em){
   #levels, 
   .longtext {

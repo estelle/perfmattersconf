@@ -3,8 +3,9 @@
 <head>
 	<title>#PerfMatters: Getting Up To Speed</title>
   <meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="../css/style2.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style2.css"/><link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <?php echo $font ?>
+
   
     <meta name="twitter:image" content="https://perfmattersconf.com/images/workshop_ad.png"/>
     <meta name="twitter:url" content="https://www.perfmattersconf.com/workshop?tim" />
@@ -33,15 +34,14 @@
 	<?php echo $date ?></h2>
 </a>
 <div class="headerblurb">
-<h1>Getting Up To Speed with Performance</h1><p>Monday, April 1, 2019, we're offering a full day workshop to "Get You Up To Speed" on Web Performance. Participants will learn everything they need to know to get the most out of #PerfMatters Conference, the 2-day conference dedicated to front-end web performance</p>
-<p>Here's what we're planning:</p>
+<h1>Workshop: Getting Up To Speed</h1><p>Monday, April 1, 2019, we're offering a full day workshop to "Get You Up To Speed" on Web Performance. Participants will learn everything they need to know to get the most out of #PerfMatters Conference. Here's what we're planning:</p>
 </div></hgroup></header>
 <main>
 
 <section>
-<h1>Getting Up to Speed with Performance</h1>
+<h1>Getting Up to Speed with Web Performance</h1>
 
-<p><img src="../photos/tim.jpg" alt="Workshop presentation" style="float: right"/>Websites may be slow, but the web itself moves fast. Every day new techniques and tools emerge, promising to make your site faster and lighter. New articles are written about the latest "best practices" in performance, only to have yet newer articles contradict them. When the technologies and techniques we use to make websites more performant change so quickly, it's easy to feel like you're falling behind.</p>
+<p><img src="../photos/tim.jpg" alt="Workshop presentation" style="float: right; margin: 0 0 10px 10px;"/>Websites may be slow, but the web itself moves fast. Every day new techniques and tools emerge, promising to make your site faster and lighter. New articles are written about the latest "best practices" in performance, only to have yet newer articles contradict them. When the technologies and techniques we use to make websites more performant change so quickly, it's easy to feel like you're falling behind.</p>
 
 <p>But if you pull back the layers and the hype, drilling into the core concepts of how the network and browsers we rely on actually work, it suddenly becomes much easier to recognize which best practices are actually appropriate for you, and what trade-offs you're making.</p>
 

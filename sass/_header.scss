@@ -1,6 +1,5 @@
 header {
     background-image: url(../images/flamechart.jpg);
-    text-align: center;
     background-color: $white;
     background-size: cover;
     background-attachment: fixed;
@@ -60,7 +59,6 @@ header .buttons {
 	a {
 	  padding: 7px 14px;
 	  text-decoration: none;
-	  font-family: "acme", "Open sans", geneva;
 	  margin: 5px;
 	  font-size: 1.5em;
 	  border-radius: 2px;
@@ -72,7 +70,6 @@ header .buttons {
 	[class|="btn"] {
 	  	background-color: $bg;
 	  	color: $theme_color;
-		font-family: "acme", "Open sans", geneva;
 	    &:hover, &:focus {
 	  	color: $bg;
 	  	background-color: $speed-light;
@@ -81,7 +78,6 @@ header .buttons {
 	.btn-cta {
 	  color: $bg;
 	  background-color: $theme_color;
-	  font-family: "acme", "Open sans", geneva;
 
 	  }
 }

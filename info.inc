@@ -1,6 +1,6 @@
 <?php 
 	$date = "April 2 &amp; 3, 2019";
-
+	$font = '<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> ';
 	$wk_date = "April 1, 2019";
 	$hk_date = "April 4, 2019";
 	
@@ -10,7 +10,7 @@
 
 	$nav = 	"<ul>\r\n" .
 			"<li><a href=\"/talks\"><span>Speakers &amp; Talks</span></a></li>\r\n" .
-			"<li><a href=\"/sponsors\"><span>Sponsors</span></a></li>\r\n" .
+			"<li><a href=\"/workshop\"><span>Workshop</span></a></li>\r\n" .
 			"<li><a href=\"/venue\"><span>Venue</span></a></li>\r\n" .
 			"<li><a href=\"/diversity\"><span>Diversity</span></a></li>\r\n" .
 			'<li class="cta"><a href="https://perfmatters.lilregie.com" title="Register Now"><span>REGISTER</span></a></li>' .
@@ -18,7 +18,7 @@
 
 		$nav2 = "<ul>\r\n" .
 			"<li><a href=\"../talks\"><span>Speakers &amp; Talks</span></a></li>\r\n" .
-			"<li><a href=\"/sponsors\"><span>Sponsors</span></a></li>\r\n" .
+			"<li><a href=\"/workshop\"><span>Workshop</span></a></li>\r\n" .
 			"<li><a href=\"/venue\">Venue</span></a></li>\r\n" .
 			"<li><a href=\"/diversity\"><span>Diversity</span></a></li>\r\n" .
 			'<li class="cta"><a href="https://perfmatters.lilregie.com" title="Register Now"><span>REGISTER</span></a></li>\r\n' .
@@ -32,27 +32,7 @@
 
 	$form = "https://goo.gl/forms/uaPxPCPWKbJA7Wni1";
 	
-	$reg = '<style>
-		caption {
-			font-size: 2em; 
-			font-weight: bold; 
-			margin-top: 2em;
-			background-color: rgba(255,255,255,0.5);
-		} 
-		tbody tr {
-			opacity: 0.35;
-			} 
-		tr.active {
-			opacity: 1;
-		}
-		.registration table {
-			margin: auto;
-		}
-		.registration p {
-			text-align: center;
-		}
-		</style>
-	<div class="registration">
+	$reg = '<div class="registration">
 		<p><a href="https://perfmatters.lilregie.com" title="Register Now" class="cta" style="margin: 1.5em auto 0.5em;">Register Now</a> <br/><a href="/diversity/">Scholarship Info</a></p><div>
 	<table>
 	<caption>Conference (Only)</caption>

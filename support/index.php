@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="../css/style.css"/>
   <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <?php echo $font ?>
+  
 	<style>
 	td:first-of-type {text-align: left;}
 	  details[open] {

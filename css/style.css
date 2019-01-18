@@ -5,11 +5,35 @@ html {
 }
 
 @font-face {
-  font-family: "Acme";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: local("Acme Regular"), local("Acme-Regular"), url(https://fonts.gstatic.com/s/acme/v7/J7ium-afZ1cSO20cJqzQyvesZW2xOQ-xsNqO47m55DA.woff) format("woff"), local("Acme-Regular"), url(https://fonts.gstatic.com/s/acme/v7/FDMh4aixPTtSeEPULD_zPPesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459W1hyyTh89ZNpQ.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459WdhyyTh89ZNpQ.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 aside {
   background-color: #350e65;
@@ -147,13 +171,13 @@ p.buttons {
 }
 
 html {
-  font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body, header, footer {
   margin: 0;
   padding: 0;
-  line-height: 2;
+  line-height: 1.6;
 }
 
 section, footer {
@@ -223,9 +247,12 @@ footer ul li a, footer a {
   color: white;
 }
 
+h2, h3 {
+  margin-bottom: 0;
+}
+
 header {
   background-image: url(../images/flamechart.jpg);
-  text-align: center;
   background-color: #fff;
   background-size: cover;
   background-attachment: fixed;
@@ -285,7 +312,6 @@ header .buttons {
 header .buttons a {
   padding: 7px 14px;
   text-decoration: none;
-  font-family: "acme", "Open sans", geneva;
   margin: 5px;
   font-size: 1.5em;
   border-radius: 2px;
@@ -297,7 +323,6 @@ header .buttons a:hover {
 header .buttons [class|=btn] {
   background-color: #f8ac04;
   color: #350e65;
-  font-family: "acme", "Open sans", geneva;
 }
 header .buttons [class|=btn]:hover, header .buttons [class|=btn]:focus {
   color: #f8ac04;
@@ -306,7 +331,6 @@ header .buttons [class|=btn]:hover, header .buttons [class|=btn]:focus {
 header .buttons .btn-cta {
   color: #f8ac04;
   background-color: #350e65;
-  font-family: "acme", "Open sans", geneva;
 }
 
 footer {
@@ -343,6 +367,11 @@ footer ul a:hover {
   text-decoration: underline;
   color: #06020b;
 }
+footer small {
+  max-width: 800px;
+  display: block;
+  margin: 1em auto;
+}
 
 @media screen and (max-width: 800px) {
   footer article {
@@ -372,7 +401,7 @@ footer ul a:hover {
   width: 100%;
   color: #333;
   border: 1px solid;
-  padding: 10px;
+  white-space: nowrap;
 }
 .reg table td {
   padding: 5px 10px;
@@ -385,6 +414,39 @@ footer ul a:hover {
 }
 .reg table td[colspan] {
   text-align: center;
+}
+
+.registration caption {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 2em;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.registration tbody tr {
+  opacity: 0.35;
+}
+.registration tr:nth-of-type(odd) {
+  background-color: #f8f4fd;
+}
+.registration tr.active {
+  opacity: 1;
+  background-color: #fdcd65;
+}
+.registration table {
+  margin: auto;
+  border-collapse: collapse;
+}
+.registration table td, .registration table th {
+  padding: 2px;
+}
+.registration p {
+  text-align: center;
+}
+.registration .cta {
+  display: block;
+  width: 580px;
+  max-width: 70%;
+  margin: 2em auto;
 }
 
 @media screen and (max-width: 54em) {
