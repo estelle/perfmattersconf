@@ -70,7 +70,7 @@ and(-webkit-min-device-pixel-ratio:0)  and (max-width: 479px) {
 			<div class="buttons">
 				<a class="btn-cta" href="#reg">Register Now</a> <a href="workshop/" title="Find Out about our workshop" class="btn">Workshop</a> 
 			</div>
-            <p>workshop and hackathon information coming soon.
+            <p>Hackathon information coming soon.
 		</div>
 	</hgroup>
 </header>
@@ -97,6 +97,7 @@ foreach ($people as $name) {
 
 </ul>
 </section>
+<section>&nbsp;</section>
 <section class="reg" id="reg">
 	<h1>Register for #PerfMatters Conference</h1>
 	<p><?php echo $date ?> at Cañada College</p>

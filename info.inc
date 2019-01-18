@@ -3,7 +3,7 @@
 	$font = '<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> ';
 	$wk_date = "April 1, 2019";
 	$hk_date = "April 4, 2019";
-	
+	$reglink = "https://perfmatters.lilregie.com";
 	$year = "2019";
 
     $tagline = 'The building blocks of web performance: Getting to "fast enough?"';
@@ -33,7 +33,7 @@
 	$form = "https://goo.gl/forms/uaPxPCPWKbJA7Wni1";
 	
 	$reg = '<div class="registration">
-		<p><a href="https://perfmatters.lilregie.com" title="Register Now" class="cta" style="margin: 1.5em auto 0.5em;">Register Now</a> <br/><a href="/diversity/">Scholarship Info</a></p><div>
+		<p><a href="' . $reglink . '" title="Register Now" class="cta" style="margin: 1.5em auto 0.5em;">Register Now</a> <br/><a href="/diversity/">Scholarship Info</a></p><div>
 	<table>
 	<caption>Conference (Only)</caption>
 		<thead><tr>
@@ -162,6 +162,6 @@
 	</tbody>
 	</table>
 	</div>
-		<p><a href="https://perfmatters.lilregie.com" title="Register Now" class="cta" style="margin: 1.5em auto 0">Register Now</a> <br/>&nbsp; <a href="/diversity/">Scholarship Info</a></div>';
+		<p><a href="' . $reglink . '" title="Register Now" class="cta" style="margin: 1.5em auto 0">Register Now</a> <br/>&nbsp; <a href="/diversity/">Scholarship Info</a></div>';
 
 ?>

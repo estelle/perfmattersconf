@@ -35,7 +35,7 @@ main section p {text-align:left;}
 
 	
 	<div class="headerblurb">
-	    <h1>Diversity Program</h1>
+	    <h1>Scholarship Program</h1>
 		<p>All attendees, speakers, sponsors and volunteers at #PerfMatters Conference are required to agree with the conference code of conduct. Organizers will enforce this code throughout the event.</p>
 	</div>
 </hgroup>
@@ -58,7 +58,7 @@ main section p {text-align:left;}
 <h3>How to apply</h3>
 <p>Fill out this form:</p>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfGl7kZhDNQVA1uccDDHL5FR42eW-Z52Lb3NqXK0KjQnxYAew/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-<p>You'll be notified of the result no matter the outcome. Application review and notification is on a rolling basis, and closes March 21, 2019	. All information will be kept confidential except the review committee.</p>
+<p>You'll be notified of the result no matter the outcome. Application review and notification is on a rolling basis, and closes March 21, 2019. All information will be kept confidential except the review committee.</p>
 
 <p>Thanks to <a href="https://cssconf.au">CSSConf.au</a> for their diversity program, which I took as the base for writing this</p>
 </section>

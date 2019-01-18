@@ -449,6 +449,14 @@ footer small {
   margin: 2em auto;
 }
 
+.diversity {
+  color: #d91962;
+  text-decoration: none;
+}
+.diversity:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 54em) {
   #levels,
 .longtext {
