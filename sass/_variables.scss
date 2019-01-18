@@ -1,10 +1,23 @@
+/* NAMED COLORS */
+$purple: rgb(53, 14, 101);
+$orange: rgb(248, 172, 4);
+$pink: rgb(217, 25, 98); 
+$black: #333; 
+$white: #fff;
+
+/* USED COLORS */
+$darkest_bg: $purple;
+$bg: $orange;
+$text: $black;
+$text_on_dark: $white;
+$highlight: $pink;
+$shadows: 3px 3px 3px rgba(0,0,0,0.2);
+$topshadows: -3px -3px 3px rgba(0,0,0,0.2);
+
+
 $theme_color: rgb(53, 14, 101); 
 $darken: rgba(0,0,0,0.1);
 $lightborders: #ccc;
-$shadows: 3px 3px 3px rgba(0,0,0,0.2);
-$topshadows: -3px -3px 3px rgba(0,0,0,0.2);
-$black: #333;
-$white: #fff;
 $background: $white;
 $bg_light: $lightborders;
 $tc_tester: lighten($theme_color, 50%);
@@ -16,7 +29,7 @@ $popcolor: $theme_color;
 
 $cdn-dark: #635e5e;
 $cdn-light: #d0d0d0;
-$speed-dark: rgb(53, 14, 101); // /* purple */
+$speed-dark: $darkest_bg; 
 $speed-light: rgb(242,65,26);
 $speed-light: rgb(217, 25, 98); 
 $shield-dark: #5c1f8e;
@@ -24,8 +37,6 @@ $shield-light: #cec1e2;
 $flex-dark: #447228;
 $flex-light: #badba5;
 $ads-dark: #00154e;
-$bg: rgb(248, 172, 4); // /* orange */
-$light: #ffffff;
-$text: #333;
+$light: $white;
 
 html {font-size: 16px;}

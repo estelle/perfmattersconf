@@ -1,71 +1,66 @@
-<?php include '../test.inc' ?><!doctype html>
+<?php include '../info.inc' ?><!doctype html>
 <html lang="en">
 <head>
 	<title>Diversity and Inclusion: #PerfMatters Conference</title>
 	<meta name="viewport" content="width=device-width">
-    <meta name="twitter:image" content="https://perfmattersconf.com/images/people4.jpg"/>
+    <meta name="twitter:image" content="https://perfmattersconf.com/images/cfp.jpg"/>
 <meta name="twitter:url" content="https://www.perfmattersconf.com/" />
 <meta property="og:title" content="Get up to speed Workshop #PerfMatters Conference" />
 <meta property="og:type" content="article" />
-<meta property="og:image" content="https://perfmattersconf.com/images/people4.jpg" />
+<meta property="og:image" content="https://perfmattersconf.com/images/cfp.jpg" />
 <meta name="author" content="Estelle Weyl" />
 <meta property="og:url" content="https://www.perfmattersconf.com/code/" />
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@perfmattersconf">
 <meta name="twitter:title" content="Diversity and Inclusion :: #PerfMatters Conference 2018">
-<meta property="og:description" content="Everyone at our two-day community Web Performance conference happening March 27-28, 2018 in Redwood City, CA is expected to be respectful, nice, and to make everyone feel welcome, no matter their differences. We have a Getting Up To Speed workhop on March 26 to help get people up to speed on Web Performance, therefore you should expect everyone to know as much about tech and performance as you." />
+<meta property="og:description" content="Everyone at our two-day community Web Performance conference happening <? echo $date ?> in Redwood City, CA is expected to be respectful, nice, and to make everyone feel welcome, no matter their differences. We have a Getting Up To Speed workhop on <? echo $wk_date ?> to help get people up to speed on Web Performance, therefore you should expect everyone to know as much about tech and performance as you." />
 	<link rel="stylesheet" href="../css/style.css"/>
 	<style>
 main section p {text-align:left;}
 	</style>
 </head>
 <body>
-<nav>
-    <?php echo $logo ?>
-	<?php echo $nav ?>
-</nav>
+<aside>
+    <?php echo $tagline ?>
+</aside>
 <header>
-	<hgroup>
-	<div class="circle">
-	<h1>Code of Conduct</h1>
-	<h2>#PerfMatters Conference<br/>
-	Redwood City, CA <br/>
+<hgroup>
+<?php echo $logo ?>
+<?php echo $nav ?>
+<a href="/" class="circle">
+	<h1>#PerfMatters</h1>
+	<h2>Redwood City, CA <br/>
 	<?php echo $date ?></h2>
-	</div>
+</a>
+
+	
 	<div class="headerblurb">
-	    <h1>Code of Conduct</h1>
+	    <h1>Diversity Program</h1>
 		<p>All attendees, speakers, sponsors and volunteers at #PerfMatters Conference are required to agree with the conference code of conduct. Organizers will enforce this code throughout the event.</p>
 	</div>
 </hgroup>
 </header>
 <main>
 <section>
+<p>We realize that buying a ticket to a conference for many isn't a trivial expense, but it can be a turning point in someone's career.</p>
 
-<h2>The Quick Version</h2>
+<p>We're committed to bringing in as many individuals who couldn't attend otherwise as possible. We want you to feel like you belong and build a lasting, inclusive, safe community. As organizers, we see it as our responsibility to help diversify the face of the web performance industry. We strongly encourage members of underrepresented groups to apply.<p>
 
-<p>#PerfMatters Conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), employer, employment status, or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.</p>
-<p>Additionally, we expect participants to be proactively nice and respectful of everyone, from the other participants, to the speakers, to the organizers, to the caterers, to the cleaning crew: EVERYONE.</p>
+<p>Please note that the scholarships cover conference registration only, so you will have to arrange travel and any accommodation, if necessary. We do have a #HOUSING channel in Slack where you can try to find someone to share a hotel room with, or even ask someone to share their corporate sponsored hotel room at hopefully reduced to no cost. </p>
 
-<h2>The Less&ndash;Quick Version</h2>
+<h2>Eligibility</h2>
+<p>Applicants for a free or reduced ticket diversity ticket have to fulfill at least one of the below requirements:</p>
 
-<p>Harassment includes offensive verbal comments related to gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion, technology choices, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.</p>
+<ul><li>be a member of an underrepresented group in tech, including, but not limited to women, LGBTQI+, African-American, Native American, Latinx, people with disabilities and people facing economic or social hardships</li>
+<li>be unable to attend without financial assistance</li>
+</ul>
 
-<p>Participants asked to stop any harassing behavior, or any demeaning or otherwise unwelcome behavior, are expected to comply immediately.</p>
+<h3>How to apply</h3>
+<p>Fill out this form:</p>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfGl7kZhDNQVA1uccDDHL5FR42eW-Z52Lb3NqXK0KjQnxYAew/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<p>You'll be notified of the result no matter the outcome. Application review and notification is on a rolling basis, and closes March 21, 2019	. All information will be kept confidential except the review committee.</p>
 
-<p>Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualized images, activities, or other material. Booth staff (including volunteers) should not use sexualized clothing/uniforms/costumes, or otherwise create a sexualized environment.  In addition, booth schwag should not be gendered. For examples, there is no such thing as a unisex t-shirt. Either have both loose and fit shirts, or offer different schwag.</p>
-
-<p>If a participant engages in harassing behavior, the conference organizers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund.</p>
-
-<p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff can be identified by a clearly marked "STAFF" shirt.</p>
-
-<p>Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.</p>
-
-<p>Be nice to everyone, and treat everyone with equal respect. Speak as politely to the other participants, the speakers, the organizers, the caterers, and the cleaning crew as you would to your boss.</p>
-
-<p>Include everyone. In conversations, be inclusive and welcoming. Do not "backpack". Backpacking is when you exclude a person from a group conversation by turning your back to them. It's called back packing because often times people do this actually smack people with their back packs. Instead, open up the circle and welcome other participants into your conversation, regardless of age difference, gender difference, racial difference, or any other differences you may have.</p>
-
-<p>We expect participants to follow these rules at all conference venues and conference-related social events.</p>
-<p><small>This Code of Conduct is an expansion of the  <a href="http://jsconf.com/codeofconduct.html">JSconf.us Code of Conduct</a>. </small></p>
+<p>Thanks to <a href="https://cssconf.au">CSSConf.au</a> for their diversity program, which I took as the base for writing this</p>
 </section>
 </main>
 <footer>

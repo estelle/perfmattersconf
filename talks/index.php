@@ -1,12 +1,12 @@
 <?php 
-  include '../test.inc';
+  include '../info.inc';
   include '../speakers.inc';
   # if($name) {echo $fullname;}
  ?><!doctype html>
 <html lang="en">
 <head>
-	<title>#PerfMatters: Web Performance Conference</title>
-	<meta name="description" content="#PerfMatters - A Front-End Web Performance Conference in Redwood City, CA in March 2018. Call for speakers is currently open.">
+	<title>#PerfMatters :: Speakers and Talk descriptions</title>
+	<meta name="description" content="The speakers and talks making #PerfMatters the premiere Front-End Web Performance Conference in Redwood City, CA in March 2018.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -23,17 +23,17 @@
     <meta name="twitter:title" content='<?php echo $talk_title ?>'>
     <meta property="og:description" content='<?php echo substr($talk_description, 0, 240) ?>' />
  <?php } else { ?>
-<meta name="twitter:image" content="https://perfmattersconf.com/images/people2.jpg"/>
+<meta name="twitter:image" content="https://perfmattersconf.com/images/twitter_banner.jpg"/>
 <meta name="twitter:url" content="https://www.perfmattersconf.com/" />
 <meta property="og:title" content="Get up to speed Workshop #PerfMatters Conference" />
 <meta property="og:type" content="article" />
-<meta property="og:image" content="https://perfmattersconf.com/images/people2.jpg" />
+<meta property="og:image" content="https://perfmattersconf.com/images/twitter_banner.jpg" />
 <meta name="author" content="Estelle Weyl" />
 <meta property="og:url" content="https://www.perfmattersconf.com/talks/" />
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@perfmattersconf">
 <meta name="twitter:title" content="Talks :: #PerfMatters Conference 2018">
-<meta property="og:description" content="The talks being presented at our two-day community Web Performance conference happening March 27-28, 2018 in Redwood City, CA. Getting Up To Speed workhop on March 26 to help get people up to speed on Web Performance." />
+<meta property="og:description" content="The talks being presented at our two-day community Web Performance conference happening <? echo $date ?> in Redwood City, CA. Getting Up To Speed workhop on <? echo $wk_date ?> to help get people up to speed on Web Performance." />
  <?php } ?>
 
 	<style>
@@ -47,21 +47,24 @@
     
 </head>
 <body id="home">
-<nav>
-    <?php echo $logo ?>
-	<?php echo $nav ?>
-</nav>
+<aside>
+    <?php echo $tagline ?>
+</aside>
 
 <header>
-	<hgroup>
-		<div class="circle">
-			<h1>#PerfMatters</h1>
-			<h2>Web Performance Conference<br/>
-			in Redwood City, CA <br/>on <strong><?php echo $date ?></strong></h2>
-		</div>
+<hgroup>
+<?php echo $logo ?>
+<?php echo $nav ?>		
+<a href="/" class="circle">
+	<h1>#PerfMatters</h1>
+	<h2>Redwood City, CA <br/>
+	<?php echo $date ?></h2>
+</a>
+
+	
 		<div class="about">
 		<h2><span>#PerfMatters Conference Sessions</span>?</h2>
-		<p>One track, two days, 21 great talks (so far), 23 amazing speakers<br>Plus a one day <a href="../workshop/">workshop</a></p>
+		<p>One track, two days, a gazillion great talks (so far), a bazillion amazing speakers, plus a one day <a href="../workshop/">workshop</a> and a one day hack-a-thon</p>
 			<div class="buttons">
 				<a class="btn-cta" href="#reg">Register Now</a> <a href="../workshop/" title="Find Out about our workshop" class="btn">Workshop</a>
 			</div>
@@ -74,14 +77,14 @@
 <h2>Talks</h2>
 <ul>
 <?php
-$people = array("paul", "sharon", "jem", "leonie", 'marcy', "tim", "eli", "katie","lin", "simon",  "javier", "bianca",  "yoav","pinterest", "gopal2", "jeremy", "dawn", "jacques", "vitor", "kim", "jason"); 
+$people = array("addy","sarah","pat","ewa","shubhie","erica","tim","anthonia", "tatiana", "rick", "katie", "ryan", "robert", "eric", "buddy", "lauren", "gemma", "heather", "mandy", "alfredo", "keerthana", "greg", "nathan","mina", "estelle");
 
 foreach ($people as $name) {
 	$person = getInformation($name);
 	?><li id="<?php echo $name ?>">
     <h2><?php echo $person -> talk_title ?></h2>
     <div>
-	<figure><a href="https://twitter.com/<?php echo $person->twitter ?>"><img data-src="../avatars/<?php echo $name ?>.jpg" alt="<?php echo $person->fullname ?>"></a>	<figcaption><h4 class="name"><?php echo $person->fullname ?></h4><p class="bio"><?php echo $person->job ?>, <?php echo $person->company ?></p></figcaption>
+	<figure><a href="https://twitter.com/<?php echo $person->twitter ?>"><img data-src="../avatars/<?php echo $name ?>.jpg" alt="<?php echo $person->fullname ?>"></a>	<figcaption><h4 class="name"><?php echo $person->fullname ?></h4><p class="bio"><?php echo $person->job ?><?php if (strlen($person->company) > 0) {echo ", ";} ?> <?php echo $person->company ?></p></figcaption>
     </figure>
     <div>
     	<p><?php echo $person -> talk_description ?></p>
@@ -101,7 +104,7 @@ foreach ($people as $name) {
 </section>
 <section class="reg" id="reg">
 	<h1>Register for #PerfMatters Conference</h1>
-	<p>March 27-28, 2018 at Cañada College</p>
+	<p><? echo $date ?> at Cañada College</p>
 	 <?php echo $reg ?>
      <p><small>Prices subject to change. No refunds. Tickets are transferable with notice. Getting tickets for a 5 or more people? Get $50 off for the fifth person and everyone thereafter. Group of 10 or more? Contact us at <a href="mailto:tickets@perfmattersconf.com">tickets@perfmattersconf.com</a></small>
 </section>

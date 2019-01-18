@@ -6,22 +6,24 @@ header {
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
-    padding: 120px 0 80px;
+    padding: 20px 0;
 }
 
 hgroup {
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(245,242,245,0.95);
   border: 1 solid white;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  grid-gap: 5px;
   box-shadow: $shadows, $topshadows;
   padding: 3vh;
-
-	.about {
-  		text-align: left;
-  		line-height: 1.5;
-	}
+  > * {
+    grid-column: auto / span 2;
+   }
+  .about {
+	text-align: left;
+	line-height: 1.5;
+  }
   h2 {
 	font-size: calc((5vw + 5vh)/2);
 	margin: 0;
@@ -44,13 +46,10 @@ p  {
 }
 
 @media only screen and (min-width: 540px) {
-    header {
-    	padding-top: calc((20vh+20vw)/2);
-    }
     .about {
   		padding-left: 3em;
     }
- }
+}
 
 header .buttons {
 	display: flex;

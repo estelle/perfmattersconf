@@ -1,40 +1,53 @@
+.circle {
+	grid-column: 1 / 1;
+    grid-row: 1 / 3;
+	background: radial-gradient(circle at center, $light 50%, transparent 50%);
+	color: $text;
+	box-sizing: border-box;
+	text-align: center;
+	border: none;
+	line-height: 1.2;
+	text-decoration: none;
+	&:hover {
+		background: radial-gradient(circle at center, $bg 50%, transparent 50%);
+		text-decoration: none;
+	}
+	h1 {
+		font-size: 2.75rem;
+		line-height: 1;
+		margin: 10px 0 0;
+	}
+	h2 {
+		font-size: 1rem;
+	}
+}
+.circle h1 {
+		 background: -webkit-linear-gradient($darkest_bg 30%, $highlight 50%, $highlight 60%, $bg 80%);
+		 -webkit-text-stroke: 0.25px black;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent; 
+		transform:  scale(1.25) rotate(-5deg) translate(-5px, -2px);
+		text-decoration: none;
+}
+@media screen and (min-width: 34rem) {
 	.circle {
-		background-color: $light;
-		color: $text;
-		box-sizing: border-box;
-		text-align: center;
-		box-shadow: inset 3px 3px 3px rgba(0,0,0,0.2), 6px 6px 6px rgba(0,0,0,0.6);
-		border: solid $bg 10px;
-		padding: 1rem;
-		width: 100%;
-		margin-top: 1rem;
-		margin-bottom: 1rem;
-		line-height: 1.2;
+		border-radius: 50%;
+		height: 18rem; width: 18rem;
+		flex: 0 0 18rem;
+		margin: 50px 20px;
+		padding: 4rem 0;
+		border-width: 1.5rem;
+	}
+	h1 {
+		white-space: nowrap;
+		
+	}
+	header hgroup {
+		flex-flow: row nowrap;
+		&::before {margin: 0 -2rem;}
+	}
 
-		h1 {
-			font-size: 2.75rem;
-			line-height: 1;
-			margin: 10px 0 0;
-		}
-		h2 {
-			font-size: 1rem;
-		}
-	}
-	@media screen and (min-width: 34rem) {
-		.circle {
-			border-radius: 50%;
-			height: 18rem; width: 18rem;
-			flex: 0 0 18rem;
-			margin: 50px 20px;
-			padding: 4rem 0;
-			border-width: 1.5rem;
-		}
-		h1 {
-			white-space: nowrap;
-			
-		}
-		header hgroup {
-			flex-flow: row nowrap;
-			&::before {margin: 0 -2rem;}
-		}
-	}
+    body hgroup {
+		grid-template-columns: repeat(3, 1fr); 
+    }
+}

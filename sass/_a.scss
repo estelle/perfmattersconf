@@ -1,4 +1,5 @@
-:not(main) a {
+footer a,
+.circle a {
   text-decoration: none;			
 }
 a {
@@ -8,6 +9,9 @@ a {
 }
 .subnav {
 	text-align: left;
+	a {
+	text-decoration: none;
+	}
 }
 .button, a.cta {
 	background-color: $speed-light;
@@ -16,7 +20,6 @@ a {
 	padding: 0.5rem 2rem;
 	white-space: nowrap;
 	&:hover, &:focus, &:active {
-		text-decoration: none;
 		color: $light;
 		background-color: darken($speed-light, 10%);
 	}
@@ -25,6 +28,7 @@ a.cta,
 section:first-of-type a.button {
 	background-color: $bg;
 	color: $text;
+	text-decoration: none;
 }
 
 @media screen and (min-width: 35em){

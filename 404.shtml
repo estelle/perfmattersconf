@@ -1,0 +1,1054 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>#PerfMatters: Web Performance Conference</title>
+	<meta name="description" content="#PerfMatters - A Front-End Web Performance Conference in Redwood City, CA in April 2019.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="twitter:image" content="https://perfmattersconf.com/images/twitter_banner.jpg"/>
+    <meta name="twitter:url" content="https://www.perfmattersconf.com/" />
+    <meta property="og:title" content="#PerfMatters Front End Web Performance Conference" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://perfmattersconf.com/images/twitter_banner.jpg" />
+    <meta name="author" content="Estelle Weyl" />
+    <meta property="og:url" content="https://www.perfmattersconf.com/" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@perfmattersconf">
+    <meta name="twitter:title" content="#PerfMatters Front End Web Performance Conference 2019">
+    <meta property="og:description" content="A two-day community Web Performance conference happening April 2 &amp; 3, 2019 in Redwood City, CA. Workhops on April 1, 2019 to help get people up to speed on Web Performance. Hackathon on April 4, 2019 to improve online performance documentation." />
+ 	<style>
+/* NAMED COLORS */
+/* USED COLORS */
+html {
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "Acme";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Acme Regular"), local("Acme-Regular"), url(https://fonts.gstatic.com/s/acme/v7/J7ium-afZ1cSO20cJqzQyvesZW2xOQ-xsNqO47m55DA.woff) format("woff"), local("Acme-Regular"), url(https://fonts.gstatic.com/s/acme/v7/FDMh4aixPTtSeEPULD_zPPesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+aside {
+  background-color: #350e65;
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+hgroup > ul:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  width: 100%;
+  line-height: 1;
+  z-index: 12;
+  list-style-type: none;
+  padding: 0;
+}
+hgroup > ul:first-of-type a {
+  color: #350e65;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  text-decoration: none;
+  opacity: 0.8;
+  display: inline-block;
+  background-color: #ebdefa;
+  transform: skewx(-20deg);
+}
+hgroup > ul:first-of-type a:hover {
+  background-color: #350e65;
+  color: #fff;
+}
+
+.subnav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.subnav ul li {
+  flex: 1;
+}
+.subnav ul li a {
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  text-decoration: none;
+  color: #350e65;
+}
+.subnav ul li a:hover {
+  color: white;
+}
+.subnav ul li:hover {
+  background: #350e65;
+}
+
+@media screen and (max-width: 25em) {
+  body > nav > ul > li:first-of-type {
+    display: none;
+  }
+}
+footer a,
+.circle a {
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+}
+
+.subnav {
+  text-align: left;
+}
+
+.button, a.cta {
+  background-color: #d91962;
+  color: #fff;
+  border-radius: 3px;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.button:hover, .button:focus, .button:active, a.cta:hover, a.cta:focus, a.cta:active {
+  color: #fff;
+  background-color: #ab144d;
+}
+
+a.cta,
+section:first-of-type a.button {
+  background-color: #f8ac04;
+  color: #333;
+}
+
+@media screen and (min-width: 35em) {
+  .subnav.subnav a:hover {
+    background-color: #f8ac04;
+    color: #333;
+  }
+
+  .subnav {
+    display: inline-flex;
+    justify-content: space-evenly;
+  }
+  .subnav a {
+    background-color: #d91962;
+    color: #fff;
+    border-radius: 3px;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+  }
+  .subnav a:hover, .subnav a:focus, .subnav a:active {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ab144d;
+  }
+  .subnav li {
+    margin-right: 10px;
+    list-style-type: none;
+  }
+}
+p.buttons {
+  line-height: 2.5rem;
+}
+
+html {
+  font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body, header, footer {
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+}
+
+section, footer {
+  padding: 4vh 1vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  section, footer {
+    padding: 20px;
+  }
+}
+section > * {
+  max-width: 54rem;
+}
+
+section:first-of-type {
+  background-color: #350e65;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), -3px -3px 3px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+section:first-of-type a {
+  color: #f8ac04;
+}
+
+section:nth-of-type(2) {
+  background-color: #06020b;
+  background-image: url("../images/back.jpg");
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset -3px -3px 3px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-position: right center;
+  color: #fff;
+}
+section:nth-of-type(2) a {
+  color: #d91962;
+}
+
+section:nth-of-type(3),
+table {
+  background-color: white;
+  color: #333;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), -3px -3px 3px rgba(0, 0, 0, 0.2);
+}
+
+section:nth-of-type(4) {
+  background-color: #f8f4fd;
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset -3px -3px 3px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+section:nth-of-type(5) {
+  background-color: #06020b;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), -3px -3px 3px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+section:nth-of-type(5) a {
+  color: #d91962;
+}
+
+footer {
+  background-color: #d91962;
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset -3px -3px 3px rgba(0, 0, 0, 0.2);
+}
+footer ul li a, footer a {
+  color: white;
+}
+
+header {
+  background-image: url(../images/flamechart.jpg);
+  text-align: center;
+  background-color: #fff;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+}
+
+hgroup {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1 solid white;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 5px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), -3px -3px 3px rgba(0, 0, 0, 0.2);
+  padding: 3vh;
+}
+hgroup > * {
+  grid-column: auto/span 2;
+}
+hgroup .about {
+  text-align: left;
+  line-height: 1.5;
+}
+hgroup h2 {
+  font-size: calc((5vw + 5vh)/2);
+  margin: 0;
+  color: #350e65;
+  font-weight: normal;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+hgroup h2 span {
+  font-family: acme;
+}
+hgroup h1 {
+  font-size: 3em;
+  font-family: acme;
+  line-height: 1;
+}
+hgroup p {
+  font-size: calc((2.5vw + 2.5vh)/2);
+  max-width: 40em;
+}
+
+@media only screen and (min-width: 540px) {
+  .about {
+    padding-left: 3em;
+  }
+}
+header .buttons {
+  display: flex;
+  max-width: 26rem;
+  text-align: center;
+  padding-top: calc((5vh + 5vw)/2);
+  margin: auto;
+}
+header .buttons a {
+  padding: 7px 14px;
+  text-decoration: none;
+  font-family: "acme", "Open sans", geneva;
+  margin: 5px;
+  font-size: 1.5em;
+  border-radius: 2px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+header .buttons a:hover {
+  box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.2);
+}
+header .buttons [class|=btn] {
+  background-color: #f8ac04;
+  color: #350e65;
+  font-family: "acme", "Open sans", geneva;
+}
+header .buttons [class|=btn]:hover, header .buttons [class|=btn]:focus {
+  color: #f8ac04;
+  background-color: #d91962;
+}
+header .buttons .btn-cta {
+  color: #f8ac04;
+  background-color: #350e65;
+  font-family: "acme", "Open sans", geneva;
+}
+
+footer {
+  padding: 20px;
+}
+footer article {
+  display: flex;
+  line-height: 1.6;
+}
+footer article > ul:not(:first-of-type) > li > a {
+  border-bottom: 1px solid;
+}
+footer article > ul:not(:first-of-type) > li > a:hover {
+  border: none;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+footer ul li {
+  flex: 1 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+footer ul a {
+  text-decoration: none;
+  color: #005193;
+}
+footer ul a:hover {
+  text-decoration: underline;
+  color: #06020b;
+}
+
+@media screen and (max-width: 800px) {
+  footer article {
+    flex-wrap: wrap;
+  }
+  footer article > ul {
+    flex: 45%;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer article {
+    flex-wrap: wrap;
+  }
+  footer article ul {
+    flex-direction: column;
+  }
+}
+.reg {
+  color: #fff;
+  overflow: scroll;
+}
+.reg h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+.reg table {
+  width: 100%;
+  color: #333;
+  border: 1px solid;
+  padding: 10px;
+}
+.reg table td {
+  padding: 5px 10px;
+}
+.reg table tr + tr td {
+  border-top: 1px solid;
+}
+.reg table td + td {
+  border-left: 1px solid;
+}
+.reg table td[colspan] {
+  text-align: center;
+}
+
+@media screen and (max-width: 54em) {
+  #levels,
+.longtext {
+    display: block;
+  }
+  #levels details[open] p,
+.longtext details[open] p {
+    right: 0;
+    width: 100%;
+  }
+  #levels tr,
+.longtext tr {
+    display: list;
+  }
+  #levels tr ~ tr td:first-of-type,
+.longtext tr ~ tr td:first-of-type {
+    border-top: 1px solid;
+  }
+  #levels tr:first-of-type,
+.longtext tr:first-of-type {
+    display: none;
+  }
+  #levels td,
+.longtext td {
+    display: list-item;
+    border: none;
+  }
+  #levels td:empty,
+.longtext td:empty {
+    display: none;
+  }
+
+  #levels td:not(:first-of-type) {
+    text-indent: 60px;
+  }
+  #levels td:nth-of-type(2):before {
+    content: "Supporter: ";
+  }
+  #levels td:nth-of-type(3):before {
+    content: "Silver-: ";
+  }
+  #levels td:nth-of-type(4):before {
+    content: "Silver+: ";
+  }
+  #levels td:nth-of-type(5):before {
+    content: "Gold: ";
+  }
+  #levels td:nth-of-type(6):before {
+    content: "Platinum: ";
+  }
+
+  .longtext.longtext td {
+    border: none;
+  }
+  .longtext.longtext td:first-of-type {
+    font-weight: bold;
+    paddin-top: 2em;
+  }
+  .longtext.longtext td:nth-of-type(2) {
+    font-style: italic;
+    opacity: 0.5;
+  }
+  .longtext.longtext td:nth-of-type(2):before {
+    content: "Sponsorship Level: ";
+  }
+  .longtext.longtext td:nth-of-type(3):before {
+    content: "Description: ";
+  }
+}
+.circle {
+  grid-column: 1/1;
+  grid-row: 1/3;
+  background: radial-gradient(circle at center, #fff 50%, transparent 50%);
+  color: #333;
+  box-sizing: border-box;
+  text-align: center;
+  border: none;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.circle:hover {
+  background: radial-gradient(circle at center, #f8ac04 50%, transparent 50%);
+  text-decoration: none;
+}
+.circle h1 {
+  font-size: 2.75rem;
+  line-height: 1;
+  margin: 10px 0 0;
+}
+.circle h2 {
+  font-size: 1rem;
+}
+
+.circle h1 {
+  background: -webkit-linear-gradient(#350e65 30%, #d91962 50%, #d91962 60%, #f8ac04 80%);
+  -webkit-text-stroke: 0.25px black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.25) rotate(-5deg) translate(-5px, -2px);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 34rem) {
+  .circle {
+    border-radius: 50%;
+    height: 18rem;
+    width: 18rem;
+    flex: 0 0 18rem;
+    margin: 50px 20px;
+    padding: 4rem 0;
+    border-width: 1.5rem;
+  }
+
+  h1 {
+    white-space: nowrap;
+  }
+
+  header hgroup {
+    flex-flow: row nowrap;
+  }
+  header hgroup::before {
+    margin: 0 -2rem;
+  }
+
+  body hgroup {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* NAMED COLORS */
+/* USED COLORS */
+html {
+  font-size: 16px;
+}
+
+.speakers ul {
+  max-width: 68em;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+}
+.speakers li {
+  list-style-type: none;
+  text-align: center;
+  margin: 5px 30px;
+  padding: 0;
+  flex: 0;
+  width: 200px;
+}
+.speakers li:hover, .speakers li.focus {
+  height: 320px;
+  width: 300px;
+  margin: 0 -20px -80px;
+  padding: 5px 10px;
+  z-index: 100;
+  left: 40px;
+  position: relative;
+  background: #f8ac04;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.speakers img {
+  height: 200px;
+  -webkit-filter: sepia(40);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.speakers a {
+  display: block;
+}
+.speakers figcaption {
+  line-height: 1.4;
+}
+.speakers figcaption .bio {
+  position: absolute;
+  left: -200vw;
+}
+.speakers figcaption .name {
+  position: relative;
+  display: block;
+  top: -3em;
+  width: 200px;
+  padding: 0;
+  white-space: nowrap;
+  background-color: #f8ac04;
+  color: white;
+  font-weight: bold;
+  background-color: #d91962;
+}
+.speakers li:hover img, .speakers li.focus img {
+  -webkit-filter: none;
+}
+.speakers li:hover figcaption, .speakers li.focus figcaption {
+  left: 0;
+  position: absolute;
+  top: 240px;
+  bottom: 0;
+  width: 300px;
+  text-align: center;
+  color: #350e65;
+  margin: 0;
+  padding: 0;
+}
+.speakers li:hover figcaption .bio, .speakers li:hover figcaption .name, .speakers li.focus figcaption .bio, .speakers li.focus figcaption .name {
+  position: static;
+  display: block;
+  clear: both;
+  width: 100%;
+}
+
+.talks li > div {
+  display: flex;
+}
+.talks li:nth-of-type(odd) > div {
+  flex-direction: row-reverse;
+}
+.talks figure a {
+  padding: 10px 10px 30px;
+  background: white;
+  display: inline-block;
+  transform: rotate(-5deg);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.talks figure img {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.talks figure img {
+  width: 200px;
+}
+.talks li:nth-of-type(odd) figure a {
+  transform: rotate(5deg);
+}
+.talks > ul > li ~ li {
+  border-top: 2px solid #f8ac04;
+}
+.talks h4 {
+  margin-bottom: 0;
+}
+.talks h4 + p {
+  margin-top: 0;
+}
+.talks > ul {
+  list-style-type: none;
+}
+.talks hr {
+  opacity: 0.1;
+}
+
+@media screen and (max-width: 520px) {
+  .talks.talks.talks li > div {
+    flex-direction: column;
+  }
+}
+a {
+  color: #350e65;
+}
+
+/*# sourceMappingURL=style.css.map */
+@media screen and (min-color-index:0) 
+and(-webkit-min-device-pixel-ratio:0) and (min-width: 480px) and (max-width: 640px) {
+	.speakers ul {}
+	.speakers li {min-height:320px;flex: 0 0 auto; box-sizing: border-box;}
+}
+@media screen and (min-color-index:0) 
+and(-webkit-min-device-pixel-ratio:0)  and (max-width: 479px) {
+	.speakers ul {flex-direction: column;
+	}
+	.speakers li {min-height:320px;}
+}
+	</style>
+    
+</head>
+<body id="home">
+<aside>
+    The building blocks of web performance: Getting to "fast enough?"</aside>
+<header>
+<hgroup>
+<ul>
+
+<li><a href="/talks">Speakers &amp; Talks</a></li>
+
+<li><a href="/sponsors">Sponsors</a></li>
+
+<li><a href="/venue">Venue</a></li>
+
+<li><a href="/diversity">Diversity</a></li>
+
+<li class="cta"><a href="https://perfmatters.lilregie.com" title="Register Now">REGISTER</a></li></ul>
+
+<a href="/" class="circle">
+	<h1>#PerfMatters</h1>
+	<h2>Redwood City, CA <br/>
+	April 2 &amp; 3, 2019</h2>
+</a>
+
+	
+		<div class="about">
+		<h2>What is <span>#PerfMatters</span>?</h2>
+		<p>#PerfMatters Conference is the web performance conference in Redwood City, California with talks by internationally renowned performance developers. Our focus is on front-end web performance.</p>
+			<div class="buttons">
+				<a class="btn-cta" href="#reg">Register Now</a> <a href="workshop/" title="Find Out about our workshop" class="btn">Workshop</a> 
+			</div>
+            <p>workshop and hackathon information coming soon.
+		</div>
+	</hgroup>
+</header>
+<main>
+
+<section class="speakers" id="speakers">
+<h2>Speakers</h2>
+<ul>
+<li>
+	<figure><a href="talks/#addy"><img data-src="/avatars/addy.jpg" style="background-color: white" alt="Addy Osmani"></a>	<figcaption><span class="name">Addy Osmani</span><span class="bio">
+ Engineering Manager<br/> Google</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#sarah"><img data-src="/avatars/sarah.jpg" style="background-color: white" alt="Sarah Drasner"></a>	<figcaption><span class="name">Sarah Drasner</span><span class="bio">
+ Senior Developer 🥑<br/> Microsoft</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#pat"><img data-src="/avatars/pat.jpg" style="background-color: white" alt="Patrick Meenan"></a>	<figcaption><span class="name">Patrick Meenan</span><span class="bio">
+ Software Engineer<br/> Cloudflare</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#ewa"><img data-src="/avatars/ewa.jpg" style="background-color: white" alt="Ewa Gasperowicz"></a>	<figcaption><span class="name">Ewa Gasperowicz</span><span class="bio">
+ Developer Programs Engineer<br/> Google</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#shubhie"><img data-src="/avatars/shubhie.jpg" style="background-color: white" alt="Shubhie Panicker"></a>	<figcaption><span class="name">Shubhie Panicker</span><span class="bio">
+ Staff Software Engineer<br/> Google Chrome</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#erica"><img data-src="/avatars/erica.jpg" style="background-color: white" alt="Erica Stanley"></a>	<figcaption><span class="name">Erica Stanley</span><span class="bio">
+ Engineering Manager<br/> SalesLoft</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#tim"><img data-src="/avatars/tim.jpg" style="background-color: white" alt="Tim Kadlec"></a>	<figcaption><span class="name">Tim Kadlec</span><span class="bio">
+ Performance Consultant<br/> Tim Kadlec Consulting LLC</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#anthonia"><img data-src="/avatars/anthonia.jpg" style="background-color: white" alt="Anthonia Carter"></a>	<figcaption><span class="name">Anthonia Carter</span><span class="bio">
+ Fulbright Scholar<br/> US-UK Fulbright Commission</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#tatiana"><img data-src="/avatars/tatiana.jpg" style="background-color: white" alt="Tatiana Mac"></a>	<figcaption><span class="name">Tatiana Mac</span><span class="bio">
+ Community Engineer<br/> Interactive Art Director</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#rick"><img data-src="/avatars/rick.jpg" style="background-color: white" alt="Rick Viscomi"></a>	<figcaption><span class="name">Rick Viscomi</span><span class="bio">
+ Senior Developer Programs Engineer<br/> Google</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#katie"><img data-src="/avatars/katie.jpg" style="background-color: white" alt="Katie Sylor-Miller"></a>	<figcaption><span class="name">Katie Sylor-Miller</span><span class="bio">
+ Staff Software Engineer<br/> Etsy</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#keerthana"><img data-src="/avatars/keerthana.jpg" style="background-color: white" alt="Keerthana Krishnan"></a>	<figcaption><span class="name">Keerthana Krishnan</span><span class="bio">
+ Software Engineer<br/> Baker Hughes, A GE Company</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#ryan"><img data-src="/avatars/ryan.jpg" style="background-color: white" alt="Ryan Townsend"></a>	<figcaption><span class="name">Ryan Townsend</span><span class="bio">
+ CTO<br/> SHIFT Commerce</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#mina"><img data-src="/avatars/mina.jpg" style="background-color: white" alt="Mina Markham"></a>	<figcaption><span class="name">Mina Markham</span><span class="bio">
+ Senior Engineer<br/> Slack</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#robert"><img data-src="/avatars/robert.jpg" style="background-color: white" alt="Robert Aboukhalil"></a>	<figcaption><span class="name">Robert Aboukhalil</span><span class="bio">
+ Bioinformatics Software Engineer<br/> Invitae</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#lauren"><img data-src="/avatars/lauren.jpg" style="background-color: white" alt="Lauren Younger Nagel"></a>	<figcaption><span class="name">Lauren Younger Nagel</span><span class="bio">
+ Product Line Lead, DPM<br/> Akamai</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#gemma"><img data-src="/avatars/gemma.jpg" style="background-color: white" alt="Gemma Petrie"></a>	<figcaption><span class="name">Gemma Petrie</span><span class="bio">
+ Mozilla<br/> Senior Staff User Researcher</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#eric"><img data-src="/avatars/eric.jpg" style="background-color: white" alt="Eric Bailey"></a>	<figcaption><span class="name">Eric Bailey</span><span class="bio">
+ Designer<br/> thoughtbot</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#buddy"><img data-src="/avatars/buddy.jpg" style="background-color: white" alt="Buddy Brewer"></a>	<figcaption><span class="name">Buddy Brewer</span><span class="bio">
+ Performance Consultant<br/> </span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#heather"><img data-src="/avatars/heather.jpg" style="background-color: white" alt="Heather McGaw"></a>	<figcaption><span class="name">Heather McGaw</span><span class="bio">
+ Staff User Researcher<br/> Mozilla</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#mandy"><img data-src="/avatars/mandy.jpg" style="background-color: white" alt="Mandy Michael"></a>	<figcaption><span class="name">Mandy Michael</span><span class="bio">
+ Front End Developer Manager<br/> Seven West Media</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#alfredo"><img data-src="/avatars/alfredo.jpg" style="background-color: white" alt="Alfredo Lopez"></a>	<figcaption><span class="name">Alfredo Lopez</span><span class="bio">
+ Director of Engineering<br/> Hearst</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#greg"><img data-src="/avatars/greg.jpg" style="background-color: white" alt="Greg Tatum"></a>	<figcaption><span class="name">Greg Tatum</span><span class="bio">
+ Browser Engineer<br/> Mozilla</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#nathan"><img data-src="/avatars/nathan.jpg" style="background-color: white" alt="Nathan Bower"></a>	<figcaption><span class="name">Nathan Bower</span><span class="bio">
+ Sr. Product Manager, Performance<br/> Zillow Group</span></figcaption>
+    </figure>
+  
+</li>
+<li>
+	<figure><a href="talks/#estelle"><img data-src="/avatars/estelle.jpg" style="background-color: white" alt="Estelle Weyl"></a>	<figcaption><span class="name">Estelle Weyl</span><span class="bio">
+ Contractor, MDN Web Docs<br/> Standardista</span></figcaption>
+    </figure>
+  
+</li>
+
+
+</ul>
+</section>
+<section class="reg" id="reg">
+	<h1>Register for #PerfMatters Conference</h1>
+	<p>April 2 &amp; 3, 2019 at Cañada College</p>
+    <style>
+		caption { 
+			font-size: 2em; 
+			font-weight: bold; 
+			padding-top: 2em;
+		} 
+		tbody tr {
+			opacity: 0.35;
+			} 
+		tr.active {
+			opacity: 1;
+		}
+		.reg div {
+			display: flex; 
+			flex-flow: wrap; 
+			justify-content: space-between;	
+		}
+		</style>
+	
+		<p style="text-align:center"><a href="https://perfmatters.lilregie.com" title="Register Now" class="cta" style="margin: 1.5em auto 0.5em;">Register Now</a> <br/><a href="/diversity/">Scholarship Info</a></p><div>
+	<table>
+	<caption>Conference (Only)</caption>
+		<thead><tr>
+			<th width="38%">Ticket Type</th>
+			<th width="25%">Sale Ends</th>
+			<th width="25%">Available</th>
+			<th width="12%">Cost</th>
+		</tr></thead>
+		<tbody>
+		<tr>
+			<td>Blind Bird</td>
+			<td>October 30, 2018</td>
+			<td>EXPIRED</td>
+			<td>$329</td>
+		</tr>
+		<tr>
+			<td>Very Early Bird</td>
+			<td>November 30, 2018</td>
+			<td>EXPIRED</td>
+			<td>$379</td>
+		</tr>
+		<tr  class="active">
+			<td>Early Bird</td>
+			<td>January 31, 2019</td>
+			<td>AVAILABLE</td>
+			<td>$429</td>
+		</tr>
+		<tr>
+			<td>Regular Ticket</td>
+			<td>March 14, 2019</td>
+			<td>NOT YET</td>
+			<td>$479</td>
+		</tr>
+		<tr>
+			<td>Conference Only</td>
+			<td>April 3, 2019</td>
+			<td>NOT YET</td>
+			<td>$579</td>
+		</tr>
+	</tbody>
+	</table>
+	
+	
+<table>
+	<caption>Conference &amp; Hackathon</caption>
+		<thead><tr>
+			<th width="38%">Ticket Type</th>
+			<th width="25%">Sale Ends</th>
+			<th width="25%">Available</th>
+			<th width="12%">Cost</th>
+		</tr></thead>
+		<tbody>
+		<tr>
+			<td>Blind Bird</td>
+			<td>October 30, 2018</td>
+			<td>EXPIRED</td>
+			<td>$369</td>
+		</tr>
+		<tr>
+			<td>Very Early Bird</td>
+			<td>November 30, 2018</td>
+			<td>EXPIRED</td>
+			<td>$419</td>
+		</tr>
+		<tr   class="active">
+			<td>Early Bird</td>
+			<td>January 31, 2019</td>
+			<td>AVAILABLE</td>
+			<td>$469</td>
+		</tr>
+		<tr>
+			<td>Regular Ticket</td>
+			<td>March 14, 2019</td>
+			<td>NOT YET</td>
+			<td>$529</td>
+		</tr>
+		<tr>
+			<td>You're late</td>
+			<td>March 30, 2019</td>
+			<td>NOT YET</td>
+			<td>$654</td>
+		</tr>
+	</tbody>
+	</table>	
+	
+	
+	<table>
+	<caption>Conference &amp; Workshop</caption>
+		<thead><tr>
+			<th width="38%">Ticket Type</th>
+			<th width="25%">Sale Ends</th>
+			<th width="25%">Available</th>
+			<th width="12%">Cost</th>
+		</tr></thead>
+		<tbody>
+		<tr>
+			<td>Blind Bird</td>
+			<td>October 30, 2018</td>
+			<td>EXPIRED</td>
+			<td>$608/$528</td>
+		</tr>
+		<tr>
+			<td>Very Early Bird</td>
+			<td>November 30, 2018</td>
+			<td>EXPIRED</td>
+			<td>$708</td>
+		</tr>
+		<tr  class="active">
+			<td>Early Bird</td>
+			<td>January 31, 2019</td>
+			<td>AVAILABLE</td>
+			<td>$808</td>
+		</tr>
+		<tr>
+			<td>Regular Ticket</td>
+			<td>March 14, 2019</td>
+			<td>NOT YET</td>
+			<td>$908</td>
+		</tr>
+		<tr>
+			<td>You're late!</td>
+			<td>April 1, 2019</td>
+			<td>NOT YET</td>
+			<td>$1,108</td>
+		</tr>
+	</tbody>
+	</table>
+	</div>
+		<p><a href="https://perfmatters.lilregie.com" title="Register Now" class="cta" style="margin: 1.5em auto 0">Register Now</a> <br/>&nbsp; <a href="/diversity/">Scholarship Info</a>	<p><small>Prices subject to change. No refunds. Tickets are transferable with notice. Getting tickets for a 5 or more people? Get $50 off for the fifth person and everyone thereafter. Group of 10 or more? Contact us at <a href="mailto:tickets@perfmattersconf.com">tickets@perfmattersconf.com</a></small>
+</section>
+
+</main>
+<footer>
+	<ul>
+
+<li><a href="/talks">Speakers &amp; Talks</a></li>
+
+<li><a href="/sponsors">Sponsors</a></li>
+
+<li><a href="/venue">Venue</a></li>
+
+<li><a href="/diversity">Diversity</a></li>
+
+<li class="cta"><a href="https://perfmatters.lilregie.com" title="Register Now">REGISTER</a></li></ul>
+
+	<small>&copy; 2019 <a href="/">#PerfMatters: Web Performance Conference</a> &middot; <a href="/code/">Code of Conduct</a> &middot; <a href='/support/'>Become a sponsor</a> </small></footer>
+<script>
+	/* download all defered images */
+	[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = function() {
+    img.removeAttribute('data-src');
+  };
+});
+
+	/* download defered css */
+	var styles = document.createElement('link');
+	styles.setAttribute('rel', 'stylesheet');
+	styles.setAttribute('href', 'css/styles.css');
+	var head = document.querySelector('head');
+	head.appendChild(styles);
+
+
+</script>
+</body>
+</html>

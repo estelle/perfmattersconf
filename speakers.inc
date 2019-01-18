@@ -4,6 +4,7 @@ $name = $_GET["name"];
 if ($name) {
 	$results = getInformation($name);
 	$fullname = $results->fullname;
+	$jpg      = $results->jpg;
 	$job      = $results->job;
 	$company  = $results->company;
 	$twitter  = $results->twitter;
@@ -22,373 +23,307 @@ if ($name) {
 	$talk_title = '';
 	$talk_description = '';
 	$about = '';
+	$jpg = '';
 	switch ($name) {
-		case 'paul':
-			$fullname = 'Paul Irish';
-			$job      = 'Performance Engineer';
-			$company  = 'Google';
-			$twitter  = 'paul_irish';
-			$talk_title = 'Web Perf Metrics & Measurement in 2018';
-			$talk_description = 'The landscape of measuring your page&rsquo;s performance has been evolving quick. Paul will provide an insider&rsquo;s view to the modern approaches for evaluating page load and runtime responsiveness. We&rsquo;ll cover lab-based tooling and client-side APIs so you can get a complete and accurate understanding of your page&rsquo;s performance.';
-			$about    = "Chrome developer tools aficionado (understatement) and Google web performance engineer, will present web performance metrics and measurements in 2018";
-		    break;
 
-		case 'marcy':
-			$fullname = 'Marcy Sutton';
-			$job      = 'Senior Front-End Engineer';
-			$company  = 'Deque Systems';
-			$twitter  = 'marcysutton';
-			$talk_title = 'React/Virtual DOM and accessibility';
-			$talk_description = 'The JavaScript frameworks gaining the most market share are ones that implement a virtual DOM. React is one such framework that dominated the industry with its new approaches to browser rendering and code organization conventions; by now, its reach and popularity are difficult to ignore. Any time a big shift in web development practices comes along, it&rsquo;s worthwhile to investigate how it might impact accessibility and performance. </p><p>
-The most notable differences in React are its encouragement of modules packaging HTML and CSS together with JavaScript, and applying them to a Virtual DOM. Instead of manipulating parts of a page directly with many small updates–like you would with a tool like jQuery–changes are aggregated in memory and only applied if there are differences in the HTML sub-tree. For large-scale web applications, compiling views virtually before applying them as pixels has proven performance benefits. There are also other wins related to code architecture and ergonomics that have developers across the world reaching for React as part of their web development stack. This begs the question: does the shift to React.js affect people with disabilities relying on assistive technologies? In this talk, we&rsquo;ll look at how React impacts accessibility, from end-user experience to automated testing.';
-			$about	  = "Marcy Sutton works on web accessibility tools at Deque Systems, a company focused on digital equality. In 2016, O&rsquo;Reilly gave Marcy a Web Platform Award for her work in accessibility. She loves co-leading the Accessibility Seattle meetup and a code club for Girl Develop It Bellingham. When away from the keyboard, Marcy can be found hiking with her dog, riding a bicycle, or snowboarding.";
-		    break;
+			case 'sarah':
+				$fullname = 'Sarah Drasner';
+				$job      = 'Senior Developer 🥑';
+				$company  = 'Microsoft';
+				$twitter  = 'sarah_edo';
+				$talk_title = 'Sarah will be presenting a brilliant talk about SVG.';
+				$talk_description = 'TBD';
+				$about = "Sarah Drasner is an award-winning Speaker, Vue core team member, Senior Developer 🥑 at Microsoft, and Staff Writer at CSS-Tricks. Sarah is also the co-founder of Web Animation Workshops, with Val Head. She’s the author of SVG Animations from O’Reilly and has given Frontend Masters workshops on Vue.js and Advanced SVG Animations. Sarah is formerly Manager of UX Design & Engineering at Trulia (Zillow).";
+				$jpg = 'jpg';
+			    break;
 
-		case 'leonie':
-			$fullname = 'Léonie Watson';
-			$job      = 'Principal Engineer';
-			$company  = ', Paciello Group and W3C Web Platform WG co-chair';
-			$twitter  = 'leoniewatson';
-			$talk_title = "There&rsquo;s more to performance than meets the eye";
-			$talk_description = "What does performant look like when you can&rsquo;t see the screen? The browser does more with the DOM than visually render content. It presents an accessibility tree that&rsquo;s queried using platform accessibility APIs. Different browser processing models mean that Assistive Technologies (AT) are changing the way they obtain accessibility information, but is that having an impact on performance, and what happens when we introduce a new JavaScript accessibility API into the equation?";
-			$about    = '<p>L&eacute;onie Watson (AKA Tink) began using the internet in 1993, turned it into a web design career in 1997, and (despite losing her eyesight along the way) has been enjoying herself thoroughly ever since.</p>
-<p>L&eacute;onie is Communications director and Principal engineer at <a href="http://paciellogroup.com">The Paciello Group (TPG)</a>, and also works with Government Digital Service (GDS) on the <a href="http://gov.uk">GOV.UK platform</a>.</p>
-<p>As a member of the <a href="https://www.w3.org/2002/ab/">W3C Advisory Board</a>, and co-chair of the <a href="https://www.w3.org/WebPlatform/WG/">W3C Web Platform WG</a> (working on specs like HTML5), L&eacute;onie is closely involved with the web standards community. She is frequently asked to talk about web standards and/or accessibility at <a href="http://ljwatson.github.io/decks">conferences</a>.</p>
-<p>In her spare time L&eacute;onie blogs on <a href="http://tink.uk">tink.uk</a>, writes for tech journals like <a href="https://www.smashingmagazine.com/2015/03/web-accessibility-with-accessibility-api/">Smashing magazine</a>, <a href="https://www.sitepoint.com/tips-accessible-svg/">SitePoint.com</a> and <a href="http://www.creativebloq.com/netmag/l-onie-watson-giving-damn-about-what-youre-building-8135487">Net magazine</a>. She also loves cooking, dancing and drinking tequila (although not necessarily in that order).</p>';
-		    break;
-
-		case 'katie':
-			$fullname = 'Katie Sylor-Miller';
-			$job      = 'Staff Software Engineer';
-			$company  = 'Etsy';
-			$twitter  = 'ksylor';
-			$talk_title = 'Raiders of the Fast Start: Frontend Performance Archaeology';
-			$talk_description =  "There are a lot of books, articles, and online tutorials out there with fantastic advice on how to make your websites performant. It all seems easy in theory, but applying best practices to real-world code is anything but straightforward. Diagnosing and fixing frontend performance issues on a large legacy codebase is like being an archaeologist excavating the remains of a lost civilization. You don&rsquo;t know what you will find until you start digging! </p>
-
-<p>Pick up your trowels and come along with Etsy&rsquo;s Frontend Systems team as we become archaeologists digging into frontend performance on our large, legacy mobile codebase. I&rsquo;ll share real-life lessons you can use to guide your own excavations into legacy code:</p>
-
-<ul> <li>What tools and metrics we used to diagnose issues and track progress.</li> 
-<li>How we went beyond server-driven best practices to focus on the client.</li> 
-<li> Which fixes successfully increased conversion, and which didn&rsquo;t.</li>
-</ul> 
- 
-<p>Our work, like all good archaeology, went beyond artifacts and unearthed new insights into our culture. We at Etsy pride ourselves on our culture of performance, but, like all cultures, it needs to adapt and reinvent itself to account for changes to the landscape. Based on what we&rsquo;ve learned, we are making the case for a new, organization-wide, frontend-focused performance culture that will solve the problems we face today.";
-			$about    = "Katie Sylor-Miller is a Senior Software Engineer on the Frontend Systems team at Etsy, where she advocates for and implements frontend best practices in collaboration with product engineers and designers. She is passionate about frontend architecture, design systems, style guides, accessibility, frontend performance, and teaching others. Katie created ohshitgit.com to share her hard-won knowledge of how to get out of your git messes with a bit of humor (and a lot of swears).";
-		    break;
-
-		case 'eli':
-			$fullname = 'Eli Fitch';
-			$job      = 'Senior Web Application Engineer';
-			$company  = 'MapBox';
-			$twitter  = 'EliFitch';
-			$talk_title = 'Perceived Performance: The only kind that really matters';
-			$talk_description = "Web performance has made incredible strides in the last few years, which has presented developers with a new problem: How do we efficiently improve our app&rsquo;s performance now that we&rsquo;ve plucked the low hanging fruit from the vine?  How do we make an API driven app faster when the performance bottleneck are API requests?  The answer is directly manipulating users' perceptions in order to make our projects *feel* faster than they really are.</p>
-
-<p>This isn&rsquo;t easy.  Humans are imprecise beings, and how we perceive the world around us is fraught with fascinating quirks.  Improving perceived performance is likewise an incredibly challenging prospect.  If people don&rsquo;t perceive time accurately, how can you possibly hope to build to meet this nebulous standard?</p>
-
-<p>In this talk, Eli will discuss the psychological basics of how people sense time, and how to use this understanding to create experiences that feel fast, tactile, and create the illusion of speed.  He&rsquo;ll break down real world, actionable guidelines on:</p>
-<ul>
-<li>When it makes sense to focus on perceived performance over outright speed
-</li><li>How to turn the difference between active and passive mental states to our advantage
-</li><li>How to make \"fake\" progress bars feel genuine
-</li><li>How to cleverly craft animations to make loading seem faster
-</li><li>When to use unconventional event listeners to increase perceived speed
-</li><li>Predictive preloading: The art of anticipating user behavior and loading assets just in time</li></ul>";
-			$about  = "Eli Fitch is a developer with a passion for web performance, animation, and WebGL. He makes tools to create beautiful interactive maps at Mapbox, a startup in his hometown of Washington, DC. He also organizes the DC CodePen meetup and dabbles in design, 3D art, and game development. When not in front of a computer, he restores his perpetually broken stable of 1970s motorcycles and attempts to keep his historic row house from collapsing in on itself like a dying star.";
-		    break;
-
-		case 'jem':
-			$fullname = 'Jem Young';
-			$job      = 'Senior Software Engineer';
-			$company  = 'Netflix';
-			$twitter  = 'jemyoung';
-			$talk_title = 'Modern Performance in the Year of the Dog';
-			$talk_description = 'It&rsquo;s 2018 and with the explosion of people joining the internet for the first time, building a performant application is more crucial than ever before. Unfortunately with all the new tools, libraries, and measurements, it&rsquo;s difficult to even know where to start when it comes to building an application from scratch. In this talk, we&rsquo;re going to cover the steps and methodologies that the modern web developer should keep in mind when crafting code. From choosing the right libraries and understanding application architecture, all the way to debugging common performance issues, we&rsquo;re going to learn how to build a modern, production ready web application.';
-			$about    = "Jem Young is a (very) tall engineer at Netflix who loves dogs, reading, and clean code. He really enjoys working across the stack but his true passion lies in JavaScript and building a clean user experience. He believes that empathy is the key to building an effective UI and when he's not out riding his bike, you can find him hassling other engineers to write more tests.";
-		    break;
-
-		case 'bianca':
-			$fullname = 'Bianca Berning';
-			$job      = 'Font Engineer';
-			$company  = 'Dalton Maag';
-			$twitter  = 'bianca_berning';
-			$talk_title = 'The Potential of Variable Fonts';
-			$talk_description = 'One OpenType variable font file can contain the equivalent of multiple individual fonts and allows for a near infinite range of font styles, with smooth interpolation between weights, width and other design axes. With my presentation I want to answer the following questions: What is the difference between a static and a variable font? What are the performance benefits of variable fonts in comparison to static fonts? Why do designers and typographers care about a range of font styles? How can variable fonts improve the user experience?';
-			$about    = "Bianca Berning is a font engineer and type designer and heads up the Skills and Process department for font foundry Dalton Maag. She is an active member of Alphabettes, ATypI and the Unicode Consortium; and she coordinates a mentorship program with the aim to help students and professional newcomers immerse themselves in the industry.";
-		    break;
-
-		case 'vitor':
-			$fullname = 'Vitor Talaia';
-			$job      = 'Junior Developer';
-			$company  = 'Code Miner 42';
-			$twitter  = 'vitortalaia';
-			$talk_title = 'Accelerated Mobile Pages: The good, the bad and the ugly';
-			$talk_description = "The purpose of this talk is to introduce the Accelerated Mobile Pages (AMP) project, a way to make web pages load insanely fast on mobile devices. How it works, its benefits —and why it&rsquo;s a hot topic for media publishers—, its downsides —and why developers are criticizing it.";
-			$about    = "Developer at Codeminer 42 that also likes to watch Formula One races; Currently working on implementing​ an AMP blog version for a big brazilian e-commerce platform.";
-		    break;
-
-		case 'yoav':
-			$fullname = 'Yoav Weiss';
-			$job      = 'Principal Architect';
-			$company  = 'Akamai';
-			$twitter  = 'yoavweiss';
-			$talk_title = 'Faster Bytes is Not Always Enough - Why is The Web Slow? (and what can we do about it)';
-			$talk_description = "Our networks are getting exceedingly faster. Unfortunately, that&rsquo;s not always enough to make sure users perceive their experience as fast when they are loading your web site. So, how do users perceive web performance? What does a browser do when it loads a page? And what makes a web page \"fast\"? </p>
-
-<p>In this talk, Yoav Weiss will go over the various processing modes that a browser goes through when it loads web pages. He will explain the connection between the various networking protocols and web performance as perceived by the user.
-He will talk about the different metrics we use when measuring the performance of a page, and discuss how changes in the web&rsquo;s content layer are impacting those metrics and the user experience. Finally, he&rsquo;ll detail performance API and protocol enhancements that can help us remedy the situation and make our customer sites faster.";
-			$about    = "Yoav Weiss is a principal architect at Akamai, where he focuses on making the Web platform faster by adding performance-related features to browsers as well as to Akamai&rsquo;s CDN. Yoav has been working on mobile Web performance for longer than he cares to admit. He takes image bloat on the Web as a personal insult, which is why he joined the Responsive Image Community Group and implemented the various responsive images features in Blink and WebKit. When he&rsquo;s not writing code, he&rsquo;s probably slapping his bass, mowing the lawn in the French countryside, or playing board games with his family.";
-		    break;
-
-		case 'sharon':
-			$fullname = 'Sharon Steed';
-			$job      = 'Founder/CEO';
-			$company  = 'Communilogue, LLC';
-			$twitter  = 'SharonSteed';
-			$talk_title = 'Cultivating community: building powerful relationships by communicating with empathy';
-			$talk_description = "One of our most valuable commodities as humans is our ability to build relationships - both personally and professionally. And the key to any successful relationship is empathy: being able to understand someone, connect with someone and view the world through their eyes. The problem is that the empathy needed to cultivate relationships, foster collaboration and build strong communities is often times lacking, especially when we are around people who are different from us. And if empathy is the tie that binds us, then vulnerability is the thread that holds that rope together. It&rsquo;s time to change the status quo in tech.</p>
-
-<p>Let&rsquo;s explore the impact of empathy on communities. We&rsquo;ll discuss how communication plays a role in building successful relationships; how empathy fosters highly collaborative teams; and finally we&rsquo;ll talk about true accessibility. Why? Because innovation is at it&rsquo;s best when it&rsquo;s inclusive. And to be inclusive, you must be empathetic.";
-			$about    = "Sharon Steed is a corporate empathy and communications consultant as well as an international keynote speaker. Sharon is a subject matter expert on communicating with empathy. She has spoken at companies on improving team communication and collaboration; at tech conferences on vulnerability as an asset; and has given a TEDx talk on empowering insecurities. A lifelong stutterer, she uses her speech impediment to teach both what empathy is and how to be empathetic.</p>
-
-<p>Her corporate empathy practice teaches organizations how to build a collaborative culture using principles of empathy. Sharon works with teams looking to boost productivity through improving collaboration as well as with individuals on effective, productive and positive communication strategies.</p>
-
-<p>Sharon&rsquo;s course \"Communicating with Empathy\" is available on both LinkedIn Learning and Lynda.com.";
-		    break;
-
-		case 'lin':
-			$fullname = 'Lin Clark';
-			$job      = 'Code Cartoonist';
-			$company  = 'Mozilla';
-			$twitter  = 'linclark';
-			$talk_title = 'Making the browser faster';
-			$talk_description = "There are lots of talks about how web developers can make their sites run faster. In this talk, let&rsquo;s turn the tables and look at how browser developers can make their browsers faster. </p>
-
-<p>We&rsquo;ll see how a CSS engine can be modified to run up to 18x faster, and how you can get up to 400 frames per second by rendering like a 3D game engine. Then we&rsquo;ll talk about other future directions to explore in speeding up the browser.";
-			$about    = "Lin Clark is a code cartoonist. She takes complex coding concepts and turns them into cartoons. She also works in Mozilla&rsquo;s Emerging Technologies group, where she gets to tinker with things like WebAssembly, Servo, and Rust. In previous lives, she worked at npm, was a core contributor to open source projects like Firefox&rsquo;s developer tools, and contributed to HTML data standards.";
-		    break;
-
-		case 'jeremy':
-			$fullname = 'Jeremy Wagner';
-			$job      = 'Web Developer';
-			$company  = 'Freelance';
-			$twitter  = 'malchata';
-			$talk_title = 'Demystifying Performance Timings';
-			$talk_description = "If you&rsquo;ve ever experimented with the navigation and resource timing APIs in the browser, it can be a daunting task to understand the performance timings they provide. What&rsquo;s the difference between connectStart and fetchStart? Where does SSL time figure in? What the heck does domInteractive mean, and how is that different from domComplete? What order do these timings even occur in?</p>
-
-<p>In this talk, we&rsquo;re going to demystify these performance timings. We&rsquo;ll define them, place them in proper order, and you&rsquo;ll learn how to quantify the time your site and its assets are taking to load in distinct phases. All you&rsquo;ll need is a basic working knowledge of JavaScript, and simple arithmetic skills. If you&rsquo;ve wanted to make sense of performance timings, this is the talk for you!";
-			$about    = "Jeremy Wagner is a web developer living and working in Saint Paul, Minnesota. He is the author of the Manning Publications book Web Performance in Action, a companion guide for the performance-minded web developer. Read his meandering ramblings on the web at https://jeremywagner.me, or check him out on Twitter @malchata.";
-		    break;
-
-		case 'javier':
-			$fullname = 'Javier Garza';
-			$job      = 'Senior Enterprise Architect';
-			$company  = 'Akamai';
-			$twitter  = 'jjaviergarza';
-			$talk_title = 'Optimize your life';
-			$talk_description = 'Javier has been focused on optimizing the Web for over a decade, working with the largest Companies who are changing the world to ensure the Web is fast and secure for everybody. On this inspiring talk Javier will explain how this quest for optimizing everything expanded from his work, to other areas of his life (like for example reducing a long commute in half), and what you can do with all that extra time.';
-			$about    = "Multi-lingual technology evangelist that loves taking things apart, understanding how they work and finding the best/most practical way of improving them. Started hacking basic-based computer games at the age of 9. I have been working with computers the past 25 years in Spain, Germany and USA (half of those at Akamai helping the largest Websites on the Internet run faster and more secure).";
-		    break;
-
-		case 'simon':
-			$fullname = 'Simon Hearne';
-			$job      = 'Principle Software Engineer';
-			$company  = 'Akamai';
-			$twitter  = 'simonhearne';
-			$talk_title = 'Third-party content: the weak link in the chain';
-			$talk_description = "Third-party content is the thorn in the side of many a good website. From A/B testing that delays render to advertising networks that bleed user data, we depend on services over which we have no control.
-In an ideal world we could attribute a user experience cost to each third-party provider, allowing marketing, eCommerce and business intelligence to make 
-educated decisions about which providers should stay and which should go.</p>
-
-<p>The Resource Timing API allows site owners to measure how third-parties perform for every single pageview. Combining this data with business intelligence provides new insight to the impact of third-party providers on business performance.</p>
-
-<p>This talk explores some of the toughest questions in web performance, backed up with huge amounts of data:</p>
-<ul>
-<li>Will moving to a new advertising network increase ad revenue?</li>
-<li>Is A/B testing losing more revenue that it gains?</li>
- <li>Does measuring web performance impact web performance?</li></ul>
-
-<p>Data for this talk has been gathered from over 500,000 websites, with detailed investigation performed on millions of pageviews from a small number of sites.</p> 
-
-<p>You will leave this talk armed with the tools and knowledge to measure the performance of third-party providers and provide compelling arguments for whether they should stay or go.";
-			$about    = "Simon is an engineer who specializes in web performance visualizations.";
-		    break;
-
-		case 'dawn':
-			$fullname = 'Dawn Parzych';
-			$job      = 'Director of Product and Solution Marketing';
-			$company  = 'Catchpoint';
-			$twitter  = 'dparzych';
-			$talk_title = 'The Power of Storytelling';
-			$talk_description = "If you want people to pay attention, learn, or remember something important, tell them a story. Stories help us connect with others and are easy for our brain to remember. Stories are all around us in tech from the user stories we create when developing features to the marketing messages crafted. But did you know stories are also hidden inside of metrics? </p>
-
-<p>Organizations today are measuring hundreds or even thousands of metrics to measure performance including front-end, back-end, and business metrics.  What story are these metrics telling us? In this session learn how to identify who your audience is and craft a story using metrics that will resonate with them. Understand which metrics matter and should be the star of your story and who the supporting characters are. ";
-			$about    = '<a href="https://twitter.com/dparzych">Dawn Parzych</a> is a Director at Catchpoint. Prior to entering the tech field, Dawn obtained a masters degree in Psychology. She enjoys researching, writing and speaking about the intersection of technology and psychology with a focus on application performance, bias, and culture.  She has spent over 15 years working in the application performance space in a wide variety of roles at Instart Logic, F5 Networks and Gomez.
-';
-		    break;
-
-		case 'gopal':
-			$fullname = 'Gopal Brugalette';
-			$job      = 'Principal Software Engineer';
-			$company  = 'Concur';
-			$twitter  = '';
-			$talk_title = 'Understand your customers, think like e-commerce';
-			$talk_description = "What is important for an e-commerce site? Everyone knows that performance matters. A 100ms slowdown can mean millions of dollars in lost revenue.  But user insights are also a critical aspect of managing an e-commerce site.  What are the users doing? How, when and why? How fast is fast enough?  How does site performance impact user behavior?  What really affects the customer experience? If you are not asking these questions for your site, you should be, just like an e-commerce site.  The answers provide the data your company needs to drive product development, a quality site and ultimately the business. Gopal Brugalette shares his experiences in analyzing e-commerce and non-ecommerce sites.  He describes the data science methodologies and tools, including open-source, he uses to answer these questions.  He discusses how to think about the customer funnel, define conversion rate equivalents, measure user behavior and determine how performance and other factors impact your customers.  This yields actionable data and he shares examples of insights gained from this approach.  Learn these techniques to analyze the users of your website and enhance your testing, develop better software and ultimately improve your customers' experience.";
-			$about    = "Gopal is a Performance Architect/Principal Engineer. His experience spans e-Commerce, Financial and various Technology industries. He is currently developing a machine-learning based system for analyzing production and test data. His responsibilities have included preparing sites for peak events, user behavior insights, DevOps transformations, applying data science and machine learning to performance problems, developing engineering frameworks and expanding performance engineering activities into the development cycle and production. He has presented at numerous industry events and been featured in online magazines.  Previous to IT, he was a researcher at the Center for Experimental Nuclear Physics.  Outside of IT, he enjoys developing his permaculture farm and woodworking.";
-		    break;
+			case 'addy':
+				$fullname = 'Addy Osmani';
+				$job      = 'Engineering Manager';
+				$company  = 'Google';
+				$twitter  = 'addyosmani';
+				$talk_title = 'The Cost Of JavaScript';
+				$talk_description = "As the world build sites that are more heavily reliant on JavaScript, we sometimes pay for what we send down in ways that we can’t always easily see.</p></p>Addy Osmani explains how and why JavaScript is the most expensive resource your site uses today—especially on mobile. Addy also shares tips for fixing JavaScript performance issues so everything loads quicker. A little discipline can help if you want your site to load and be interactive as soon as possible on mobile.";
+				$about    = "Addy leads a Speed team on Google Chrome trying to make the web fast.";
+				$jpg = 'jpg';
+			    break;
 			
-				case 'gopal2':
-				case 'gopalB':
-			$fullname = 'Gopal Brugalette';
-			$job      = 'Principal Software Engineer';
-			$company  = 'Concur';
-			$twitter  = 'betaorbust';
-			$talk_title = 'Building a Performance Engineering Culture';
-			$talk_description = "Building a performance engineering culture can be challenging. Competing demands of feature delivery, security, emerging technologies and operations can push performance to the bottom of the priority list. How can you influence your organization?
-You need effective methods for getting your message to engineers, product managers and the business. In this session, we share techniques that have proven effective. These include:</p>
-<ul><li>Framing your Vision</li>
-<li>Newsletters</li>
-<li>Advertising</li>
-<li>Office Hours</li>
-<li>Embedding with a Team</li>
-<li>Developing Relationships</li>
-<li>Building Frameworks</li>
-</ul>
-<p>All of these methods can be implemented at a grass-roots level. After this session, you&rsquo;ll have concrete tools to drive the performance engineering culture you envision.";
-			$about    = "Gopal is a Performance Architect/Principal Engineer. His experience spans e-Commerce, Financial and various Technology industries. He is currently developing a machine-learning based system for analyzing production and test data. His responsibilities have included preparing sites for peak events, user behavior insights, DevOps transformations, applying data science and machine learning to performance problems, developing engineering frameworks and expanding performance engineering activities into the development cycle and production. He has presented at numerous industry events and been featured in online magazines.  Previous to IT, he was a researcher at the Center for Experimental Nuclear Physics.  Outside of IT, he enjoys developing his permaculture farm and woodworking.";
+			case 'shubhie':
+				$fullname = 'Shubhie Panicker';
+				$job      = 'Staff Software Engineer';
+				$company  = 'Google Chrome';
+				$twitter  = 'shubhie';
+				$talk_title = 'Runtime Scheduling on the Web';
+				$talk_description = 'For consistent runtime performance -- UI should meet the needs of being responsive to user interactions (clicks, taps, scrolls, etc), rendering smooth animations, and fetching and rendering content in time. It is too difficult for web devs to reason about rendering pipeline and how to use combination of microtasks, rAF, settimeout, postmessage etc to achieve this. This talk covers our journey in developing a native scheduling API that can schedule browser tasks, framework code, application code, and third party code.';
+				$about    = 'Shubhie drives web performance efforts as an engineer on the Chrome Web Platform team at Google. She develops web performance oriented standardized platform APIs. Prior to Chrome, she worked on server infrastructure and web frameworks for products like Google Search, Google Photos, etc. Outside of Google, Shubhie is an avid Bay Area photographer and a staunch foodie.';
+				$jpg = 'jpg';
+			    break;
+
+			 case 'tim':
+				$fullname = 'Tim Kadlec';
+				$job      = 'Performance Consultant';
+				$company  = 'Tim Kadlec Consulting LLC';
+				$twitter  = 'tkadlec';
+				$talk_title = 'leading a pre-conference workshop "Getting Up to Speed with Performance"';
+				$talk_description =  '';
+				$about = "Tim is a performance consultant and trainer focused on building a web everyone can use. He is the author of High Performance Images (O'Reilly, 2016) and Implementing Responsive Design: Building sites for an anywhere, everywhere web (New Riders, 2012), and was a contributing author for Smashing Book #4: New Perspectives on Web Design (Smashing Magazine, 2013), and the Web Performance Daybook Volume 2 (O'Reilly, 2012). He writes about all things web at timkadlec.com. You can find him sharing his thoughts in a briefer format on Twitter at @tkadlec.";
+				$jpg = 'jpg';
+			    break;
+
+			case 'ewa':
+				$fullname = 'Ewa Gasperowicz';
+				$job      = 'Developer Programs Engineer';
+				$company  = 'Google';
+				$twitter  = 'devnook';
+				$talk_title = 'Keep your website fast for the times to come';
+				$talk_description =  "Top-notch speed performance in a big web project is as elusive as a tidy kid’s room - even if you manage to get there, it vanishes in the first 5 minutes of your distraction. New features, additional code, even new team members - all this can quickly make the site’s performance suboptimal again. Fortunately, there are some tricks that can prevent you from slipping on your performance targets. Tools like performance budgets, early regression indicators and monitoring tools and APIs can help you and your team to stay on track and deliver always best experience to your users.";
+				$jpg = 'jpg';
+				$about = "Ewa is a developer platform engineer at Google Web team. A front-end engineer, focused mainly on making the Web faster and more user friendly. Interested in Progressive Web Apps development and analysis, EWA is always keen to investigate common scenarios and emerging app design patterns.";
+			    break;
+
+
+			case 'anthonia':
+				$fullname = 'Anthonia Carter';
+				$job      = 'Fulbright Scholar';
+				$company  = 'US-UK Fulbright Commission';
+				$twitter  = 'AnthoniaCarter';
+				$talk_title = 'Leveraging the power of service design to boost web performance';
+				$talk_description =  "Designers know that performance is key to user experience. Do we limit ourselves to only individual user interactions? Service design is all about looking at the \"big picture,\" designing experiences that reach people across many touch points (interactions between users and a brand, product, or service) over time. Not every design decision will favor performance, and it is essential for designers and developers to understand how cumulative experiences impact conversion and retention rates. This talk will discuss how to use service design to model end to end user journeys and to uncover gaps in overall web performance.";
+				$jpg = 'svg';
+				$about = "Anthonia Carter is a multidisciplinary innovator, visual narrator, and a US Fulbright Scholar. With a background in mathematics, fine art, and design, her work occupies the critical space where art, science, and technology intersect. She uses a design-led approach to help enterprises realize innovation opportunities.";
+			    break;
+
+			case 'pat':
+				$fullname = 'Patrick Meenan';
+				$job      = 'Software Engineer';
+				$company  = 'Cloudflare';
+				$twitter  = 'patmeenan';
+				$talk_title = 'Resource loading, prioritization, HTTP/2 - oh my!';
+				$talk_description =  "How your website content is delivered can often be the most important aspect of a high-performance website. We will take a quick tour through how browsers schedule resources based on your content and then take a deep dive into how HTTP/2 changes things. We will go through the full stack from the front-end structure down into the network protocols and deployment architectures and expose the landmines, current state of the world and best-practices to ensure the best experience possible for your visitors.";
+				$about = "Patrick Meenan has been working on web performance in one form or another for the last 20 years and is currently working at Cloudflare to make the web faster. </p><p>
+Prior to that he worked at Google to make Chrome and the web faster. Patrick created the popular open source WebPagetest web performance measurement tool, runs the free instance of it at www.webpagetest.org, and can frequently be found in the forums helping site owners understand and improve their website performance.";
+				$jpg = 'svg';
+			    break;
+
+			case 'tatiana':
+				$fullname = 'Tatiana Mac';
+				$job      = 'Community Engineer';
+				$company  = 'Interactive Art Director';
+				$twitter  = 'tatianatmac';
+				$talk_title = 'How Privilege Defines Performance';
+				$talk_description =  "In theory, performance, accessibility, and inclusive design all have similar goals: Provide the best, most consistent experience to all people using the minimal amount of resources.</p><p>In practice, this often falls apart.</p><p>Product creators define what it means to be performant from where they stand, which is typically from places of privilege with unseen biases, struggling to find true empathy with their users. </p><p>Through this talk, we'll examine how to build conscientiously, looking within to resist systematic problems in order to create more truly performant, accessible, and inclusive systems for our users.";
+				$about = "Tatiana Mac is an independent interactive art director and designer currently based out of Portland, Oregon.Tatiana is passionate about representing our diverse communities through design, which means building design systems with performance, inclusivity, and accessibility in mind throughout the entire process. She believes that design plays a critical role in changing our social landscape—to dismantle exclusionary systems in favor of community-focused, inclusionary ones.</p><p>When she's not designing, she's editing for A List Apart, moonlighting as a wardrobe stylist, adding countries to her travelled-to list, learning languages, and cheering on her favourite sports teams.";
+				$jpg = 'svg';
+			    break;
+
+			case 'buddy':
+				$fullname = 'Buddy Brewer';
+				$job      = 'Performance Consultant';
+				$company  = '';
+				$twitter  = 'bbrewer';
+				$talk_title = 'Taking the Guesswork out of Performance Budgets';
+				$talk_description =  "Most people know how fast their sites are today thanks to the thriving ecosystem of free and commercial tools for monitoring site performance. But when it comes to how fast their sites should be, most site owners are still flying blind. As a result they guess at what their performance budgets should be - or worse - don’t bother setting performance budgets at all.<p></p>In this talk we will lay out a specific and repeatable process for solving this problem by working through the following key questions, using a little bit of machine learning and statistical analysis via freely available tools and OSS libraries:</p><ol><li>My monitoring tools give me so many different metrics that I don’t know where to begin optimizing. So which performance metric is my site’s “hero metric”? How do I find the metric that most accurately predicts whether my visitors will do what I want them to do?<li><li>What should the value of that metric be, and what would achieving that value do for my business? How do I pick a precise and defensible value to organize my team and my team’s goals around?</li><li>Even if I knew my site’s hero metric and what the value should be, I have more performance issues on my backlog than I have bandwidth to solve. How do I narrow and prioritize my focus to manageable clusters of visitors and issues to act on?</li><p>Answering these key questions will help you squeeze more value out of the tools and techniques you already have, so that you can achieve better outcomes for your users (and subsequently your business) in less time.";
+				$about = "Buddy helps companies find and fix performance problems that make customers unhappy and get in the way of revenue. A software engineer, product manager, and RUM entrepreneur at various points in his career, he has been building tools to help people make their sites faster for almost 20 years.";
+				$jpg = 'svg';
+			    break;
+
+			case 'robert':
+				$fullname = 'Robert Aboukhalil';
+				$job      = 'Bioinformatics Software Engineer';
+				$company  = 'Invitae';
+				$twitter  = 'RobAboukhalil';
+				$talk_title = 'Level up your web tools with WebAssembly';
+				$talk_description =  "This talk is a deep dive into WebAssembly and how it can help you level up your web applications.<p><p>We'll start the talk by introducing WebAssembly, how it works, and how to get started using it. Next, to concretely demonstrate how WebAssembly can be used to speed up web tools, we'll consider the application fastq.bio, an interactive front-end-only web tool we previously developed in JavaScript to help biologists QC their DNA sequencing data. By compiling an existing QC tool from C to WebAssembly and optimizing the original C code, we obtain >10X speedup compared to our original JavaScript implementation!<p><p>We'll also cover how we can leverage WebWorkers alongside WebAssembly to maintain the UI's responsiveness, and how this enables us to more easily mount File and Blob objects onto a virtual file system.<p><p>Finally, we'll conclude by discussing rules of thumb on when to use WebAssembly, and when to avoid it.";
+				$about = 'Robert is a Bioinformatics Software Engineer, which means that he spends his time engineering software for bioinformatics purposes. Specifically, he develops cloud applications to enable the interactive analysis and exploration of genomics data. Robert has a Ph.D. in Bioinformatics from CSHL and a Bachelor in Computer Engineering from McGill.';
+				$jpg = 'svg';
+			    break;
+
+			case 'erica':
+				$fullname = 'Erica Stanley';
+				$job      = 'Engineering Manager';
+				$company  = 'SalesLoft';
+				$twitter  = 'ericastanley';
+				$talk_title = 'Refactoring for Progressive Web Apps';
+				$talk_description =  "This session outlines best practices in architecture and design patterns for progressive web apps (PWAs). Along the way, we'll detail common ways to refactor existing web apps to take advantage of these best practices and share lessons learned from the PWA migration of SalesLoft’s core application. We'll:</p><ul><li>Explore progressive web apps (PWAs) and why are they useful</li><li>Learn best practices and modern technologies to prepare for PWAs</li><li>Learn about design patterns for more performant PWAs</li><li>Explore refactoring examples that incorporate these design patterns and lessons learned from building a PWA</li></ul>";
+				$about = 'Erica Stanley is an engineer, entrepreneur and diversity & inclusion advocate. She is an engineering manager for the integrations and analytics teams at SalesLoft – where she’s helping grow the product engineering team for the 4th fastest growing software company in North America. She’s worked with Fortune 500 companies, as well as successful startups.</p><p>Erica is active in the Atlanta technology community. She founded the Atlanta network of Women Who Code, where she organizes conferences, hackathons, workshops and networking events for women technologists. She also helps develop and teach youth coding programs and mentors entrepreneurs for local incubators and accelerators.';
+				$jpg = 'svg';
+			    break;
+
+			case 'ryan':
+				$fullname = 'Ryan Townsend';
+				$job      = 'CTO';
+				$company  = 'SHIFT Commerce';
+				$twitter  = 'ryantownsend';
+				$talk_title = 'Chaperones and curfews: minimising 3rd party impact';
+				$talk_description =  "Every year websites get heavier – but the majority of growth isn’t coming from code written at the organisations running them... it’s coming from 3rd parties. </p><p>Long gone are the days when it was viable to build everything internally, but their impact on performance is already getting a little out-of-hand. We don’t want to be the fun police throwing everyone out, but we can start to moderate the party.</p><p>In this talk we won’t be looking to remove 3rd parties altogether – nobody likes having their toys taken away; instead we’ll be taking the practical approach of accepting that 3rd parties aren’t going anywhere and look at what strategies we can employ for maintaining performance and safeguarding against slowdowns, outages and abuse.";
+				$about = 'With over 15 years experience developing for the web, and an undying passion for web performance, Ryan Townsend is the CTO of SHIFT Commerce – a SaaS e-commerce platform bringing agility to ambitious retailers.</p><p>His pragmatic and performance-led outlook means that—on the rare occasion that he does wear a shirt—his sleeves stay firmly rolled up: even as an exec, his favourite place is right there in the thick of things with his team.</p><p>Outside of the office, you’ll usually find him picking up heavy objects in the gym or falling off his mountain bike down the side of a hill.';
+				$jpg = 'svg';
+			    break;
+
+			case 'eric':
+				$fullname = 'Eric Bailey';
+				$job      = 'Designer';
+				$company  = 'thoughtbot';
+				$twitter  = 'ericwbailey';
+				$talk_title = 'The intersection of accessibility and performance';
+				$talk_description =  "Accessibility is a holistic practice, essential to some but useful to all. It is a practice that touches on many aspects of good web design and development, especially performance. This talk will highlight opportunities and techniques to improve your website or web app's performance by embracing an accessible, inclusive mindset.";
+				$about = 'Eric Bailey is an Inclusive Design advocate, A11Y Project maintainer, MDN Web Docs contributor, and recovering curmudgeon.';
+				$jpg = 'svg';
+			    break;
+
+			case 'greg':
+				$fullname = 'Greg Tatum';
+				$job      = 'Browser Engineer';
+				$company  = 'Mozilla';
+				$twitter  = 'TatumCreative';
+				$talk_title = 'Profiling the Profiler';
+				$talk_description =  'Writing DevTools is an inherently recursive problem: the tools you build are required to debug the tools you are building. This talk explores this circular relationship of building a web-based profiler for Firefox, that itself is used to profile Firefox. It dives into many of the practical aspects of making a fast product, and the types of analysis that is used. It also explores the importance of having fast tools and happy users. Responsive and ergonomic tools mean that its easier for engineers to fix performance problems, which in turn means that the web is faster for all of the end-users of Firefox.</p><p>Learn some of the engineering story behind Firefox Quantum, and the profiler that was used by many of the Firefox engineers to analyze and validate many of the new browser technologies that have gone into re-inventing the internals of Firefox.';
+				$about = 'With a background in art, but a job title that has the word "engineer" in it, Greg Tatum enjoys spending time in the odd space between the technical and creative. For Mozilla, Greg Tatum works on building tools to help make Firefox faster. This work varies from instrumenting the platform internals, to taking data sources and turning them into actionable visualizations.';
+				$jpg = 'svg';
+			    break;
+
+			case 'rick':
+				$fullname = 'Rick Viscomi';
+				$job      = 'Senior Developer Programs Engineer';
+				$company  = 'Google';
+				$twitter  = 'rick_viscomi';
+				$talk_title = 'Crash Course in CrUX';
+				$talk_description =  'This talk is a lightning demo of the Chrome UX Report. Learn how to quickly and easily extract insights from it to understand the web performance of real user experiences from millions of websites.';
+				$about = 'Rick Viscomi is a Senior Developer Programs Engineer at Google working on web transparency projects that track the state of the web including the Chrome UX Report and HTTP Archive. He is also the coauthor of the web performance book "Using WebPageTest" and once pair programmed with Snoop Dogg.';
+				$jpg = 'svg';
+			    break;
+
+			case 'katie':
+				$fullname = 'Katie Sylor-Miller';
+				$job      = 'Staff Software Engineer';
+				$company  = 'Etsy';
+				$twitter  = 'ksylor';
+				$talk_title = 'Happy Browser, Happy User!';
+				$talk_description =  'Performance is fundamentally, a UX concern. Sites that are slow to render or janky to interact with are a bad user experience. We strive to write performant code for our users, but users don’t directly interact with our code - it all happens through the medium of the browser. The browser is the middleman between us and our users; therefore to make our users happy, we first have to make the browser happy. But how exactly do we do that?</p><p> In this talk, we’ll learn how browsers work under the hood: how they request, construct, and render a website. At each step along the way, we’ll cover what we can do as developers to make the browser’s job easier, and why those best practices work. You’ll leave with a solid understanding of how to write code that works *with* the browser, not against it, and ultimately improves your users’ experience.';
+				$about = 'Katie is a Staff Software Engineer on the Frontend Systems team at Etsy, where she advocates for and implements frontend best practices in collaboration with product engineers and designers. She is passionate about frontend architecture, design systems, accessibility, frontend performance, and teaching others. Katie co-authored the Design Systems Handbook, but her proudest accomplishment is creating ohshitgit.com to share her hard-won knowledge of how to get out of your git messes with a bit of humor (and a lot of swears).';
+				$jpg = 'svg';
+			    break;
+
+			case 'lauren':
+				$fullname = 'Lauren Younger Nagel';
+				$job      = 'Product Line Lead, DPM';
+				$company  = 'Akamai';
+				$twitter  = 'llyounger';
+				$talk_title = 'The Business of Performance';
+				$talk_description =  'Panel Moderator';
+				$about = 'Lauren has been interested in computers and software ever since her first TI-99 when she was four years old. Her career started as a software design engineer in Test, until she realized that the best way to prevent bugs was to not design them in – and thus made the leap to product management. Today, Lauren is responsible for Digital Performance Management at Akamai, which brings together her love of testing and analytics, as well as her keen interest in everything that makes the internet run fast. She also just had her first baby, whom she considers her best product ever! ';
+				$jpg = 'svg';
+			    break;
+
+			case 'heather':
+				$fullname = 'Heather McGaw';
+				$job      = 'Staff User Researcher';
+				$company  = 'Mozilla';
+				$twitter  = 'heathermcgaw';
+				$talk_title = 'Measuring User Perceived Performance to Prioritize Product Work';
+				$talk_description =  "Performance is a primary metric deployed in software benchmarks, yet user perceived performance is equally important for assessing a user's experience as they pursue their goals with software. We will share our experience using perceived performance user research to help prioritize product work for the Firefox desktop and mobile browsers. We will discuss how we design perceived performance studies, how we have used perceived performance studies to benchmark the user experience over time, and how these insights have helped us identify and prioritize the greatest areas of improvement for our products.";
+				$about = 'Heather McGaw is a Toronto-based user researcher and educator driven by the desire to make technology more helpful and accessible across a wide range of human experiences. She currently works at Mozilla as a Staff User Researcher and teaches UX Research at Humber College.';
+				$jpg = 'svg';
+			    break;
+
+			case 'gemma':
+				$fullname = 'Gemma Petrie';
+				$job      = 'Mozilla';
+				$company  = 'Senior Staff User Researcher';
+				$twitter  = 'gemmapetrie';
+				$talk_title = 'Measuring User Perceived Performance to Prioritize Product Work';
+				$talk_description =  "Performance is a primary metric deployed in software benchmarks, yet user perceived performance is equally important for assessing a user's experience as they pursue their goals with software. We will share our experience using perceived performance user research to help prioritize product work for the Firefox desktop and mobile browsers. We will discuss how we design perceived performance studies, how we have used perceived performance studies to benchmark the user experience over time, and how these insights have helped us identify and prioritize the greatest areas of improvement for our products.";
+				$about = 'Gemma Petrie is a multi-method user researcher focused on informing the development of global products and services through understanding the complexity of context, culture, and relationships in markets around the world. Gemma lives in Seattle, has a background in nonprofit development, and an MLIS from the University of Illinois. She currently works as a Senior Staff User Researcher and Manager for Mozilla Firefox.';
+				$jpg = 'svg';
+			    break;
+
+			case 'mandy':
+				$fullname = 'Mandy Michael';
+				$job      = 'Front End Developer Manager';
+				$company  = 'Seven West Media';
+				$twitter  = 'mandy_kerr';
+				$talk_title = 'Performance Benefits of Variable Fonts';
+				$talk_description =  'Variable fonts are a game changer for how we use typography on the web. With improvements to performance and responsive typography, variable fonts deliver practical improvements for designers and developers alike. </p><p>We’ll explore what variable fonts are, how to use on your website as well as the benefits to actual and perceived performance on the web including from file improvements, compression, display options and rendering.</p><p>With an increase in support and creation of variable fonts in the past year, now is the time to start understanding, exploring and experimenting the exciting future ahead for typography on the web.';
+				$about = 'Mandy is a community organiser, speaker, and developer working as a Development Manager at Seven West Media in Western Australia. She is a co-organiser and Director of <a href="http://mixinconf.com/">Mixin Conf</a>, and the founder and co-organiser of <a href="http://www.fenders.co">Fenders</a>, a local Meetup for front end developers providing events, mentoring and support to the Perth web community. In 2018 she was named one of the Top 20 women in Tech in Western Australia.</p><p>Mandy’s passion is CSS, HTML and JS, she has a particular interest in web typography, accessibility and modern layouts, and hopes to inspire that passion in others. Mandy loves the supportive and collaborative nature of the web, her aim is to create a community of web developers who can share, mentor, learn and grow together.';
+				$jpg = 'svg';
+			    break;
+
+			case 'keerthana':
+				$fullname = 'Keerthana Krishnan';
+				$job      = 'Software Engineer';
+				$company  = 'Baker Hughes, A GE Company';
+				$twitter  = 'geekypurpleunicorn';
+				$talk_title = 'A Billion Phones and Even More People';
+				$talk_description =  'The growth of internet usage in developing countries has been very uneven, with adoption focussing mainly in urban centres. But this is a trend that is rapidly changing in areas like South Asia and Africa. As Billions of users get added to this ecosystem by 2020, many of them using technology for the first time, it brings with it a ton of new challenges. This talk focuses on exploring how we can give the best performance for users from these areas by considering their usage patterns and behaviours, with a special focus on mobile performance.';
+				$about = "Keerthana is a software engineer who's passionate about building the best websites she can for everyone. She has previous experience with speaking including Node + JS Interactive 2018. She lives in the sunny town of Cochin, India and works as a full stack web developer to pay the bills";
+				$jpg = 'svg';
+			    break;
+
+			case 'alfredo':
+				$fullname = 'Alfredo Lopez';
+				$job      = 'Director of Engineering';
+				$company  = 'Hearst';
+				$twitter  = 'lfredolo';
+				$talk_title = 'Think Fast, First: Empowering Performance Culture';
+				$talk_description =  'Attending a conference can be exciting but also overwhelming. This is the story of attending PerfMatters a year ago, and the learnings of establishing a performance culture by empowering non-technical team members to understand, own, and plan their performance impact through a path that aspires to be seamlessly integrated into the development lifecycle.';
+				$about = 'Alfredo is a Director of Engineering at Hearst working with technical and non-technical teams to develop tools and promote guidelines that abstract best practices and performance enhancements into measurable business goals.His current interests include creating highly performant and flexible web applications that enable developers to be productive.  Prior to Hearst, Alfredo worked for an ad platform writing low-level Javascript that catered to strict browser support requirements.  Outside of the web, Alfredo is a musician, film enthusiast, and comedy fan.';
+				$jpg = 'svg';
+			    break;
+
+			case 'mina':
+				$fullname = 'Mina Markham';
+				$job      = 'Senior Engineer';
+				$company  = 'Slack';
+				$twitter  = 'MinaMarkham';
+				$talk_title = 'Our Fabulous eMCee';
+				$talk_description = 'Will be introducing all our fabulous speakers and guiding us through this journey we call #PerfMatters.';
+				$about    = "Mina Markham is a Senior Engineer at Slack. She's a lover of design systems and prolific public speaker, appearing at events worldwide, including CSS Dev Conf, Fluent, and Future of Web Design. Mina also co-organizes Front Porch Conference.</p><p>Previously at Hillary for America, her work on the Pantsuit pattern library has been spotlighted in WIRED, Fast Company, and Communication Arts. Mina likes ampersands, Oreos, traveling, cupcakes, and the color pink. She lives in Oakland, California.";
+				$jpg = 'svg';
 		    break;
 
-		case 'jacques':
-			$fullname = 'Jacques Favreau';
-			$job      = 'Senior UI Engineer';
-			$company  = 'Netflix';
-			$twitter  = 'betaorbust';
-			$talk_title = 'Measure the Change You Want to See in the World';
-			$talk_description = "A stairway at Netflix costs over $100,000 each year because it turns left instead of right. Lurking in Gulp build times we found an entire engineer. One sneaky getBoundingClientRect launched a million laptop fan hurricanes.</p>
+			case 'estelle':
+				$fullname = 'Estelle Weyl';
+				$job      = 'Contractor, MDN Web Docs';
+				$company  = 'Standardista';
+				$twitter  = 'estellevw';
+				$talk_title = 'co-emCee';
+				$talk_description =  'If you want a pre-cursor to this fabulous conference intro, please read the conference <a href="../code/">code of content</a>. ';
+				$about = 'Estelle started her professional life in architecture and then managed teen health programs. In 2000, Estelle took the natural step of becoming a web standardista. She currently writes for  <a href="https://developer.mozilla.org">MDN Developer Network</a> and organizes <a href="https://perfmattersconf.com">#PerfMatters Conference</a>. She has consulted for Kodak Gallery, SurveyMonkey, Samsung, Yahoo, Visa, and Apple, among others. Estelle shares esoteric tidbits learned while programming  in her <a href="http://standardista.com">blog</a>. She is the author of Mobile HTML5 and co-authored CSS: The Definitive Guide, and HTML5 and CSS3 for the Real World. While not coding, Estelle works in construction, de-hippifying her 1960s throwback abode.</div>';
+				$jpg = 'svg';
+			    break;
 
-<p>There&rsquo;s a hidden world around us, and our only hope of cracking it open is keeping a measurement-oriented mindset. Kick off your path to performance glory with a lightning talk on what we miss when we&rsquo;re not looking.";
-			$about    = "Jacques Favreau is a senior UI engineer at Netflix. He&rsquo;s the tech lead for the Web Core team, which covers web performance, developer productivity, cross-team libraries, and best practices. Jacques is an ardent supporter of accessible websites and removing magic from code – something future-Jacques is always happy about.
-When not watching or working on Netflix, he can usually be found at home in San Mateo with his wife and daughter, or out pursuing their passion for travel.";
-		    break;
+			case 'nathan':
+				$fullname = 'Nathan Bower';
+				$job      = 'Sr. Product Manager, Performance';
+				$company  = 'Zillow Group';
+				$twitter  = 'nwbower';
+				$talk_title = 'Delighted, Satisfied, or Angry? : Building empathy into our core business metrics to put users first.';
+				$talk_description =  'All too often developers ask the question, “Is my service or feature healthy?” When more importantly we should be asking the question, “Are my users happy?” Zillow developed a new convention shifting our culture so we can better relate empathy for our users.</p><p>This new strategy integrates performance directly in our business metrics and drives priority to what matter most, our users. Come learn why we’ve made this shift, and how we’re measuring. Learn how we have enabled our developers and product managers to be accountable for performance and transparent with prioritization of performance against new and existing feature development. Nathan will share challenges observed and overcome as they’ve evolved too. Performance no longer takes a back seat during development. Call shotgun. You’re in for a ride.';
+				$about = 'Nathan is a Senior Product Manager in Performance at Zillow Group. Nathan\'s mission is collaborating closely with product teams on all things performance. Nathan formerly lead a performance team at MSN.com and has spoken at  VelocityConf and Twitter\'s "Hello World!" conference.';
+				$jpg = 'svg';
+			    break;
 
-		case 'jessica':
-			$fullname = 'Jessica Chan';
-			$job      = 'Software Engineer';
-			$company  = 'Pinterest';
-			$twitter  = 'missyjcat';
-			$talk_title = 'Making Pinterest Fast';
-			$talk_description = 'Pinterest.com serves millions of requests per day internationally across a myriad of network conditions and devices. This is the story of how the web performance team tackled the task of gathering data, applying a strategic roadmap across the organization, prevented performance regression slips as developers were shipping new features, and executed on the best opportunities to improve the Pinterest experience for our users and made performance a priority for the company.';
-			$about    = "";
-		    break;
+			case 'x':
+				$fullname = '';
+				$job      = '';
+				$company  = '';
+				$twitter  = '';
+				$talk_title = '';
+				$talk_description =  '';
+				$about = '';
+				$jpg = 'svg';
+			    break;
 
-		case 'jason':
-			$fullname = 'Jason Lengstorf';
-			$job      = '';
-			$company  = 'IBM';
-			$twitter  = 'jlengstorf';
-			$talk_title = 'Progressive Web Apps: Show Up for Offline First, but Stay for the Killer Performance Boost';
-			$talk_description = "There is a big push for Offline First development, with a new buzzword — \"Progressive Web App\", or PWA — making the rounds for the last year or two. But a lot of what&rsquo;s being said sounds like the coding equivalent of \"eat your vegetables!\".</p>
-
-<p>What is in it for ME? Quite a bit, it turns out.</p>
-
-<p>In this talk, Jason Lengstorf will share the surprising ways that online apps will see huge benefits when they&rsquo;re built to support offline users. Learn how to add blazing speed gains to existing sites with just a few simple changes — and how you can easily add Offline First support to your apps with just a few lines of code.</p>
-
-<p>Learn how going Offline First will improve the connected experience, including:</p>
-
-<ul>
-<li>better performance</li>
-<li>increased stability and reliability</li>
-<li>improved user experience</li>
-<li>and more!</li>
-</ul>
-
-<p>So in addition to eating your vegetables — you know, making your web apps usable for people with slow and unreliable connections and whatnot — you will ALSO see your apps perform even better for connected users. All with minimal effort required.";
-			$about    = "Jason Lengstorf is a developer, designer, author, and friendly bear. He focuses on work-life balance, efficiency, processes, and productivity to help people get more done in less time — so they can spend more time on the things that matter most. He recently joined IBM Design as a senior front-end developer in Austin, TX, where he can often be spotted in the forest foraging for nuts and berries.";
-		    break;
-
-		case 'kim':
-			$fullname = 'Kimberly Munoz';
-			$job      = 'Web Developer';
-			$company  = 'Slack';
-			$twitter  = 'kimberlymunoz';
-			$talk_title = 'Increasing Performance Developing Accessible Sites Through Semantic HTML';
-			$talk_description = '&lt;section> and &lt;button> and &lt;div>, Oh my! HTML is extensible enough to create almost anything you need, but for developers making accessible websites (which should be all of us) semantic markup has a number of advantages and built-in features to make accessible sites more performant. Learn about them in this talk.';
-			$about    = "Kimberly Muñoz is a front-end developer creating fast, accessible online experiences. She is currently on Slacks Customer Acquisition Team where she worked on the recent redesign of Slack.com. Previously she was recently a Technology and Innovation Fellow at the Consumer Financial Protection Bureau where she helped launch the redesign of Consumerfinance.gov, a new responsive website built on Django.";
-		    break;
-
-		case 'estelle':
-			$fullname = 'Estelle Weyl';
-			$job      = 'Open Web Evangelist';
-			$company  = 'Standardista';
-			$twitter  = 'estellevw';
-			$talk_title = 'TBD';
-			$talk_description = 'TBD';
-			$about    = "";
-		    break;
-
-		case 'tim':
-			$fullname = 'Tim Kadlec';
-			$job      = 'Head of Developer Evanglism';
-			$company  = 'Snyk';
-			$twitter  = 'tkadlec';
-			$talk_title = 'Workshop: Get Up to Speed';
-			$talk_description = 'Websites may be slow, but the web itself moves fast. Every day new techniques and tools emerge, promising to make your site faster and lighter. New articles are written about the latest "best practices" in performance, only to have yet newer articles contradict them. When the technologies and techniques we use to make websites more performant change so quickly, it&rsquo;s easy to feel like you&rsquo;re falling behind.<br/><br/>
-
-But if you pull back the layers and the hype, drilling into the core concepts of how the network and browsers we rely on actually work, it suddenly becomes much easier to recognize which best practices are actually appropriate for you, and what trade-offs you&rsquo;re making.
-<br/><br/>
-In this workshop, we&rsquo;ll go beyond the latest and greatest techniques and tools to understand what is going on at the core. We&rsquo;ll explore:<br/><br/>
-
-&middot; How the browser renders pages, from the very first request on the network to the final pixel on your screen<br/>
-&middot; What the critical rendering path is and how to optimize for it<br/>
-&middot; How HTTP/2 differs from HTTP/1 and what that means for popular opimizations<br/>
-&middot; How to identify common performance bottlenecks in your sites and applications<br/>
-<br/>By the time we&rsquo;re done, you&rsquo;ll have a firm understanding of what makes sites fast, and how to separate the hype from reality.';
-			$about    = "Tim is head of developer relations at Snyk—a company focused on making open source code more secure. He is the author of Implementing Responsive Design: Building sites for an anywhere, everywhere web, and was a contributing author for Smashing Book #4: New Perspectives on Web Design, and the Web Performance Daybook Volume 2. Along with Katie Kovalcin, he also co-hosts The Path to Performance Podcast.";
-		    break;
-
-
-
-
-		case 'sarah':
-			$fullname = 'Sarah Dapul-Weberman';
-			$job      = 'Software Engineer';
-			$company  = 'Pinterest';
-			$twitter  = 'sarahddubs';
-			$talk_title = 'Making Pinterest Fast';
-			$talk_description = 'Pinterest.com serves millions of requests per day internationally across a myriad of network conditions and devices. This is the story of how the web performance team tackled the task of gathering data, applying a strategic roadmap across the organization, prevented performance regression slips as developers were shipping new features, and executed on the best opportunities to improve the Pinterest experience for our users and made performance a priority for the company.';
-			$about    = "Sarah Dapul-Weberman is a software engineer on the Pinterest Core Experience Web team. She focuses specifically on server-side web technologies. She is passionate about attempting to automate away more and more parts of her job.";
-		    break;
-
-
-		case 'michelle':
-			$fullname = 'Michelle Vu';
-			$job      = 'Software Engineer';
-			$company  = 'Pinterest';
-			$twitter  = 'micvu';
-			$talk_title = 'Making Pinterest Fast';
-			$talk_description = 'Pinterest.com serves millions of requests per day internationally across a myriad of network conditions and devices. This is the story of how the web performance team tackled the task of gathering data, applying a strategic roadmap across the organization, prevented performance regression slips as developers were shipping new features, and executed on the best opportunities to improve the Pinterest experience for our users and made performance a priority for the company.';
-			$about    = "";
-		    break;
-
-
-		case 'pinterest':
-			$fullname = 'Jessica Chan, Michelle Vu, and Sarah Dapul-Weberman';
-			$job      = 'Software Engineers';
-			$company  = 'Pinterest';
-			$twitter  = 'missyjcat';
-			$talk_title = 'Making Pinterest Fast';
-			$talk_description = 'Pinterest.com serves millions of requests per day internationally across a myriad of network conditions and devices. This is the story of how the web performance team tackled the task of gathering data, applying a strategic roadmap across the organization, prevented performance regression slips as developers were shipping new features, and executed on the best opportunities to improve the Pinterest experience for our users and made performance a priority for the company.';
-			$about    = "Sarah Dapul-Weberman is a software engineer on the Pinterest Core Experience Web team. She focuses specifically on server-side web technologies. She is passionate about attempting to automate away more and more parts of her job.";
-		    break;
-		case '':
-			$fullname = '';
-			$job      = '';
-			$company  = '';
-			$twitter  = '';
-			$talk_title = '';
-			$talk_description = '';
-			$about    = "";
-		    break;
+			case 'x':
+				$fullname = '';
+				$job      = '';
+				$company  = '';
+				$twitter  = '';
+				$talk_title = '';
+				$talk_description =  '';
+				$about = '';
+				$jpg = 'svg';
+			    break;
 	}
 	
 	$speaker = (object)[
@@ -398,6 +333,7 @@ In this workshop, we&rsquo;ll go beyond the latest and greatest techniques and t
     	'twitter' => $twitter,
     	'talk_title' => $talk_title,
     	'talk_description' => $talk_description,
+    	'jpg' => $jpg,
     	'about' => $about
   	];
 	

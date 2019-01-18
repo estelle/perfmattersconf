@@ -1,4 +1,4 @@
-<?php include '../test.inc' ?><!doctype html>
+<?php include '../info.inc' ?><!doctype html>
 <html lang="en">
 <head>
 	<title>#PerfMatters: Our Sponsors</title>
@@ -11,25 +11,27 @@ main ul {
 	list-style-type: none;
 }
 li {
-	list-style-type: none;
+	list-style-type: none; padding-top: 30px; padding-bottom: 30px;
 }
 main ul li img {height:90px;}
 
 	</style>
 </head>
 <body id="home">
-<nav>
-    <?php echo $logo ?>
-	<?php echo $nav ?>
-</nav>
+<aside>
+    <?php echo $tagline ?>
+</aside>
 <header>
 <hgroup>
-<div class="circle">
-	<h1>Our Sponsors</h1>
-	<h2>#PerfMatters Conference<br/>
-	Redwood City, CA <br/>
+<?php echo $logo ?>
+<?php echo $nav ?>
+<a href="/" class="circle">
+	<h1>#PerfMatters</h1>
+	<h2>Redwood City, CA <br/>
 	<?php echo $date ?></h2>
-</div>
+</a>
+
+	
 <div>
 Support #PerfMatters and connect with 
 the web performance engineeers of the world.
@@ -50,18 +52,19 @@ the web performance engineeers of the world.
 <h2>Gold Sponsors</h2>
 </section>
 <section>
-<h2>Silver Sponsors</h2>
+<h2>Silver Sponsors</h2><!--
 <ul style="justify-content: space-around; display: flex; flex-flow: row wrap; width: 90%">
 <li><a href="https://fastly.com"><img src="../logos/fastly.png" alt="Fastly"/></a></li>
-<li><a href="https://cloudinary.com"><img src="../logos/cloudinary_w.svg" alt="Cloudinary"/></a></li>
-</ul>
+<li><a href="https://cloudinary.com"><img src="../logos/cloudinary_w.svg" alt="Cloudinary"/></a></li><li><a href="https://appdynamics.com"><img src="../logos/appdynamics.png" alt="AppDynamics" style="height:180px; position: relative; top: -45px; margin: auto 90px"/></a></li><li><a href="https://linkedin.com"><img src="../logos/linkedin.png" alt="LinkedIn"/></a></li>
+</ul>-->
 </section>
 <section>
 <h2>Partners &amp; Community Supporters</h2>
-<ul style="justify-content: space-around; display: flex; flex-flow: row wrap; width: 90%">
+<!--<ul style="justify-content: space-around; display: flex; flex-flow: row wrap; width: 90%">
 <li><a href="https://catchpoint.com"><img src="../logos/catchpoint.png" alt="Catchpoint" style="height: 80px"/></a></li>
 <li><a href="https://speedcurve.com"><img src="../logos/speedcurve.png" alt="SpeedCurve" style="height: 60px"/></a></li>
-</ul>
+<li><a href="https://mapbox.com"><img src="../logos/mapbox.svg" alt="MapBox" style="height: 60px"/></a></li>
+</ul>-->
 </section>
 
 <section id="reg">
