@@ -1,13 +1,10 @@
-html {
-	font-family: 'Montserrat', "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-body, header, footer {
-	margin: 0; padding: 0;
-	line-height: 1.6;
+body {
+	margin: 0;
+  padding: 0;
 }
 
 section, footer {
-	padding: 4vh 1vw;
+	padding: 3rem 0;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -37,7 +34,7 @@ section:nth-of-type(2) {
   background-size: cover;
   background-position: right center;
   color: $white;
-  
+
 	a {color: $speed-light;}
 }
 section:nth-of-type(3),
@@ -65,7 +62,4 @@ footer {
 	background-color: $speed-light;
     box-shadow: inset $shadows, inset $topshadows;
     ul li a, a {color: white;}
-}
-h2, h3 {
-	margin-bottom: 0;
 }

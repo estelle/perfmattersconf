@@ -4,7 +4,7 @@
 
 .speakers {
 	ul {
-		max-width: 68em;
+		max-width: 60rem;
 		display: flex;
 		flex-flow: wrap row;
 		justify-content: flex-start;
@@ -12,46 +12,53 @@
 		padding: 0; margin: 0;
 	}
 	li {
+		box-sizing: border-box;
 		list-style-type: none;
 		text-align: center;
-		margin: 5px 30px;
-		padding: 0;
+		margin: .75rem 0;
+		padding: 0 1rem;
 		flex: 0;
-		width: 200px; 
+		width: 15rem;
 	}
-	li:hover, li.focus {
-		height: 320px;
-		width: 300px;
-		margin: 0 -20px -80px;
-		padding: 5px 10px;
-		z-index: 100;
-		left: 40px;
+
+	li:hover,
+	li.focus {
 		position: relative;
+		height: 21rem;
+		width: 15rem;
+		margin: 0 0 -5rem;
+		padding: .75rem 1rem;
+		z-index: 100;
 		background: $bg;
 		box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
-		
+
 	}
 	img {
-		height: 200px;
+		height: 13rem;
 		-webkit-filter: sepia(40);
 		box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
 
 	}
 	a {
 		display: block;
+		line-height: 0;
 	}
 
 	figcaption {
-		line-height: 1.4;
+		box-sizing: border-box;
+		padding: 0 1rem;
+
 		.bio {position: absolute; left: -200vw;}
 		.name {
 			position: relative;
 			display: block;
-			top: -3em; width: 200px;
+			top: -3rem;
+			left: -1rem;
+			width: 13rem;
 			padding:0; white-space: nowrap;
 			background-color: $bg;
 			color: white; font-weight: bold;
-			background-color: $speed-light; 
+			background-color: $speed-light;
 		}
 	   }
 	li:hover, li.focus {
@@ -61,10 +68,13 @@
 		figcaption {
 			left: 0;
 			position: absolute;
-			top: 240px; bottom: 0;
-			width: 300px; text-align: center;
-			color: $popcolor; 
-			margin: 0; padding: 0;
+			top: 15rem;
+			bottom: 0;
+			width: 15rem;
+			text-align: center;
+			color: $popcolor;
+			margin: 0;
+			padding: 0;
 			.bio, .name {position: static; display: block;clear: both; width: 100%;}
 		}
 	}

@@ -1,8 +1,8 @@
 /* NAMED COLORS */
 $purple: rgb(53, 14, 101);
 $orange: rgb(248, 172, 4);
-$pink: rgb(217, 25, 98); 
-$black: #333; 
+$pink: rgb(217, 25, 98);
+$black: #333;
 $white: #fff;
 
 /* USED COLORS */
@@ -15,7 +15,7 @@ $shadows: 3px 3px 3px rgba(0,0,0,0.2);
 $topshadows: -3px -3px 3px rgba(0,0,0,0.2);
 
 
-$theme_color: rgb(53, 14, 101); 
+$theme_color: rgb(53, 14, 101);
 $darken: rgba(0,0,0,0.1);
 $lightborders: #ccc;
 $background: $white;
@@ -29,14 +29,12 @@ $popcolor: $theme_color;
 
 $cdn-dark: #635e5e;
 $cdn-light: #d0d0d0;
-$speed-dark: $darkest_bg; 
+$speed-dark: $darkest_bg;
 $speed-light: rgb(242,65,26);
-$speed-light: rgb(217, 25, 98); 
+$speed-light: rgb(217, 25, 98);
 $shield-dark: #5c1f8e;
 $shield-light: #cec1e2;
 $flex-dark: #447228;
 $flex-light: #badba5;
 $ads-dark: #00154e;
 $light: $white;
-
-html {font-size: 16px;}

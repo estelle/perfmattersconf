@@ -1,0 +1,11 @@
+.container,
+.container-small,
+.container-large {
+  margin: 0 auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.container       { max-width: 60rem;  }
+.container-small { max-width: 40rem;  }
+.container-large { max-width: 120rem; }

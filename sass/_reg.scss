@@ -1,20 +1,13 @@
 .reg {
 	color: $white;
 	overflow: scroll;
+
 	h1 {
 		font-size: 2rem;
-		margin-bottom: 0
 	}
+
 	table {
-		width: 100%;
-		color: #333;
-		border: 1px solid;
-		white-space: nowrap;
-		td { padding:5px 10px;}
-		tr + tr td {border-top:1px solid;}
-		td + td {
-			border-left: 1px solid;
-		}
+
 		td[colspan] {text-align: center;}
 	}
 
@@ -22,38 +15,52 @@
 
 
 .registration {
-	caption {
-	font-size: 2em; 
-	font-weight: bold; 
-	margin-top: 2em;
+
+	tbody {
+		tr {
+			opacity: 0.35;
+		}
+
+		tr.active {
+			opacity: 1;
+		}
+	}
+
+	p {
+		text-align: center;
+	}
+
+	.cta {
+		display: block;
+		margin: 3rem auto;
+		font-weight: bold;
+	}
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	color: #333;
+}
+
+caption {
+	margin: 1.5rem 0;
+	font-size: 2rem;
+	font-weight: bold;
 	background-color: rgba(255,255,255,0.5);
-} 
-tbody tr {
-	opacity: 0.35;
-	} 
+}
+
 tr:nth-of-type(odd){
 	background-color: $tc_light;
 }
+
 tr.active {
-	opacity: 1;
 	background-color: lighten($bg, 20%);
 }
-  table {
-	margin: auto;
-	border-collapse: collapse;
-	td, th {
-		padding: 2px;
-	}
-  }
-  p {
-	text-align: center;
-  }
-  .cta {
-  	display: block;
-  	width: 580px;
-  	max-width: 70%;
-  	margin: 2em auto;
-  }
+
+th,
+td {
+	padding: .75rem 1rem;
 }
 
 .diversity {
@@ -65,19 +72,19 @@ tr.active {
 }
 
 @media screen and (max-width: 54em){
-  #levels, 
+  #levels,
   .longtext {
 	details[open] p {
-		right: 0; 
+		right: 0;
 		width: 100%;
 	}
 	display: block;
 	tr { display: list;}
 	tr ~ tr td:first-of-type {border-top: 1px solid;}
 	tr:first-of-type {display: none;}
-	td { display: list-item; 
+	td { display: list-item;
 		border: none;
-		
+
 		&:empty {display: none;}
 	}
   }

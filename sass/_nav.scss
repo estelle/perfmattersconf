@@ -1,9 +1,9 @@
 aside {
+	padding: .75rem 0;
+  font-size: 1.5rem;
 	background-color: $darkest_bg;
-	font-size: 1.5em;
 	color: $text_on_dark;
 	text-align: center;
-	font-style: italic;
 	opacity: 0.8;
 }
 
@@ -12,20 +12,19 @@ hgroup > ul:first-of-type {
 	justify-content: space-between;
 	flex-flow: wrap;
 	width: 100%;
-	line-height: 1;
 	z-index: 12;
 	list-style-type: none;
 	padding: 0;
+
 	a {
 		color: $darkest_bg;
 		text-transform: uppercase;
-		padding: 4px 8px;
-		text-decoration: none;
+		padding: .75rem 1rem;
 		opacity: 0.8;
 		display: inline-block;
 		background-color: lighten($darkest_bg,70%);
 		transform: skewx(-20deg);
-		border: 1px solid lighten($darkest_bg,50%);
+
 		span {
 			display: inline-block;
 			transform: skewx(20deg);
@@ -35,7 +34,7 @@ hgroup > ul:first-of-type {
 		background-color: $darkest_bg;
 		color: $text_on_dark;
 	}
-}	
+}
 .subnav ul {
 	display: flex;
 	list-style-type: none;
