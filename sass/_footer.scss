@@ -1,5 +1,5 @@
 footer {
-	padding: 20px;
+
 	article {
 		display: flex;
 		line-height: 1.6;
@@ -12,20 +12,19 @@ footer {
 	}
 	ul {
 		list-style-type: none;
-		margin: 0;
-		padding: 0 0 0 1rem;
+		padding: 0;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
 		li {
 		flex: 1 0 auto;
-		padding: 0 20px;
+		padding: 0 1rem;
 		box-sizing: border-box;
 		}
 		a {
 			text-decoration: none;
 			color: $aa_theme_color_on_grey;
-			
+
 		&:hover{
 			text-decoration: underline;
 			color: $tc_dark;

@@ -1,4 +1,4 @@
-<?php 
+<?php
 	$date = "April 2 &amp; 3, 2019";
 	$font = '<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> ';
 	$wk_date = "April 1, 2019";
@@ -31,9 +31,9 @@
 	$logo = '';
 
 	$form = "https://goo.gl/forms/uaPxPCPWKbJA7Wni1";
-	
+
 	$reg = '<div class="registration">
-		<p><a href="' . $reglink . '" title="Register Now" class="cta" style="margin: 1.5em auto 0.5em;">Register Now</a> <br/><a href="/diversity/">Scholarship Info</a></p><div>
+		<p><a href="' . $reglink . '" title="Register Now" class="cta">Register Now</a> <br/><a href="/diversity/">Scholarship Info</a></p><div>
 	<table>
 	<caption>Conference (Only)</caption>
 		<thead><tr>
@@ -75,8 +75,8 @@
 		</tr>
 	</tbody>
 	</table>
-	
-	
+
+
 <table>
 	<caption>Conference &amp; Hackathon</caption>
 		<thead><tr>
@@ -117,9 +117,9 @@
 			<td>$654</td>
 		</tr>
 	</tbody>
-	</table>	
-	
-	
+	</table>
+
+
 	<table>
 	<caption>Conference &amp; Workshop</caption>
 		<thead><tr>
